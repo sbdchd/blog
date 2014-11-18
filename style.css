@@ -1,0 +1,195 @@
+*, *:after, *:before {
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box; 
+}
+body, html {
+ font-size: 100%;
+ padding: 0;
+ margin: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    background: #0c84c5;
+    background: #0c84c5;
+
+}
+
+a,a:hover  {
+	color: #ccc;
+	text-decoration: none;
+}
+
+html, body, 
+.container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	overflow-y: scroll;
+	background: #0c84c5;
+}
+
+.splitlayout {
+	position: relative;
+	overflow-x: hidden;
+	min-height: 100%;
+	width: 100%;
+}
+
+.side {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	-webkit-backface-visibility: hidden;
+}
+
+.side-left {
+	left: 0;
+	background: #0c84c5;
+	color: #fff;
+	outline: 1px solid #0c84c5;
+}
+
+.side-right {
+	right: 0;
+	background: #fff;
+	color: #0c84c5;
+	outline: 1px solid #fff; 
+}
+
+
+.intro-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 0 1em;
+	width: 50%;
+	cursor: pointer;
+	-webkit-transform: translateY(-50%) translateX(-50%);
+	transform: translateY(-50%) translateX(-50%);
+}
+
+.profile {
+	margin: 0 auto;
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+}
+
+.profile img {
+	max-width: 100%;
+	border-radius: 50%;
+}
+
+.intro-content h1 > span {
+	display: block;
+	white-space: nowrap;
+}
+
+.intro-content h1 > span:first-child {
+	font-weight: 100;
+	font-size: 2em;
+}
+
+.intro-content h1 > span:nth-child(2) {
+	position: relative;
+	margin-top: 0.5em;
+	padding: 0.8em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 0.8em;
+}
+
+.intro-content h1 > span:nth-child(2):before {
+	position: absolute;
+	top: 0;
+	left: 25%;
+	width: 50%;
+	height: 2px;
+	background: #fff;
+	content: '';
+}
+
+.side-right .intro-content h1 > span:nth-child(2):before {
+	background: #0c84c5;
+}
+
+
+
+@media screen and (max-width: 83em) {
+	.intro-content { font-size: 60%; }
+}
+
+@media screen and (max-width: 58em) {
+	body { font-size: 90%; }
+}
+
+
+@media screen and (max-width: 49.4375em) {
+	.page {
+		width: 100%;
+	}
+
+	.page-right {
+		left: 0;
+		padding-left: 15%;
+	}
+
+	.page-left {
+		padding-right: 15%;
+	}
+
+	.intro-content {
+		width: 70%;
+	}
+
+
+	.back-left {
+		left: 6.25%;
+	}
+
+	.back-right {
+		right: 6.25%;
+	}
+	
+}
+
+@media screen and (max-width: 42.5em) {
+	body { font-size: 80%; }
+	.intro-content { 
+		font-size: 70%; 
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 40em) {
+	.intro-content { 
+		width: 100%;
+	}
+}
+
+
+/* Changes Profile Size */
+@media screen and (max-width: 25em) {
+	.intro-content .profile { -webkit-transform: scale(0.75); transform: scale(0.75); }
+}
+
+@media screen and (max-width: 320px) {
+	body { font-size: 70%; }
+}
+
+.white{
+color: #fff;
+}
+
+.blue{
+color: #0c84c5
+}
