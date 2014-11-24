@@ -1,3 +1,3 @@
 blog
 ====
-My future blog (maybe) that is not working due to broken links.
+A blog of many things. Mostly Tech.
