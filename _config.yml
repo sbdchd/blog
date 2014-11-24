@@ -9,6 +9,8 @@ description:	  A blog of many things. Mostly technology.
 url:              http://steve.dignam.xyz
 paginate:         10
 baseurl:          /
+gems: 
+  - jekyll-sitemap
 
 author:
   name:           Steve Dignam
