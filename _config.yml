@@ -8,7 +8,7 @@ tagline:          A blog of things.
 description:	  A blog of many things. Mostly technology.
 url:              steve.dignam.xyz
 paginate:         10
-baseurl:          /blog
+baseurl:          /
 
 author:
   name:           Steve Dignam
