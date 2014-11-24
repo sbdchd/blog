@@ -1,0 +1,2 @@
+#Robots.txt for steve.dignam.xyz
+User-agent: *

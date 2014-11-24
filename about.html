@@ -1,0 +1,21 @@
+---
+layout: about
+title: About
+---
+
+<img class="center" src="{{ site.author.profile_photo }}" />
+
+{% if site.findme_list.size < 5  %}
+	<p>Hello, I am {{ site.author.name }}. You can reach me directly through my email at <a href="mailto:{{ site.author.email}}" title="email">{{ site.author.email}}</a>. I can be found here and on <a href="{{ site.findme_list.Github}}"  title="github">github</a>, along with many other miscellaneous places.
+	</p>
+	<p>This site is powered through <a href="http://jekyllrb.com/">jekyll</a>, hosted on <a href="https://pages.github.com/">github pages</a>, and utilizes a modified <a href="https://github.com/poole/poole">poole</a> theme.
+	</p>
+{% else %}
+	<p>Hello, I am {{ site.author.name }}.<br /> I can be found here:</p>
+	{% for page in site.findme_list%}
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<small><a href="{{ page[1]  }}" title="{{ page[0] }}">{{ page[0] }}</a></small>
+	{% endfor %}
+	<p>This site is powered through <a href="http://jekyllrb.com/">jekyll</a>, hosted on <a href="https://pages.github.com/">github pages</a>, and utilizes a modified <a href="https://github.com/poole/poole">poole</a> theme.
+	</p>
+{% endif %}

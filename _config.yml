@@ -1,0 +1,31 @@
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            Stev
+tagline:          A blog of things.
+description:	  A blog of many things. Mostly technology.
+url:              steve.dignam.xyz
+paginate:         10
+baseurl:          /
+
+author:
+  name:           Steve Dignam
+  url:            https://steve.dignam.xyz
+  email:          steve@dignam.xyz
+  alt_contact: 	  https://plus.google.com/u/0/+StephenDignam/
+  profile_photo: "/public/sloth_899x600.jpg"
+
+findme_list:
+#  Twitter: https://twitter.com/test
+  Github: https://github.com/sbdchd
+#  Google+: https://plus.google.com/u/0/example
+#  Steam: http://steamcommunity.com/id/example
+#  Facebook: https://www.facebook.com/
+  
+# This is the list of pages to include in the header of the website.
+pages_list:       
+  About: '/about/'
+  Archive: '/archive/'
+#  Feed: '/atom.xml'

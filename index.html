@@ -1,40 +1,41 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<link href="http://gmpg.org/xfn/11" rel="profile">
-		<!-- Enable responsiveness on mobile devices-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-		<link rel="stylesheet" type="text/css" href="style.css"/>
-		<title>
-			Steve &middot; Chris
-		</title>
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-precomposed.png">
-		<link rel="shortcut icon" href="favicon.ico">
+---
+layout: default
+title: Home
+---
 
-	</head>
-	<body>
-		<div class="container">
-			<div id="splitlayout" class="splitlayout">
-				<div class="intro">
-					<div class="side side-left">
-						<a href="http://steve.dignam.xyz" title="Visit">
-						<div class="intro-content">
-							<div class="profile"><img src="profile1.jpg" alt="profile1"></div>
-							<h1 class="white"><span>Steve </span><span>Sloth</span></h1>
-							<p> This is a test page for steve.dignam.xyz & potentially dignam.xyz/blog </p>
-						</div> </a>	
-					</div>
-					<div class="side side-right">
-					<a href="http://chris.dignam.xyz" title="Visit">
-						<div class="intro-content">
-							<div class="profile"><img src="profile2.png" alt="profile2"></div>
-							<h1 class="blue"><span>Chris </span><span>Otter</span></h1>
-							<p> This is a test page for steve.dignam.xyz & potentially dignam.xyz/blog </p>
-						</div> </a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</body>
-</html>
+<div class="posts">
+  {% for post in paginator.posts %}
+  <article class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url }}" title="View Post">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+
+    {{ post.excerpt }}
+  </article>
+  {% endfor %}
+</div>
+
+{% if paginator.total_pages < 2 %}
+
+{% else %}
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
+  {% else %}
+   <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+   <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
+{% endif %}
