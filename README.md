@@ -1,3 +1,3 @@
 blog
 ====
-Testing out to see how DNS is working for future blog.
+My future blog (maybe) that is not working due to broken links.
