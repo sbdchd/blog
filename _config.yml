@@ -6,7 +6,7 @@ relative_permalinks: true
 title:            Stev
 tagline:          A blog of things.
 description:	  A blog of many things. Mostly technology.
-url:              steve.dignam.xyz
+url:              http://steve.dignam.xyz
 paginate:         10
 baseurl:          /
 
@@ -15,7 +15,7 @@ author:
   url:            https://steve.dignam.xyz
   email:          steve@dignam.xyz
   alt_contact: 	  https://plus.google.com/u/0/+StephenDignam/
-  profile_photo:  http://steve.dignam.xyz/public/Sloth_899x600.jpg
+  profile_photo:  /public/Sloth_899x600.jpg
 
 findme_list:
 #  Twitter: https://twitter.com/test
