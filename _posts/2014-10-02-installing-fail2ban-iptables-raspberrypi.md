@@ -19,16 +19,18 @@ excerpt: A simple guide to installing and configuring IPTables and Fail2Ban on t
 		
 	Add the following to the file
 	
-		*filter
-		:INPUT DROP [23:2584]
-		:FORWARD ACCEPT [0:0]
-		:OUTPUT ACCEPT [1161:105847]
-		-A INPUT -i lo -j ACCEPT
-		-A INPUT -i eth0 -p tcp -m tcp --dport 22 -j ACCEPT
-		-A INPUT -i wlan0 -p tcp -m tcp --dport 22 -j ACCEPT
-		-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
-		COMMIT
-		
+	``` bash
+	*filter
+	:INPUT DROP [23:2584]
+	:FORWARD ACCEPT [0:0]
+	:OUTPUT ACCEPT [1161:105847]
+	-A INPUT -i lo -j ACCEPT
+	-A INPUT -i eth0 -p tcp -m tcp --dport 22 -j ACCEPT
+	-A INPUT -i wlan0 -p tcp -m tcp --dport 22 -j ACCEPT
+	-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+	COMMIT
+	```
+	
 	If you want to open up more ports, for a web server perhaps, add another set of lines similar to that of port 22.
 	
 		-A INPUT -i eth0 -p tcp -m tcp --dport 80 -j ACCEPT
