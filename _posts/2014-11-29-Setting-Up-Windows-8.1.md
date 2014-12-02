@@ -59,3 +59,6 @@ Although a fresh install will work fine it is important to install the many upda
 * [Dropbox](https://www.dropbox.com/)
 * [Notepad++](http://notepad-plus-plus.org/download/)
 * [Malwarebytes](https://www.malwarebytes.org/mwb-download/)
+* [7-Zip](http://www.7-zip.org/)
+
+[Other Programs List](/List-Of-Windows-Programs)
