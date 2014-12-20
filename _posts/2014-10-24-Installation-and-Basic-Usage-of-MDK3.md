@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Installation and Basic Usage of MDK3
-excerpt: A how-to for the installation and basic usage of mdk3
+excerpt: A how-to for the installation and basic usage of mdk3.
 ---
 ###Installation
 

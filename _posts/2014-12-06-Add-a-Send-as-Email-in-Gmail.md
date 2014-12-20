@@ -3,6 +3,7 @@ layout: post
 title: Add a Send as Email in Gmail
 excerpt: A guide to adding an alternative email to send from via Gmail.
 ---
+###Introduction
 Sending emails from your normal Gmail address is fine but if you want to send emails
 from your custom domain (more professional?) then you would normally have to setup 
 your own smtp server. However, you can send emails from your custom domains with Gmail 
