@@ -55,6 +55,8 @@ excerpt: A basic guide to setting up a wifi hotspot on the Raspberry Pi using an
 			
 4.	Edit the ISC DHCP Server File
 	
+		sudo nano /etc/default/isc-dhcp-server
+	
 	Modify the line with `INTERFACES=""` to look like the following:
 
 		INTERFACES="wlan0"
@@ -94,7 +96,7 @@ excerpt: A basic guide to setting up a wifi hotspot on the Raspberry Pi using an
 		device_name=RTL8192CU
 		manufacturer=Realtek
 		
-	If you are using a wifi dongle besides the [Edimax](http://www.amazon.com/dp/B003MTTJOY), change the `manufacturer` and `device_name`
+	If you are using a wifi dongle besides the [Edimax](http://www.amazon.com/dp/B003MTTJOY), change the `driver`, `device_name`, and`manufacturer`.
 	
 6. Editing the Hostapd File
 
