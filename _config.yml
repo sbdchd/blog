@@ -9,12 +9,12 @@ description:	  A blog of many things. Mostly technology.
 url:              http://steve.dignam.xyz
 paginate:         20
 baseurl:          /
-gems: 
+gems:
   - jekyll-sitemap
 markdown: redcarpet
 
 author:
-  name:           Steve Dignam
+  name:           Steve
   url:            https://steve.dignam.xyz
   email:          steve@dignam.xyz
   alt_contact: 	  https://plus.google.com/u/0/+StephenDignam/
@@ -26,9 +26,9 @@ findme_list:
 #  Google+: https://plus.google.com/u/0/example
 #  Steam: http://steamcommunity.com/id/example
 #  Facebook: https://www.facebook.com/
-  
+
 # This is the list of pages to include in the header of the website.
-pages_list:       
+pages_list:
   About: '/about/'
   Archive: '/archive/'
 #  Feed: '/atom.xml'
