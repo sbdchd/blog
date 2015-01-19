@@ -6,6 +6,8 @@ layout: post
 
 ###Installing Hostapd and Transferring Files of Patched Version
 
+Install hostapd
+
     sudo apt-get -y update && sudo apt-get -y upgrade
 
     sudo apt-get install -y hostapd libnl-dev libssl-dev
@@ -90,6 +92,8 @@ Make sure `interface`, `driver`, `ssid`, and `channel` are appropriate
 
 ###Modifying Ifplugd Due to Interference With Hostapd
 
+Open ifplugd
+
     sudo nano /etc/default/ifplugd
 
 Change
@@ -107,11 +111,13 @@ To
     SUSPEND_ACTION="stop"
 
 
-###Modify Network Interfaces File
+###Modifying the Network Interfaces File
+
+Open the network interfaces file
 
     sudo nano /etc/network/interfaces
 
-Make it look like the following:
+Make it look like the following
 
     auto lo
 
@@ -126,11 +132,11 @@ Make it look like the following:
 
 ###Setting Up Dnsmasq
 
-Install
+Install dnsmasq
 
     sudo apt-get install -y dnsmasq
 
-Edit the dnsmasq.conf file
+Open the dnsmasq.conf file
 
     sudo nano /etc/dnsmasq.conf
 
@@ -194,13 +200,13 @@ Add the following to the file
     log-queries
 
 
-###Adding Webserver for Rickroll
+###Adding the Webserver for Rickroll
 
 Install nginx
 
     sudo apt-get install -y nginx
 
-Modify the default html with desired content
+Modify the default html file with your desired content
 
     sudo nano /usr/share/nginx/www/index.html
 
@@ -208,7 +214,7 @@ Change the default server configuration settings if neccessary
 
     sudo nano /etc/nginx/sites-available/default
 
-###Startup Hostapd on Boot
+###Starting Hostapd on Boot
 
 Edit the hostapd file
 
