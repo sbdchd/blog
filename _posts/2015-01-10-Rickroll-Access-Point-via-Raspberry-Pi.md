@@ -247,6 +247,10 @@ View dnsmasq log for problems
 
     sudo cat /var/log/dnsmasq.log
 
+View dnsmasq log for clients
+
+    sudo cat /var/log/dnsmasq.log | grep provides | awk '{print $9}' | sort | uniq
+
 ###Notes
 
 A limiting factor of this prank is that devices attempt to test their network status upon initial connection to a new wifi network, which can be inhibited by redirecting all of the DNS requests to a local server. If the devices are not able to reach their servers then the device will either spout a warning or, in the case of iOS, will display a captive portal page showing a stripped down version of the rickroll page.
