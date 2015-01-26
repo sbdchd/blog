@@ -32,6 +32,8 @@ Edit the configuration file
 
 Make sure `interface`, `driver`, `ssid`, and `channel` are appropriate
 
+    enable_karma=1
+
     karma_black_white=1
 
     interface=wlan0
