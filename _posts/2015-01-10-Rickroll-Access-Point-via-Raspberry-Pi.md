@@ -226,6 +226,221 @@ Add the line
 
     DAEMON_CONF="/etc/hostapd/hostapd.conf"
 
+###[OPTIONAL] Adding Additonal Persistently Broadcasted SSIDs
+
+1. Modify the Network Card's MAC Address
+
+    Check the MAC address of the wifi card
+
+        ifconfig wlan0 | grep -o "HWaddr ..:..:..:..:..:.."
+
+    An example output
+
+        HWaddr 09:45:c6:6j:3e:34
+
+    Note the output and change the MAC address to `02:..:..:..:..:30`, just changing the first and last two couples.
+
+    Open the network interfaces file
+
+        sudo nano /etc/network/interfaces
+
+    Add the following, remembering to change the MAC address.
+
+        allow-hotplug wlan0
+        iface wlan0 inet static
+             address 10.5.5.1
+             netmask 255.255.255.0
+             pre-up ifconfig wlan0 hw ether 02:45:c6:6j:3e:30
+
+2. Add the SSIDs of the Wifi Networks
+
+    Open hostapd config file
+
+        sudo nano /etc/hostapd/hostapd.conf
+
+    Ensure it looks like the following, once agian remembering to change the MAC address (bssid).
+
+        enable_karma=1
+
+        karma_black_white=1
+
+        interface=wlan0
+        bssid=02:45:c6:6j:3e:30
+        driver=nl80211
+        ssid=FreeWifi
+        hw_mode=g
+        channel=1
+
+        bss=wlan0_0
+        ssid=wifitwo
+
+        bss=wlan0_1
+        ssid=wifithree
+
+        #An example with a password
+        bss=wlan0_2
+        ssid=wififour
+        wpa=1
+        wpa_passphrase=password123456
+        wpa_key_mgmt=WPA-PSK
+        rsn_pairwise=CCMP
+
+
+        # Beacon interval in kus (1.024 ms) (default: 100; range 15..65535)
+        beacon_int=100
+        # Number of beacons between DTIMs (delivery traffic information message) (range 1..255)
+        dtim_period=2
+
+        # Filter via MAC address (0 = use blacklist)
+        macaddr_acl=0
+
+        # Hide AP (0 = disabled)
+        ignore_broadcast_ssid=0
+
+        # Logging
+        logger_syslog=-1
+        logger_syslog_level=0
+        logger_stdout=-1
+        logger_stdout_level=0
+        dump_file=/tmp/hostapd.dump
+
+        ctrl_interface=/var/run/hostapd
+        ctrl_interface_group=0
+
+        auth_algs=3
+        rts_threshold=2347
+        fragm_threshold=2346
+        max_num_sta=255
+        wmm_enabled=1
+        wmm_ac_bk_cwmin=4
+        wmm_ac_bk_cwmax=10
+        wmm_ac_bk_aifs=7
+        wmm_ac_bk_txop_limit=0
+        wmm_ac_bk_acm=0
+        wmm_ac_be_aifs=3
+        wmm_ac_be_cwmin=4
+        wmm_ac_be_cwmax=10
+        wmm_ac_be_txop_limit=0
+        wmm_ac_be_acm=0
+        wmm_ac_vi_aifs=2
+        wmm_ac_vi_cwmin=3
+        wmm_ac_vi_cwmax=4
+        wmm_ac_vi_txop_limit=94
+        wmm_ac_vi_acm=0
+        wmm_ac_vo_aifs=2
+        wmm_ac_vo_cwmin=2
+        wmm_ac_vo_cwmax=3
+        wmm_ac_vo_txop_limit=47
+        wmm_ac_vo_acm=0
+        eapol_key_index_workaround=0
+        eap_server=0
+        own_ip_addr=127.0.0.1
+
+3. Give the SSIDs IPs
+
+    Open the network interfaces file
+
+        sudo nano /etc/network/interfaces
+
+
+    Make it look like the following
+
+        auto lo
+
+        iface lo inet loopback
+        iface eth0 inet dhcp
+
+        allow-hotplug wlan0
+        iface wlan0 inet static
+             address 10.5.5.1
+             netmask 255.255.255.0
+             pre-up ifconfig wlan0 hw ether 02:45:c6:6j:3e:30
+
+        allow-hotplug wlan0_0
+        iface wlan0_0 inet static
+            address 10.0.1.1
+            netmask 255.255.255.0
+
+        allow-hotplug wlan0_1
+        iface wlan0_1 inet static
+            address 10.0.2.1
+            netmask 255.255.255.0
+
+        allow-hotplug wlan0_2
+        iface wlan0_2 inet static
+            address 10.0.3.1
+            netmask 255.255.255.0
+
+4. Setup DHCP Services for SSIDs with Dnsmasq
+
+    Open the dnsmasq configuration file
+
+        sudo nano /etc/dnsmasq.conf
+
+    Ensure it looks like the following
+
+        ###### DNS ######
+        # Never forward queries for plain names to upstream nameservers
+        #domain-needed
+        # Never forward addresses in the non-routed address spaces
+        bogus-priv
+        # Don't read /etc/resolv.conf. Get upstream servers from the command line / dnsmasq config
+        no-resolv
+        server=8.8.8.8
+        server=8.8.4.4
+        # Set the size of dnsmasq's cache
+        cache-size=4096
+        # This is for redirecting all traffic to a local webserver
+        address=/#/10.5.5.1
+
+        # These entries are need to fix problems with ios & windows detecting a captive portal
+        # the dnsmasq log can be used to add more if neccessary
+        server=/www.airport.us/8.8.8.8
+        server=/www.thinkdifferent.us/8.8.8.8
+        server=/apple.com/8.8.8.8
+        server=/akadns.net/8.8.8.8
+        server=/appleiphonecell.com/8.8.8.8
+        server=/icloud.com/8.8.8.8
+        sever=/itools.info/8.8.8.8
+        server=/ibooks.info/8.8.8.8
+        server=/ibook.info/8.8.8.8
+        server=/akamaiedge.net/8.8.8.8
+        server=/msftncsi.com/8.8.8.8
+        server=/windows.com/8.8.8.8
+        server=/microsoft.com/8.8.8.8
+
+
+        ###### dhcp ######
+        # Add local-only domains here, queries in these domains are answered
+        # from /etc/hosts or DHCP only
+        #local=/home/
+        # Set this (and domain: see below) if you want to have a domain
+        # automatically added to simple names in a hosts-file.
+        #expand-hosts
+        # adds my localdomain to each dhcp host
+        #domain=home
+
+        # Interface + Private dhcp range + Subnetmask + 14d lease time
+        dhcp-range=wlan0,10.5.5.100,10.5.5.150,255.255.255.0,14d
+        dhcp-range=wlan0_0,10.0.1.100,10.0.1.150,255.255.255.0,14d
+        dhcp-range=wlan0_1,10.0.2.100,10.0.2.150,255.255.255.0,14d
+        dhcp-range=wlan0_2,10.0.3.100,10.0.3.150,255.255.255.0,14d
+
+        # This will tell DHCP clients to not ask for proxy information
+        # Some clients, like Windows 7, will constantly ask if not told NO
+        dhcp-option=252,"\n"
+
+        ###### Logging ######
+        # Location of log file
+        log-facility=/var/log/dnsmasq.log
+
+        log-async
+        log-dhcp
+        log-queries
+
+*Note:*
+Depending on your wireless card you may be limited to fewer than four SSIDs, which means that you would have to remove / comment out the extra ssids and their setups in the various config files.
+
 ###Testing
 
 Reboot to propagate changes
