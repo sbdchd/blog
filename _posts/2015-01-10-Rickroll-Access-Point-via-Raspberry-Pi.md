@@ -160,19 +160,24 @@ Add the following to the file
 
     # These entries are need to fix problems with ios & windows detecting a captive portal
     # the dnsmasq log can be used to add more if neccessary
-    server=/www.airport.us/8.8.8.8
-    server=/www.thinkdifferent.us/8.8.8.8
+    server=/airport.us/8.8.8.8
+    server=/thinkdifferent.us/8.8.8.8
     server=/apple.com/8.8.8.8
     server=/akadns.net/8.8.8.8
     server=/appleiphonecell.com/8.8.8.8
     server=/icloud.com/8.8.8.8
-    sever=/itools.info/8.8.8.8
+    server=/itools.info/8.8.8.8
     server=/ibooks.info/8.8.8.8
     server=/ibook.info/8.8.8.8
     server=/akamaiedge.net/8.8.8.8
     server=/msftncsi.com/8.8.8.8
     server=/windows.com/8.8.8.8
     server=/microsoft.com/8.8.8.8
+    server=/edgekey.net/8.8.8.8
+    server=/akamaitechnologies.com/8.8.8.8
+    server=/msftncsi.com/8.8.8.8
+    server=/edgesuite.net/8.8.8.8
+    server=/nsatc.net/8.8.8.8
 
 
 
