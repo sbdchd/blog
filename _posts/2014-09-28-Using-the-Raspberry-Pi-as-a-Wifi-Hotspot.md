@@ -6,7 +6,7 @@ excerpt: A basic guide to setting up a local wifi access point on the Raspberry 
 1.	Installing the Necessary Software
 
 		sudo apt-get install isc-dhcp-server hostapd
-		wget http://dl.dropbox.com/u/1663660/hostapd/hostapd.zip
+		wget https://dl.dropboxusercontent.com/u/23279035/hostapd.zip
 		unzip hostapd.zip
 		sudo mv /usr/sbin/hostapd /usr/sbin/hostapd.original
 		sudo mv hostapd /usr/sbin/hostapd.edimax
@@ -15,7 +15,7 @@ excerpt: A basic guide to setting up a local wifi access point on the Raspberry 
 		sudo chmod 755 /usr/sbin/hostapd
 
 
-2.	Edit the DHCP Config File ([Sample File](https://www.dropbox.com/s/u6hstloap288s57/dhcpd.txt?dl=0))
+2.	Edit the DHCP Config File ([Sample File](https://dl.dropboxusercontent.com/u/23279035/dhcpd.txt))
 
 		sudo nano /etc/dhcp/dhcpd.conf
 
