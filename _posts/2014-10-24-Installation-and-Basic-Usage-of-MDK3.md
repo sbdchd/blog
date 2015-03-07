@@ -11,9 +11,9 @@ Use the following commands
 sudo apt-get install iw
 wget https://dl.dropboxusercontent.com/u/23279035/mdk3-v6.tar.bz2
 tar -xjf mdk3-v6.tar.bz2
-mv mdk3-v6 mdk3
-cd mdk3
+cd mdk3-v6
 sudo make && sudo make install
+rm -rf mdk3*
 ```
 
 ###Usage
@@ -62,3 +62,11 @@ Use the following commands
 	sudo iw phy phy0 interface add wlan0 type managed
 	sudo sudo iw dev mon0 del
 
+###*Alternative Method:* Setting Wlan into Monitor Mode
+
+Set interface into monitor mode:
+
+	sudo ifconfig wlan0 down;sudo iwconfig wlan0 mode monitor;sudo ifconfig wlan0 up
+Set interface into managed mode:
+
+	sudo ifconfig wlan0 down;sudo iwconfig wlan0 mode managed;sudo ifconfig wlan0 up
