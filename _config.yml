@@ -12,7 +12,8 @@ baseurl:          /
 gems:
   - jekyll-sitemap
 markdown: redcarpet
-
+redcarpet:
+    extensions: [with_toc_data]
 author:
   name:           Steve
   url:            https://steve.dignam.xyz
