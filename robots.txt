@@ -1,5 +1,6 @@
 #Robots.txt for steve.dignam.xyz
 User-agent: *
+Disallow:
 
 User-agent:ia_archiver
 Disallow: /
