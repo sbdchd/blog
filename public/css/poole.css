@@ -251,14 +251,15 @@ tbody tr:nth-child(odd) th {
   margin-bottom: 2em;
 }
 
-.page-title,
-.post-title,
 .post-title a {
   color: #268bd2;
   font-weight: normal;
 }
+
 .page-title,
 .post-title {
+  color: #505050;
+  font-weight: normal;
   margin-top: 0;
 }
 
@@ -325,7 +326,7 @@ img.center {
     margin-right: auto;
 }
 .test_center{
-	text-align: center;
+    text-align: center;
 }
 
 @media screen and (min-width: 30em){
@@ -337,8 +338,8 @@ img.center {
 
 a[href^=http]:after {
       content:" (" attr(href) ") ";
-	  color: #000000;
-	  background: none;
+      color: #000000;
+      background: none;
 }
 
 .masthead-title:after {
