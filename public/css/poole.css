@@ -251,13 +251,9 @@ tbody tr:nth-child(odd) th {
   margin-bottom: 2em;
 }
 
-.post-title a {
-  color: #268bd2;
-  font-weight: normal;
-}
-
 .page-title,
-.post-title {
+.post-title,
+.post-title a {
   color: #505050;
   font-weight: normal;
   margin-top: 0;
