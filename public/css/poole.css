@@ -12,7 +12,8 @@ body {
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  font-family: 'Merriweather', serif;
   font-size: 14px;
   line-height: 1.5;
 }
@@ -49,6 +50,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
   color: #505050;
   text-rendering: optimizeLegibility;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h1 {
   font-size: 1.6rem;
@@ -69,6 +71,8 @@ h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+
+  font-size: 16px
 }
 
 strong {
@@ -195,6 +199,7 @@ table {
   width: 100%;
   border: 1px solid #e5e5e5;
   border-collapse: collapse;
+  font-size: 17px;
 }
 td,
 th {
