@@ -1,8 +1,6 @@
-# Permalinks
 permalink:        pretty
 relative_permalinks: true
 
-# Setup
 title:            Stev
 tagline:          A blog of things.
 description:	  A blog of many things. Mostly technology.
@@ -11,9 +9,11 @@ paginate:         20
 baseurl:          /
 gems:
   - jekyll-sitemap
+
 markdown: redcarpet
 redcarpet:
     extensions: [with_toc_data]
+
 author:
   name:           Steve
   url:            https://steve.dignam.xyz
@@ -21,15 +21,8 @@ author:
   alt_contact: 	  https://plus.google.com/u/0/+StephenDignam/
   profile_photo:  /public/sloth_899x600.jpg
 
-findme_list:
-#  Twitter: https://twitter.com/test
-  Github: https://github.com/sbdchd
-#  Google+: https://plus.google.com/u/0/example
-#  Steam: http://steamcommunity.com/id/example
-#  Facebook: https://www.facebook.com/
+github: https://github.com/sbdchd
 
-# This is the list of pages to include in the header of the website.
 pages_list:
   About: '/about/'
-  Archive: '/archive/'
-#  Feed: '/atom.xml'
+
