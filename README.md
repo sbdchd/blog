@@ -1,3 +1,3 @@
 # blog
 
-Everyone has one.
+> Everyone has one.

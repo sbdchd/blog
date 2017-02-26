@@ -1,40 +1,17 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="posts">
-    {% for post in paginator.posts %}
-    <article class="post">
-        <h1 class="post-title">
-            <a href="{{ post.url }}" title="View Post">
-                {{ post.title }}
-            </a>
-        </h1>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Steve Dignam</title>
+    <meta name="description" content="Steve Dignam's Website">
+</head>
 
-        <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
-    </article>
-    {% endfor %}
-</div>
+<body>
+    <h1>Steve Dignam</h1>
+    <a href="https://github.com/sbdchd">Github</a>
+</body>
 
-{% if paginator.total_pages < 2 %}
-
-{% else %}
-<div class="pagination">
-    {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-    {% else %}
-    <span class="pagination-item older">Older</span>
-    {% endif %}
-
-    {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-    <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-    <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-    {% else %}
-    <span class="pagination-item newer">Newer</span>
-    {% endif %}
-</div>
-{% endif %}
+</html>
