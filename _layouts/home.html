@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {%- seo -%}
+    {%- feed_meta -%}
+
+    <style>
+
+      .d-flex {
+        display: flex;
+      }
+
+      .flex-column {
+        flex-direction: column;
+      }
+
+      h1 {
+        font-size: 5rem;
+      }
+
+      h2 {
+        font-size: 4rem;
+      }
+      h3 {
+        font-size: 3rem;
+      }
+
+      body {
+        font-family: georgia;
+        color: #444;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+
+        margin: 0.5rem;
+      }
+
+      @media (max-width: 720px) {
+        body {
+          font-size: 2rem;
+        }
+      }
+
+      a {
+        color: #167ac6;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .list-style-none {
+        list-style: none;
+        margin: 0;
+          padding: 0;
+      }
+
+
+      .footer-links > a {
+        margin-right: .5rem;
+      }
+
+    </style>
+
+  </head>
+
+
+  <body>
+    <main>
+      <h1>Steve Dignam</h1>
+
+          {%- if site.posts.size > 0 -%}
+            <ul class="list-style-none">
+              {%- for post in site.posts -%}
+              <li>
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                <h3 class="d-flex flex-column">
+                  <a class="post-link" href="{{ post.url | relative_url }}">
+                    {{ post.title | escape }}
+                  </a>
+                  <small class="post-meta">{{ post.date | date: date_format }}</small>
+                </h3>
+                {%- if site.show_excerpts -%}
+                  {{ post.excerpt }}
+                {%- endif -%}
+              </li>
+              {%- endfor -%}
+            </ul>
+
+            <p class="footer-links">
+              <a href="{{ "/feed.xml" | relative_url }}">RSS</a>
+
+              <a href="https://github.com/sbdchd">Github</a>
+            </p>
+          {%- endif -%}
+    </main>
+  </body>
+
+</html>
