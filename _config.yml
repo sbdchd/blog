@@ -3,6 +3,7 @@ author: Steve Dignam
 description: >-
   A blog about software and everything that goes with it. Ideally
   informative.
+permalink: pretty
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://steve.dignam.xyz"
 github_username:  sbdchd
