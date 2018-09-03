@@ -6,20 +6,18 @@ import thunk from "redux-thunk"
 
 import { http, IResponse } from "./http"
 
-const SET_LOADING_USERS = "@@MYAPP/SET_LOADING_USERS"
-const SET_ERROR_LOADING_USERS = "@@MYAPP/SET_ERROR_LOADING_USERS"
 const SET_USERS = "@@MYAPP/SET_USERS"
 const INCR_POLLED_USERS = "@@MYAPP/INCR_POLLED_USERS"
+const FETCH_USERS = "@@MYAPP/FETCH_USERS"
+const FETCH_USERS_ERROR = "@@MYAPP/FETCH_USERS_ERROR"
 
-const setLoadingUsers = (loading: boolean) => action(SET_LOADING_USERS, loading)
-const setErrorLoadingUsers = (error: boolean) =>
-  action(SET_ERROR_LOADING_USERS, error)
 const setUsers = (users: Array<IUser>) => action(SET_USERS, users)
 const incrPolledUsers = () => action(INCR_POLLED_USERS)
+const fetchUsers = () => action(FETCH_USERS)
+const fetchUsersError = () => action(FETCH_USERS_ERROR)
 
 const fetchingUsers = () => (dispatch: Dispatch<IActions>) => {
-  dispatch(setLoadingUsers(true))
-  dispatch(setErrorLoadingUsers(false))
+  dispatch(fetchUsers())
   http
     .get("/users")
     .then((res: IResponse<IUser[]>) => {
@@ -27,8 +25,7 @@ const fetchingUsers = () => (dispatch: Dispatch<IActions>) => {
       dispatch(pollingUsers())
     })
     .catch(() => {
-      dispatch(setErrorLoadingUsers(true))
-      dispatch(setLoadingUsers(false))
+      dispatch(fetchUsersError())
     })
 }
 
@@ -39,10 +36,10 @@ const pollingUsers = () => (dispatch: Dispatch<IActions>) => {
 }
 
 type IActions =
-  | ReturnType<typeof setLoadingUsers>
-  | ReturnType<typeof setErrorLoadingUsers>
   | ReturnType<typeof setUsers>
   | ReturnType<typeof incrPolledUsers>
+  | ReturnType<typeof fetchUsers>
+  | ReturnType<typeof fetchUsersError>
 
 type IActionThunks =
   | ReturnType<typeof fetchingUsers>
@@ -72,10 +69,8 @@ const defaultState = {
 
 const reducer = (state: IState = defaultState, action: IActions) => {
   switch (action.type) {
-    case SET_LOADING_USERS:
-      return { ...state, isLoadingUsers: action.payload }
-    case SET_ERROR_LOADING_USERS:
-      return { ...state, isErrorLoadingUsers: action.payload }
+    case FETCH_USERS:
+      return { ...state, isLoadingUsers: true, isErrorLoadingUsers: false }
     case SET_USERS:
       return {
         ...state,
@@ -86,6 +81,12 @@ const reducer = (state: IState = defaultState, action: IActions) => {
         allIds: action.payload.map(x => x.id),
         isLoadingUsers: false,
         isErrorLoadingUsers: false
+      }
+    case FETCH_USERS_ERROR:
+      return {
+        ...state,
+        isLoadingUsers: false,
+        isErrorLoadingUsers: true
       }
     case INCR_POLLED_USERS:
       return {

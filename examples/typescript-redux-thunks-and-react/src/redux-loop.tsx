@@ -5,19 +5,19 @@ import { install, loop, Cmd, Loop, StoreCreator } from "redux-loop"
 
 import { http, IResponse } from "./http"
 
-const SET_ERROR_LOADING_USERS = "@@MYAPP/SET_ERROR_LOADING_USERS"
+const ERROR_LOADING_USERS = "@@MYAPP/ERROR_LOADING_USERS"
 const SET_USERS = "@@MYAPP/SET_USERS"
 const INCR_POLLED_USERS = "@@MYAPP/INCR_POLLED_USERS"
 const FETCH_USER = "@@MYAPP/FETCH_USER"
 
 type IActions =
-  | { type: typeof SET_ERROR_LOADING_USERS }
+  | { type: typeof ERROR_LOADING_USERS }
   | { type: typeof FETCH_USER }
   | { type: typeof INCR_POLLED_USERS }
   | { type: typeof SET_USERS; users: Array<IUser> }
 
 const setErrorLoadingUsers = (): IActions => ({
-  type: SET_ERROR_LOADING_USERS
+  type: ERROR_LOADING_USERS
 })
 
 const setUsers = (users: Array<IUser>): IActions => ({
@@ -81,7 +81,7 @@ const reducer = (
           args: [Cmd.dispatch]
         })
       )
-    case SET_ERROR_LOADING_USERS:
+    case ERROR_LOADING_USERS:
       return { ...state, isErrorLoadingUsers: true, isLoadingUsers: false }
     case SET_USERS:
       return loop(
@@ -97,7 +97,6 @@ const reducer = (
         },
         Cmd.run(pollingUsers, { args: [Cmd.dispatch] })
       )
-
     case INCR_POLLED_USERS:
       return {
         ...state,

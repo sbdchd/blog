@@ -49,25 +49,22 @@ error since we removed it from `IActions`.
 ```typescript
 // src/redux-thunk.tsx
 const fetchingUsers = () => (dispatch: Dispatch<IActions>) => {
-  dispatch(setLoadingUsers(true))
-  dispatch(setErrorLoadingUsers(false))
+  dispatch(fetchUsers())
   http
     .get("/users")
     .then((res: IResponse<IUser[]>) => {
       dispatch(setUsers(res.data))
       dispatch(pollingUsers())
-      dispatch(setLoadingUsers(false))
     })
     .catch(() => {
-      dispatch(setErrorLoadingUsers(true))
-      dispatch(setLoadingUsers(false))
+      dispatch(fetchUsersError())
     })
 }
-// src/redux-thunk.tsx:27:16 - error TS2345: Argument of type '(dispatch: Dispatch<IActions>) => void' is not assignable to parameter of type 'IActions'.
-//   Type '(dispatch: Dispatch<IActions>) => void' is not assignable to type '{ type: "@@MYAPP/SET_USERS"; payload: IUser[]; }'.
+// src/redux-thunk.tsx:25:16 - error TS2345: Argument of type '(dispatch: Dispatch<IActions>) => void' is not assignable to parameter of type 'IActions'.
+//   Type '(dispatch: Dispatch<IActions>) => void' is not assignable to type '{ type: "@@MYAPP/FETCH_USERS_ERROR"; }'.
 //     Property 'type' is missing in type '(dispatch: Dispatch<IActions>) => void'.
 //
-// 27       dispatch(pollingUsers())
+// 25       dispatch(pollingUsers())
 ```
 
 Now you might just relent and use an `any`, and that's fine, it works, but the point
@@ -126,18 +123,15 @@ we don't get any type errors, and most importantly, it still works.
 ```typescript
 // no-thunks.tsx
 const fetchingUsers = () => {
-  store.dispatch(setLoadingUsers(true))
-  store.dispatch(setErrorLoadingUsers(false))
+  store.dispatch(fetchUsers())
   http
     .get("/users")
     .then((res: IResponse<IUser[]>) => {
       store.dispatch(setUsers(res.data))
       pollingUsers()
-      store.dispatch(setLoadingUsers(false))
     })
     .catch(() => {
-      store.dispatch(setErrorLoadingUsers(true))
-      store.dispatch(setLoadingUsers(false))
+      store.dispatch(fetchUsersError())
     })
 }
 ```
@@ -239,6 +233,9 @@ I was expecting `Array<IUser>`, but received `IResponse<Array<IUser>>` from
 the scheduled function.
 
 Until Redux Loop has better TypeScript support, I think plain function calls are safer.
+
+
+*Edit 9-3-18:* updated example app to be more terse/idiomatic
 
 
 [redux-thunk]: https://github.com/reduxjs/redux-thunk
