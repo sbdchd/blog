@@ -45,7 +45,7 @@
   .ne    { color: #900; font-weight: bold } // Name.Exception
   .nd, // decorator
   .nf    { color: #900; font-weight: bold } // Name.Function
-  .nn    { color: #555 } // Name.Namespace
+  .nn    { } // Name.Namespace
   .nt    { color: #000080 } // Name.Tag
   .nv    { color: #008080 } // Name.Variable
   .ow    { font-weight: bold } // Operator.Word
@@ -65,7 +65,7 @@
   .sr    { color: #009926 } // Literal.String.Regex
   .s1    { color: #d14 } // Literal.String.Single
   .ss    { color: #990073 } // Literal.String.Symbol
-  .bp    { color: #999 } // Name.Builtin.Pseudo
+  .bp    { font-weight: bold } // Name.Builtin.Pseudo
   .vc    { color: #008080 } // Name.Variable.Class
   .vg    { color: #008080 } // Name.Variable.Global
   .vi    { color: #008080 } // Name.Variable.Instance
