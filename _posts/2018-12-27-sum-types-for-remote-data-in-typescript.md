@@ -1,5 +1,6 @@
 ---
 layout: post
+title:  "Sum Types for Remote Data in TypeScript"
 ---
 
 If you've ever stumbled into the [Elm](https://elm-lang.org) community, you
