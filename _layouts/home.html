@@ -15,12 +15,18 @@
       }
 
       body {
-        font-family: georgia;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol";
         color: #444;
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 0.5rem;
+      }
+
+      h1, h2, h3 {
+        font-weight: 500;
       }
 
       h1 {
@@ -52,7 +58,6 @@
         flex-direction: column;
       }
 
-
       .list-style-none {
         list-style: none;
         margin: 0;
@@ -78,6 +83,16 @@
       main {
         max-width: 30rem;
       }
+
+      li {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.5rem
+      }
+
+      .text-small, small {
+        font-size: 0.75rem
+      }
     </style>
 
   </head>
@@ -86,11 +101,9 @@
   <body>
     <main>
       <h1 class="mb-1">Steve Dignam</h1>
-
           <p class="mb-1 mt-0">
-            <a class="mr-2" href="{{ "/feed.xml" | relative_url }}">RSS</a>
-
-            <a href="https://github.com/sbdchd">Github</a>
+            <a class="mr-2 text-small" href="{{ "/feed.xml" | relative_url }}">RSS</a>
+            <a class="text-small" href="https://github.com/sbdchd">Github</a>
           </p>
 
           {%- if site.posts.size > 0 -%}
@@ -98,19 +111,16 @@
               {%- for post in site.posts -%}
               <li>
                 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                <h3 class="d-flex flex-column mt-0">
-                  <a class="post-link" href="{{ post.url | relative_url }}">
-                    {{ post.title | escape }}
-                  </a>
-                  <small class="post-meta">{{ post.date | date: date_format }}</small>
-                </h3>
+                <a href="{{ post.url | relative_url }}">
+                  {{ post.title | escape }}
+                </a>
+                <small>{{ post.date | date: date_format }}</small>
                 {%- if site.show_excerpts -%}
                   {{ post.excerpt }}
                 {%- endif -%}
               </li>
               {%- endfor -%}
             </ul>
-
           {%- endif -%}
     </main>
   </body>
