@@ -692,24 +692,23 @@ you write once and can just import.
 #### Formatter
 
 If you look closer you'll see some of the symbols are unicode. This is a
-result of `dhall format` which handles formatting but also converts the asci
+result of `dhall format` which handles formatting but also converts the ascii
 equivalents to unicode. So if you write `//`, the operator to merge two
 records (objects), the formatter will convert it to `⫽`.
 
 I think this should be a config option in `dhall format`
 since writing these characters would be challenging to the novice who has
-never read and docs on Dhall but is looking to change some of the config.
+never read the docs on Dhall but is looking to change some of the config.
 `//`, `->`, and `\` are longer than `⫽`, `→`, and `λ` but I instantly know
 how to write them and search for them. I can recognize lambda but I'm not
-sure about the other characters. how would you ask somewhat what `⫽` means? I
-f it was `//` you could say, "Hey, what does double backslash mean?".
+sure about the other characters. How would you ask somewhat what `⫽` means? If it was `//` you could say, "Hey, what does double backslash mean?".
 
-Additionally `dhall format` **remove comments** ([luckily there's an open issue for
+Additionally `dhall format` **removes comments** ([luckily there's an open issue for
 this](https://github.com/dhall-lang/dhall-haskell/issues/145)).
 
 #### Error Messages
 
-While the formatting has issues, its the error messages that can make Dhall
+While the formatting has issues, it's the error messages that can make Dhall
 frustrating to use.
 
 Here is a short and sweet error to start us off:
