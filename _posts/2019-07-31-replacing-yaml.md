@@ -48,7 +48,7 @@ sed -e "s/:latest$/:$TAG/" docker-compose.yml > docker-compose-shipit.yml
 <details open>
     <summary><code>docker-compose.yml (69 LOC)</code></summary>
 
-```yml
+{% highlight yaml %}
 # docker-compose.yml
 version: "3"
 services:
@@ -119,7 +119,7 @@ volumes:
     driver: local
   react-static-files:
     driver: local
-```
+{% endhighlight %}
 
 </details>
 
@@ -128,7 +128,7 @@ volumes:
 <details open>
     <summary><code>docker-compose.dhall (134 LOC)</code></summary>
 
-```dhall
+{% highlight dhall %}
 let map =
       https://raw.githubusercontent.com/dhall-lang/dhall-lang/master/Prelude/List/map
 
@@ -265,14 +265,14 @@ let services
 in      defaults.ComposeConfig
       ⫽ { services = Some services, volumes = Some volumes }
     : types.ComposeConfig
-```
+{% endhighlight %}
 
 </details>
 
 <details>
     <summary><code>./compose/v3/types.dhall (259 LOC)</code></summary>
 
-```dhall
+{% highlight dhall %}
 let Map =
       https://raw.githubusercontent.com/dhall-lang/dhall-lang/master/Prelude/Map/Type
 
@@ -532,14 +532,14 @@ in  { ComposeConfig =
     , External =
         External
     }
-```
+{% endhighlight %}
 
 </details>
 
 <details>
     <summary><code>./compose/v3/defaults.dhall (126 LOC)</code></summary>
 
-```dhall
+{% highlight dhall %}
 let Map =
       https://raw.githubusercontent.com/dhall-lang/dhall-lang/master/Prelude/Map/Type
 
@@ -666,7 +666,7 @@ let ComposeConfig =
       : types.ComposeConfig
 
 in  { Service = Service, Volume = Volume, ComposeConfig = ComposeConfig }
-```
+{% endhighlight %}
 
 </details>
 
@@ -845,7 +845,7 @@ a Python YAML library.
 <details>
     <summary><code>dataclass_to_yaml.py</code></summary>
 
-```python
+{% highlight python %}
 import yaml
 from dataclasses import asdict
 from collections.abc import Mapping
@@ -862,7 +862,7 @@ def filter_none(d):
 from docker_compose_deploy import cfg
 
 print(yaml.dump(filter_none(asdict(cfg)), default_flow_style=False))
-````
+{% endhighlight %}
 
 </details>
 
@@ -871,7 +871,7 @@ print(yaml.dump(filter_none(asdict(cfg)), default_flow_style=False))
 <details open>
     <summary><code>docker_compose.py (70 LOC)</code></summary>
 
-```python
+{% highlight python %}
 from .types import ComposeConfig, Service, Logging, Volume
 
 tag = "9023daa"
@@ -936,14 +936,14 @@ services = dict(
 )
 
 cfg = ComposeConfig(services=services, volumes=volumes)
-````
+{% endhighlight %}
 
 </details>
 
 <details>
     <summary><code>types.py (190 LOC)</code></summary>
 
-```python
+{% highlight python %}
 from typing import Optional, Mapping, List, NamedTuple, TypeVar, Union
 from dataclasses import dataclass
 
@@ -1134,7 +1134,7 @@ class ComposeConfig:
     services: Optional[Mapping[str, Service]] = None
     networks: Optional[Networks] = None
     volumes: Optional[Mapping[str, Optional[Volume]]] = None
-```
+{% endhighlight %}
 
 </details>
 
