@@ -38,7 +38,7 @@ typing so we can't take advantage of a type checker.
 
 ### The Baseline
 
-Although the baseline doesn't have any characteristic template tags `{{ }}`,
+Although the baseline doesn't have any characteristic template tags `{% raw  %}{{ }}{% endraw %}`,
 the `:latest` tag is replaced with the git sha via a call to `sed`.
 
 ```sh
@@ -49,6 +49,7 @@ sed -e "s/:latest$/:$TAG/" docker-compose.yml > docker-compose-shipit.yml
     <summary><code>docker-compose.yml (69 LOC)</code></summary>
 
 {% highlight yaml %}
+{% raw  %}
 # docker-compose.yml
 version: "3"
 services:
@@ -119,6 +120,7 @@ volumes:
     driver: local
   react-static-files:
     driver: local
+{% endraw %}
 {% endhighlight %}
 
 </details>
@@ -129,6 +131,7 @@ volumes:
     <summary><code>docker-compose.dhall (134 LOC)</code></summary>
 
 {% highlight dhall %}
+{% raw %}
 let map =
       https://raw.githubusercontent.com/dhall-lang/dhall-lang/master/Prelude/List/map
 
@@ -265,6 +268,7 @@ let services
 in      defaults.ComposeConfig
       ⫽ { services = Some services, volumes = Some volumes }
     : types.ComposeConfig
+{% endraw %}
 {% endhighlight %}
 
 </details>
@@ -871,6 +875,7 @@ print(yaml.dump(filter_none(asdict(cfg)), default_flow_style=False))
     <summary><code>docker_compose.py (70 LOC)</code></summary>
 
 {% highlight python %}
+{% raw %}
 from .types import ComposeConfig, Service, Logging, Volume
 
 tag = "9023daa"
@@ -935,6 +940,7 @@ services = dict(
 )
 
 cfg = ComposeConfig(services=services, volumes=volumes)
+{% endraw %}
 {% endhighlight %}
 
 </details>
