@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2019-11-17
-title: "Distributing a Python project with Pex and Poetry"
+title: "Distributing a Python Project with Pex and Poetry"
 ---
 
 ## Overview
@@ -62,7 +62,7 @@ async def root():
 
 Ideally we'd call `pex` with our `pyproject.toml`, something like:
 
-```console
+```
 pex \
   --project=pyproject.toml \
   --script=uvicorn \
@@ -76,7 +76,7 @@ to a `requirements.txt`, which `pex` knows how to handle.
 
 Instead we run:
 
-```console
+```
 poetry install
 poetry run pip freeze > requirements.txt
 pex \
