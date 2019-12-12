@@ -126,6 +126,8 @@ function getOrganization(id: IOrg["id"]) {
 }
 
 getOrganization("foo")
+// Argument of type '"foo"' is not assignable to parameter of type
+// 'Opaque<string, unique symbol>'.(2345)
 
 const orgId = "foo" as IOrg["id"]
 getOrganization(orgId)
