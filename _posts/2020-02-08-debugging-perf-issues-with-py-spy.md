@@ -11,7 +11,7 @@ So an API endpoint is slow and you want to fix it.
 Where do you start?
 
 You could look at the code for something suspicious, but what would be even
-better is to have something tell you exactly where the slowdown is occuring.
+better is to have something tell you exactly where the slowdown is occurring.
 
 [`py-spy`](https://github.com/benfred/py-spy) to the rescue!
 
@@ -143,14 +143,14 @@ Success! 🥳
 
 ## Conclusion
 
-While this example is a little contrived, let's imagine a senario where one
+While this example is a little contrived, let's imagine a scenario where one
 dev creates the list endpoint and the serializer in a way that doesn't make a
 database call for each item it's serializing.
 
 Then another dev comes along looking to fetch a similar structure of data
 from the DB for their detail view. But wait, they need an extra related field
 so they add the `get_recipe_name` method. The serializer is fast enough for
-their detail view, and the time of an extra db query isn't noticible, but with
+their detail view, and the time of an extra db query isn't noticeable, but with
 this minor change the pre-existing list view performance has tanked.
 
 There must be a better way, some way to stop these queries
