@@ -154,4 +154,4 @@ their detail view, and the time of an extra db query isn't noticeable, but with
 this minor change the pre-existing list view performance has tanked.
 
 There must be a better way, some way to stop these queries
-in serializers, and there is but that's another post.
+in serializers, and there is but that's [another post](/2020/02/09/preventing-n-plus-one-queries/).
