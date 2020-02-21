@@ -114,12 +114,11 @@ def blocker(*args):
 
 
 class DBBlockerSerializerMixin:
-    @property
-    def data(self):
+    def to_representation(self, instance):
         if hasattr(self, "initial_data") or self.dangerously_allow_db:
-            return super().data
+            return super().to_representation(instance)
         with connection.execute_wrapper(blocker):
-            return super().data
+            return super().to_representation(instance)
 
     def __init__(self, *args, dangerously_allow_db = False, **kwargs):
         self.dangerously_allow_db = dangerously_allow_db
