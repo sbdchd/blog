@@ -145,7 +145,7 @@ creating a context manager to block the db.
 
 ```python
 from functools import partial
-block_db = partial(connection.execute_wrapper, wrapper=db_blocker_wrapper)
+block_db = partial(connection.execute_wrapper, wrapper=blocker)
 
 @api_view(["GET"])
 def get_list_view(request):
