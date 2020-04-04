@@ -25,7 +25,7 @@
 
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: var(--text-color);
   }
 }
 
@@ -123,7 +123,6 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
 }
 

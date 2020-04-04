@@ -9,6 +9,43 @@ dl, dd, ol, ul, figure {
 
 }
 
+@mixin light-mode-colors() {
+  --text-color: #{$text-color};
+  --background-color: #{$background-color};
+  --code-background-color: #{$code-background};
+  --link-color: #{$brand-color};
+  --link-hover-color: #{$text-color};
+  --link-visited-color: #{darken($brand-color, 15%)};
+}
+
+@mixin dark-mode-colors() {
+  --text-color: rgb(231, 232, 235);
+  --background-color: #2D2D2D;
+  --code-background-color: #222024;
+  --link-color: #{$brand-color};
+  --link-hover-color: #{$brand-color};
+  --link-visited-color: #{darken($brand-color, 10%)};
+}
+
+:root {
+  @include light-mode-colors();
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include dark-mode-colors();
+  }
+}
+
+// css classes let us easily flip between the two modes when developing.
+
+.theme-light {
+  @include light-mode-colors();
+}
+
+.theme-dark {
+  @include dark-mode-colors();
+}
 
 
 /**
@@ -16,8 +53,8 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-  color: $text-color;
-  background-color: $background-color;
+  color: var(--text-color);
+  background-color: var(--background-color);
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;
@@ -104,15 +141,15 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: $brand-color;
+  color: var(--link-color);
   text-decoration: none;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color: var(--link-visited-color);
   }
 
   &:hover {
-    color: $text-color;
+    color: var(--link-hover-color);
     text-decoration: underline;
   }
 
@@ -147,7 +184,7 @@ pre,
 code {
   @include relative-font-size(0.9375);
   border-radius: 3px;
-  background-color: $code-background;
+  background-color: var(--code-background-color);
 }
 
 code {
