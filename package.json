@@ -1,0 +1,9 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:sbdchd/blog.git",
+  "devDependencies": {
+    "prettier": "^2.0.2"
+  }
+}
