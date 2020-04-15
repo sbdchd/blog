@@ -5,7 +5,8 @@ date: 2020-04-15
 ---
 
 So you're working away on your TypeScript based project and you have a
-`switch` statement with some `case`s, which TypeScript is happy with but:
+`switch` statement with some `case`s, which TypeScript is happy with, but
+there's a problem!
 
 ```typescript
 function reducer(
