@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Avoiding Another TypeScript Compiler Bug with Eslint"
+title: "Avoiding Another TypeScript Compiler Bug with ESLint"
 date: 2020-04-15
 ---
 
