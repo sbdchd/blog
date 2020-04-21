@@ -65,7 +65,7 @@ ReferenceError: Cannot access 'data' before initialization
 Yikes! TypeScript should have caught that.
 
 Turns out there is already a bug ticket for this,
-<https://github.com/microsoft/TypeScript/issues/37363>, but how can we avoid
+<https://github.com/microsoft/TypeScript/issues/19503>, but how can we avoid
 this bug from biting us until it's fixed?
 
 A lint of course.
@@ -108,4 +108,4 @@ statement.
 **TL;DR**: enable
 [`no-case-declarations`](https://eslint.org/docs/rules/no-case-declarations)
 in your ESLint config until the [TypeScript
-bug](https://github.com/microsoft/TypeScript/issues/37363) is fixed.
+bug](https://github.com/microsoft/TypeScript/issues/19503) is fixed.
