@@ -2,6 +2,7 @@
 title: "Stylex in TypeScript"
 layout: post
 date: 2020-04-18
+last_updated: 2020-05-15
 ---
 
 > For an overview of Stylex in video form, check out [Building the New
@@ -216,6 +217,9 @@ discussed in the [2013 React issue using
 
 ### What about css features besides css properties?
 
+**Edit:** I've updated the types to support using pseudo selectors and media
+queries so some of these drawbacks are no longer applicable.
+
 - [Psuedo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
 
   Selectors that are based off structure like `:last-child`, `:nth-of-type`,
@@ -256,25 +260,35 @@ So let's get into the code:
 ```typescript
 import React from "react"
 
+type CSSProperties = React.CSSProperties & {
+  "::before"?: React.CSSProperties
+  "::placeholder"?: React.CSSProperties
+  // avoids having to make the types more permissive to only be
+  // `{ [key: string]: number | string }`
+  "@media"?: [string, React.CSSProperties]
+  ":hover"?: React.CSSProperties
+  // other pseudo selectors follow the same pattern
+}
+
 type VargsOrObjectFunc<T> = {
   (..._args: Array<keyof T | false>): string
   (args: { [_ in keyof T]: boolean }): string
 }
 
-interface Stylex {
-  (...args: Array<React.CSSProperties>): string
-  readonly create: <T extends { [_: string]: React.CSSProperties }>(
+type Stylex = {
+  (...args: Array<CSSProperties>): string
+  readonly create: <T extends { [_: string]: CSSProperties }>(
     _obj: T
   ) => VargsOrObjectFunc<T> & T
 }
 
-export const stylex: Stylex = Object.assign(
+const stylex: Stylex = Object.assign(
   () => {
     // todo: implement
     return ""
   },
   {
-    create: <T extends { [_: string]: React.CSSProperties }>(
+    create: <T extends { [_: string]: CSSProperties }>(
       _obj: T
     ): VargsOrObjectFunc<T> & T => {
       return Object.assign((..._arg: any[]) => {
@@ -349,14 +363,24 @@ Note you'll need to install the React types for the CSSProperties to type check.
 
 import React from "react"
 
+type CSSProperties = React.CSSProperties & {
+  "::before"?: React.CSSProperties
+  "::placeholder"?: React.CSSProperties
+  // avoids having to make the types more permissive to only be
+  // `{ [key: string]: number | string }`
+  "@media"?: [string, React.CSSProperties]
+  ":hover"?: React.CSSProperties
+  // other pseudo selectors follow the same pattern
+}
+
 type VargsOrObjectFunc<T> = {
   (..._args: Array<keyof T | false>): string
   (args: { [_ in keyof T]: boolean }): string
 }
 
-interface Stylex {
-  (...args: Array<React.CSSProperties>): string
-  readonly create: <T extends { [_: string]: React.CSSProperties }>(
+type Stylex = {
+  (...args: Array<CSSProperties>): string
+  readonly create: <T extends { [_: string]: CSSProperties }>(
     _obj: T
   ) => VargsOrObjectFunc<T> & T
 }
@@ -367,7 +391,7 @@ const stylex: Stylex = Object.assign(
     return ""
   },
   {
-    create: <T extends { [_: string]: React.CSSProperties }>(
+    create: <T extends { [_: string]: CSSProperties }>(
       _obj: T
     ): VargsOrObjectFunc<T> & T => {
       return Object.assign((..._arg: any[]) => {
@@ -381,6 +405,28 @@ const stylex: Stylex = Object.assign(
 const styles = stylex.create({ default: { fontSize: 16 } })
 const classWithSmallerFont = stylex(styles.default, { fontSize: 15 })
 const classWithColorAdded = stylex(styles.default, { color: "red" })
+
+const pseudoSelectors = stylex.create({
+  primary: { color: "blue" },
+  classWithPseudoSelectors: {
+    backgroundColor: "red",
+    "::before": {
+      color: "red"
+    },
+    "::placeholder": {
+      color: "blue"
+    },
+    "@media": [
+      "(-webkit-min-device-pixel-ratio: 0)",
+      {
+        fill: "blue"
+      }
+    ],
+    ":hover": {
+      backgroundColor: "green"
+    }
+  }
+})
 
 const stylesRedBlue = stylex.create({
   blue: { color: "blue" },
