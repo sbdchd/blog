@@ -2,7 +2,7 @@
 title: "Stylex in TypeScript"
 layout: post
 date: 2020-04-18
-last_updated: 2020-05-15
+modified_date: 2020-05-15
 ---
 
 > For an overview of Stylex in video form, check out [Building the New
