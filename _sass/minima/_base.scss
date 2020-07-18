@@ -34,9 +34,9 @@ figure {
   --text-color: rgb(231, 232, 235);
   --background-color: #2d2d2d;
   --code-background-color: #222024;
-  --link-color: #{$brand-color};
-  --link-hover-color: #{$brand-color};
-  --link-visited-color: #{darken($brand-color, 10%)};
+  --link-color: #{$brand-color-dark};
+  --link-hover-color: #{$brand-color-dark};
+  --link-visited-color: #{darken($brand-color-dark, 10%)};
 }
 
 :root {
