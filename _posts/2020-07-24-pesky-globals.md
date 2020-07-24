@@ -6,7 +6,7 @@ date: 2020-07-24
 
 There are a lot of globals in JS land:
 
-https://developer.mozilla.org/en-US/docs/Web/API/Window
+<https://developer.mozilla.org/en-US/docs/Web/API/Window>
 
 Many of these globals have verbose / unusual names meaning you won't
 enounter them when writing your application code.
@@ -21,7 +21,7 @@ But there are a handful of sneaky ones.
 
 - [`status`](https://developer.mozilla.org/en-US/docs/Web/API/Window/status): `string`
 
-  if your using a union of string literals with name `status` comparisions in
+  if your using a union of string literals with name `status`, comparisions in
   code will still be valid against `window.status`
 
 - [`name`](https://developer.mozilla.org/en-US/docs/Web/API/Window/name): `never`
