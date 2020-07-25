@@ -19,6 +19,8 @@ But there are a handful of sneaky ones.
 
   fits nicely into React components as an event handler
 
+- [`closed`](https://developer.mozilla.org/en-US/docs/Web/API/Window/closed): `boolean`
+
 - [`status`](https://developer.mozilla.org/en-US/docs/Web/API/Window/status): `string`
 
   if your using a union of string literals with name `status`, comparisions in
@@ -42,6 +44,7 @@ But there are a handful of sneaky ones.
 "no-restricted-globals": [
   "error",
   "close",
+  "closed",
   "status",
   "name",
   "length",
