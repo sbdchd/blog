@@ -80,7 +80,7 @@ Example snippet from the logs:
 
 And then we release a new version and watch as Heroku deploys the new version.
 
-In the UI Heroku says the release has completed before the logs even mention a new release.
+The Heroku UI says the release has completed before the logs even mention a new release.
 
 Using the Heroku API we can check the `created_at` and `updated_at` times to
 get the start and end time of the release.
