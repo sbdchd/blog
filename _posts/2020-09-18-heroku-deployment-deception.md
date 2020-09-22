@@ -47,7 +47,7 @@ if __name__ == '__main__':
 web: python3 main.py
 ```
 
-After connecting a repo on GitHub I enabled enabled
+After connecting a repo on GitHub I enabled
 [preboot](https://devcenter.heroku.com/articles/preboot) so
 the deploys are zero downtime, mimicking a production setting.
 
