@@ -211,7 +211,9 @@ And then substitute using [your client library](https://www.psycopg.org/docs/usa
 
 ## SQLAlchemy - Core
 
-Although SQLAlchemy has an ORM, we only need the DSL provided by the Core.
+Although SQLAlchemy has [an
+ORM](https://docs.sqlalchemy.org/en/13/orm/index.html), we only need the DSL
+provided by [the Core](http://docs.sqlalchemy.org/en/latest/core/).
 
 Unlike Pypika, SQLAlchemy's Python DSL supports all the necessary idioms to
 fully convert an arbitrary, Postgres flavored SQL query.
