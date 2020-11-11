@@ -2,6 +2,7 @@
 layout: post
 title: Towards a Better Heroku
 date: 2020-10-25
+modified_date: 2020-11-10
 ---
 
 ## General Setup
@@ -208,6 +209,18 @@ does well, and areas in need of improvement.
 - Buildpacks are tedious to change
   - each change involves a deploy
   - caching is manual
+
+- disabling old versions of TLS requires [filing a ticket with Heroku
+  support](https://elements.heroku.com/addons/ssl) and [adding a paid, Heroku
+  add-on](https://elements.heroku.com/addons/ssl)
+
+- Auto deploy kills waiting deploys
+
+  - Scenario: trying to get your fix into production, Heroku auto deploys
+    your fix once it hits `master`, but it first waits for CI to pass. If another
+    commit hits `master` before CI finishes, then Heroku will skip
+    releasing your change and start building the more recent commit.
+
 
 ## A Better Heroku
 
