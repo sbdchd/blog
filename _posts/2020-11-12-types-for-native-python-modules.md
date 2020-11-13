@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Type Stubs for Native Python Modules
-date: 2020-11-20
+date: 2020-11-12
 ---
 
 For [Kodiak](https://kodiakhq.com) we needed to find html comment positions
