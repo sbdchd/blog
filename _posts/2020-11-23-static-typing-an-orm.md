@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2020-11-23
-title: Static Typing an ORM
+title: Static Typing an ORM in Python
 ---
 
 At \$WORK we use [mongoengine](https://github.com/MongoEngine/mongoengine)
