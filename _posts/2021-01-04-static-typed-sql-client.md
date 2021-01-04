@@ -135,7 +135,7 @@ the db client.
 
 ### Code
 
-Basic stubbs for the API:
+Basic stubs for the API:
 
 ```python
 from __future__ import annotations
