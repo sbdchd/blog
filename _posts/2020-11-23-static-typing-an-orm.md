@@ -2,6 +2,7 @@
 layout: post
 date: 2020-11-23
 title: Static Typing an ORM in Python
+description: Tips for adding static types to an ORM
 ---
 
 At \$WORK we use [mongoengine](https://github.com/MongoEngine/mongoengine)

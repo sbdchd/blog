@@ -2,6 +2,7 @@
 layout: post
 date: 2019-10-14
 title: "Avoiding TypeScript Compiler Bugs via ESlint Rules"
+description: Initialize your declarations
 ---
 
 A recent bug with TypeScript at work involved spreading (`...`) a variable

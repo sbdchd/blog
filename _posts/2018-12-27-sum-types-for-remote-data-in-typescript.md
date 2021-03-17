@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Sum Types for Remote Data in TypeScript"
+title: "Sum Types for Remote Data in TypeScript"
+description: Use the compiler Luke!
 ---
 
 If you've ever stumbled into the [Elm](https://elm-lang.org) community, you

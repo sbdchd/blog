@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Avoiding Another TypeScript Compiler Bug with ESLint"
+description: ESLint FTW
 date: 2020-04-15
 ---
 

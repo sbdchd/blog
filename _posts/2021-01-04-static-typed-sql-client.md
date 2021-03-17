@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Typed SQL Client & Query DSL in Python"
+description: Pushing Python's static typing to the limits
 date: 2021-01-04
 ---
 

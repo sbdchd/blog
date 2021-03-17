@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Heroku Deployment Deception
+description: Deploys take a while
 date: 2020-09-18
 ---
 

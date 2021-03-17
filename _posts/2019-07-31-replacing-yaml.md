@@ -2,6 +2,7 @@
 layout: post
 date: 2019-07-31
 title: "Replacing YAML With Dhall"
+description: Static typing your config
 ---
 
 ## The Challenges of YAML

@@ -1,5 +1,6 @@
 ---
 layout: post
+description: Fun with inspect
 ---
 
 I was doing some recursive stuff in python and thought it might be neat to see

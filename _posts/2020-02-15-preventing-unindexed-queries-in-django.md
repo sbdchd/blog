@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Preventing Unindexed Queries in Django"
+description: An exploration in runtime checking
 date: 2020-02-15
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Faster CI Builds in a Monorepo"
+description: A little bash goes a long way
 layout: post
 date: 2020-05-03
 ---

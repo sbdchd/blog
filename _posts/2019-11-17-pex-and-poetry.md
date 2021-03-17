@@ -2,6 +2,7 @@
 layout: post
 date: 2019-11-17
 title: "Distributing a Python Project with Pex and Poetry"
+description: Executable zip files
 ---
 
 ## Overview

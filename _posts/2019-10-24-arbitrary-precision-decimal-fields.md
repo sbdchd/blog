@@ -2,6 +2,7 @@
 layout: post
 date: 2019-10-24
 title: "Arbitrary Precision Decimal Fields with Django ORM"
+description: Using Postgres features from Django
 ---
 
 The [Django ORM's

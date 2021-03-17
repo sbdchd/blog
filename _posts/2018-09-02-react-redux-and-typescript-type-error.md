@@ -1,7 +1,8 @@
 ---
 layout: post
 date: 2018-09-02
-title:  "React, Redux, and TypeScript walk into a – Type Error"
+title: "React, Redux, and TypeScript walk into a – Type Error"
+description: Comparing Redux libraries for side-effect
 ---
 
 **Attention:** There is an accompanying TypeScript project for this post:

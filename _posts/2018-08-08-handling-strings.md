@@ -1,5 +1,6 @@
 ---
 layout: post
+description: A comparision of various languages
 ---
 
 ## background

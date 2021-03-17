@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Autonomous Transactions in Postgres"
+title: "Autonomous Transactions in Postgres"
+description: By using another connection
 ---
 
 At work I was developing an import feature that needed to update around 100,000

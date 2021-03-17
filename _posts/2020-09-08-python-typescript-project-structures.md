@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Relative and Absolute Imports in Python & TypeScript
+description: Beware of ambiguity
 date: 2020-09-07
 ---
 

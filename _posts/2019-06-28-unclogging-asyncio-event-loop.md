@@ -2,6 +2,7 @@
 layout: post
 date: 2019-06-13
 title: "Unclogging an Asyncio Event Loop"
+description: A little cProfile goes a long way
 ---
 
 Calling normal, synchronous functions from [`asyncio`](https://docs.python.org/3/library/asyncio.html) code is pretty straightforward, either it is fast enough to not block the event loop or it should

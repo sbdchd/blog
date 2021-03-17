@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Pesky Globals, Even with TypeScript
+description: And how to avoid them
 date: 2020-07-24
 ---
 

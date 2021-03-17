@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Newtypes in TypeScript"
+description: Nominal typing in a structural world
 date: 2019-12-11
 ---
 

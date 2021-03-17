@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Debugging Performance Issues with Py-Spy"
+description: With included SVGs
 date: 2020-02-08
 ---
 

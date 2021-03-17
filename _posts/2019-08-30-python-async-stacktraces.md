@@ -2,6 +2,7 @@
 layout: post
 date: 2019-08-30
 title: "Python's Async Stack Traces"
+description: Much nicer than JS
 ---
 
 

@@ -93,6 +93,10 @@
         margin-top: 0;
       }
 
+      .mt-1 {
+        margin-top: 0.25rem;
+      }
+
       .mb-0 {
         margin-bottom: 0;
       }
@@ -108,7 +112,7 @@
       li {
         display: flex;
         flex-direction: column;
-        margin-bottom: 0.5rem
+        margin-bottom: 1rem
       }
 
       .text-small, small {
@@ -135,10 +139,10 @@
                 <a href="{{ post.url | relative_url }}">
                   {{ post.title | escape }}
                 </a>
-                <small>{{ post.date | date: date_format }}</small>
-                {%- if site.show_excerpts -%}
-                  {{ post.excerpt }}
+                {%- if post.description -%}
+                <small class="mb-1 mt-1">{{ post.description }}</small>
                 {%- endif -%}
+                <small>{{ post.date | date: date_format }}</small>
               </li>
               {%- endfor -%}
             </ul>

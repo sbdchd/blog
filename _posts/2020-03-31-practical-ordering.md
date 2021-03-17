@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "User Defined Ordering Made Easy"
+description: ints, floats, decimals, rationals, and strings
 date: 2020-03-31
 ---
 

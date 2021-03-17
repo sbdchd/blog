@@ -1,5 +1,6 @@
 ---
 layout: post
+description: Beware of random in Sass
 ---
 
 When upgrading [Webpack](https://webpack.js.org) to version 4 I noticed that

@@ -2,6 +2,7 @@
 layout: post
 date: 2019-09-15
 title: "Exhaustiveness Checking and Breaking API Changes"
+description: Adding enum variants is breaking
 ---
 
 Let's imagine we have a TypeScript based app that fetches comments from an API.

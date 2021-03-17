@@ -1,5 +1,6 @@
 ---
 layout: post
+description: Pretty straight forward
 ---
 
 TSLint for TypeScript and Clippy for Rust have lints to warn about code that

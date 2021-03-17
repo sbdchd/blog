@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Preventing N+1 Queries in Django"
+description: Django ORM required
 date: 2020-02-09
 ---
 

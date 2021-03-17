@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Handling Signals in Heroku
+description: Insufficent config
 date: 2021-01-17
 ---
 

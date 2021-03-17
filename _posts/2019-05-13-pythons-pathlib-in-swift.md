@@ -2,6 +2,7 @@
 layout: post
 date: 2019-05-13
 title: "Python's Pathlib in Swift"
+description: Cute operator overloading
 ---
 
 In Swift we can use [Foundation](https://developer.apple.com/documentation/foundation/)'s [`URL` struct](https://developer.apple.com/documentation/foundation/url) to construct paths, but this API is a bit verbose for my taste.

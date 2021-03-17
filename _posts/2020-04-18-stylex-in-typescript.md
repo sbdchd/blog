@@ -1,5 +1,6 @@
 ---
 title: "Stylex in TypeScript"
+description: Another approach to CSS-in-JS
 layout: post
 date: 2020-04-18
 modified_date: 2020-05-15

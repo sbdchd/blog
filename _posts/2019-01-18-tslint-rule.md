@@ -1,5 +1,6 @@
 ---
 layout: post
+description: Lessions in writing a new rule
 ---
 
 In a [previous post]({% post_url 2018-12-16-creating-a-flake8-lint %}) I went

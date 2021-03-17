@@ -2,6 +2,7 @@
 layout: post
 date: 2019-11-09
 title: "Soundness with Mypy, Flow, and Typescript"
+description: A brief comparision
 ---
 
 In the [Flow FAQ page](https://flow.org/en/docs/faq/) there as interesting example centered around `Array<string | number>` as a function argument. It will form our first example for comparision between Flow and Typescript as well as Mypy.

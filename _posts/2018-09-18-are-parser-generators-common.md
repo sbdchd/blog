@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Are Parser Generators Common? No."
+title: "Are Parser Generators Common? No."
+description: Handwritten vs generated language parsers
 ---
 
 So there are parser generators like Yacc, Bison, and friends, and

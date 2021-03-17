@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2020-07-08
+description: Type checkers for dynamic languages
 modified_date: 2021-02-28
 ---
 

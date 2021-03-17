@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ./.venv/bin/activate isn't magic
+description: You don't need it
 date: 2020-09-07
 ---
 

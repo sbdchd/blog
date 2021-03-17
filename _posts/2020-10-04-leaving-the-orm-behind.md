@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Leaving the ORM Behind
+description: Composing raw SQL queries in Python
 date: 2020-10-04
 ---
 
