@@ -82,8 +82,7 @@ unhandled exception and return a `500`.
 
 To developers unfamiliar with CPS, this example looks like any errors
 will be handled by `express` since we're returning a `Promise` from the
-handler, but that isn't the case, instead the request to the server will hang
-on error.
+handler, but that isn't the case, instead the incoming request will hang.
 
 We really shouldn't be returning anything from the handler, and the `express`
 route handler is [typed as returning `void`][express-handler-ret-type] so why
