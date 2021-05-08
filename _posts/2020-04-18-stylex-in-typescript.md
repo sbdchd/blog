@@ -3,7 +3,7 @@ title: "Stylex in TypeScript"
 description: Another approach to CSS-in-JS
 layout: post
 date: 2020-04-18
-modified_date: 2020-05-15
+last_modified_at: 2020-05-15
 ---
 
 > For an overview of Stylex in video form, check out [Building the New
