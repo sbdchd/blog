@@ -5,7 +5,7 @@ description: >-
   informative.
 permalink: pretty
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://steve.dignam.xyz"
+url: "https://steve.dignam.xyz"
 github_username:  sbdchd
 rss: "rss"
 
