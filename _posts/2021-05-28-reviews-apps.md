@@ -32,7 +32,7 @@ For a production app, you're likely to have:
 ## Dealing with State
 
 Of the above components, most are stateless or can be safely wiped between
-deploys (queues, cache, etc.), but a few trickier to handle:
+deploys (queues, cache, etc.), but a few are trickier to handle.
 
 ### storage -- databases, object storage, search engines
 
