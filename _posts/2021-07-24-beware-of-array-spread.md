@@ -9,7 +9,7 @@ Let's say you're pulling ids from a database in batches and you want to combine
 these
 batches into one big array.
 
-One approach might combine spread with [`Array::push`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push):
+One approach might use spread with [`Array::push`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push):
 
 ```ts
 const allUserIds: string[] = []
@@ -21,9 +21,9 @@ for await (const batchUserIds of getUserIds()) {
 // use allUserIds
 ```
 
-But there's a problem, if the `batchUserIds` is too large, JS will raise a [`RangeError`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError)!
+But there's a problem, if `batchUserIds` is too long, JS will raise a [`RangeError`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError)!
 
-The max number of arguments, and in turn the max number of elements in the batch, depends on the JS implementation.
+The max number of arguments, and in turn the max length of `batchUserIds`, depends on the JS implementation.
 
 - JavaScriptCore (Safari): max of [65,537 arguments](https://bugs.webkit.org/show_bug.cgi?id=80797)
 - SpiderMonkey (Firefox): max of [500,000 arguments](https://github.com/mozilla/gecko-dev/blob/d36cf98aa85f24ceefd07521b3d16b9edd2abcb7/js/src/vm/ArgumentsObject.h#L98)
