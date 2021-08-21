@@ -10,84 +10,50 @@ there are also handwritten parsers.
 How often are parser generators used in mainstream languages compared to
 handwritten ones?
 
-After looking through some languages/implementations, I found 9/26 used generated
-parsers, with the remaining 17/26 using handwritten parsers.
+After looking through some languages/implementations, I found 14/42 used generated
+parsers.
 
-| Language             | Parser Type                      |
-| -------------------- | -------------------------------- |
-| Bash                 | [Generated][zsh-parser]          |
-| C# (Mono)            | [Generated][c-sharp-parser]      |
-| C, C++, ObjC (Clang) | [Handwritten][clang-parser]      |
-| C, C++, ObjC (GCC)   | [Handwritten][gcc-parser]        |
-| CPython              | [Handwritten][cpython-parser]    |
-| Clojure              | [Handwritten][clojure-parser]    |
-| Elixir               | [Generated][elixir-parser]       |
-| Erlang               | [Generated][erlang-parser]       |
-| F#                   | [Generated][f-sharp-parser]      |
-| Go                   | [Handwritten][go-parser]         |
-| Haskell              | [Generated][haskell-parser]      |
-| Java                 | [Handwritten][java-parser]       |
-| JavaScript (V8)      | [Handwritten][js-v8-parser]      |
-| Kotlin               | [Handwritten][kotlin-parser]     |
-| Lua                  | [Handwritten][lua-parser]        |
-| OCaml                | [Generated][ocaml-generated]     |
-| PHP                  | [Handwritten][php-parser]        |
-| Perl5                | [Generated][perl5-parser]        |
-| Perl6                | [Handwritten][perl6-parser]      |
-| PyPy                 | [Handwritten][pypy-parser]       |
-| Ruby                 | [Generated][ruby-parser]         |
-| Rust                 | [Handwritten][rust-parser]       |
-| Scala                | [Handwritten][scala-parser]      |
-| Swift                | [Handwritten][swift-parser]      |
-| TypeScript           | [Handwritten][typescript-parser] |
-| Zsh                  | [Handwritten][zsh-parser]        |
-
-[lua-parser]: https://www.lua.org/source/5.3/lparser.c.html
-
-[cpython-parser]: https://github.com/python/cpython/blob/d0f49d2f5085ca68e3dc8725f1fb1c9674bfb5ed/Parser/parser.c
-
-[pypy-parser]: https://bitbucket.org/pypy/pypy/src/314ddd2d83c5e467aed4f64ab4b8b2fc0047540b/pypy/interpreter/pyparser/parser.py?at=default&fileviewer=file-view-default
-
-[rust-parser]: https://github.com/rust-lang/rust/blob/79fcc58b24d85743d025fd880fca55748662ed3e/src/libsyntax/parse/parser.rs
-
-[ocaml-generated]: https://github.com/ocaml/ocaml/blob/8c75b5f1d6133585bc6c9d96ac5af04b0624892a/parsing/parser.mly
-
-[haskell-parser]: https://github.com/ghc/ghc/blob/4edc6d64d1bc1898c0974cf26c5713a3b2724a0b/compiler/parser/Parser.y
-
-[gcc-parser]: https://github.com/gcc-mirror/gcc/blob/9c66b1e3a61119eb7cb762ff72c40e7309c16d55/gcc/c/c-parser.c
-
-[clang-parser]: https://github.com/llvm-mirror/clang/blob/16f27fb3e9a4d061864859279b62392d602d2698/lib/Parse/Parser.cpp
-
-[ruby-parser]: https://github.com/ruby/ruby/blob/e7db9df9820fd891742dba7ca977754e5d0c14ca/parse.y
-
-[java-parser]: http://hg.openjdk.java.net/jdk/jdk/file/c93f14a4ae29/src/jdk.compiler/share/classes/com/sun/source/
-
-[clojure-parser]: https://github.com/clojure/clojure/blob/16ebe679e6a5fd1c7c24df5f9b9b5056bc18d2ec/src/jvm/clojure/lang/Compiler.java
-
-[scala-parser]: https://github.com/scala/scala/blob/b75bfc3b78dbc1b4f254c86d68c2289f2833ecd9/src/compiler/scala/tools/nsc/ast/parser/Parsers.scala
-
-[kotlin-parser]: https://github.com/JetBrains/kotlin/blob/5dea245a37f6258bdc9ab14225a61ffbf76324f4/compiler/psi/src/org/jetbrains/kotlin/parsing/KotlinParsing.java
-
-[c-sharp-parser]: https://github.com/mono/mono/blob/5bfe7a5d1bf980206e952fbc52b5c1deec342177/mcs/ilasm/parser/ILParser.jay
-
-[f-sharp-parser]: https://github.com/fsharp/fsharp/blob/8a897723b74b5dbcfacbaef86e46755fb403074b/src/fsharp/pars.fsy
-
-[php-parser]: https://github.com/php/php-src/blob/cdde07d059101a05bc43b79932b01d8228bcee40/Zend/zend_ast.c
-
-[perl6-parser]: https://github.com/rakudo/rakudo/blob/19edeafd1cafc52d757e63fe1119ce5b7a5e34f9/src/Perl6/Actions.nqp
-
-[zsh-parser]: https://github.com/zsh-users/zsh/blob/54d2c4fe5d4ea44dc6212f7c7dd119c4690c481e/Src/parse.c
-
-[erlang-parser]: https://github.com/erlang/otp/blob/b2c338cb8d84567204765db87c7299519f1e1ad6/lib/compiler/src/core_parse.yrl
-
-[elixir-parser]: https://github.com/elixir-lang/elixir/blob/40180f0f4a9085705f32f440d3f579479fe07d47/lib/elixir/src/elixir_parser.yrl
-
-[swift-parser]: https://github.com/apple/swift/blob/3f787a1ad2d6774dfb9bf231e443fd771085efd4/lib/Parse/Parser.cpp
-
-[js-v8-parser]: https://github.com/v8/v8/blob/5cfe1a6b121ad004ec3d73b137f84f558aac0efd/src/parsing/parser.cc
-
-[typescript-parser]: https://github.com/Microsoft/TypeScript/blob/c57ff087d6b72f1ef5ffe54ab5c1b2710481bb94/src/compiler/parser.ts
-
-[go-parser]: https://github.com/golang/go/blob/37db664c6cd480b578d6114854bc20c2bc3cddcd/src/go/parser/parser.go
-
-[perl5-parser]: https://github.com/Perl/perl5/blob/5feab405f7eeeed2157687018ee9aad3088b4a64/perly.y
+| Language                    | Parser Type                                                                                                                                                             |
+| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Bash                        | [Generated](https://github.com/bminor/bash/blob/ce23728687ce9e584333367075c9deef413553fa/parse.y)                                                                       |
+| C# (Mono)                   | [Generated](https://github.com/mono/mono/blob/5bfe7a5d1bf980206e952fbc52b5c1deec342177/mcs/ilasm/parser/ILParser.jay)                                                   |
+| C# (Rosyln)                 | [Handwritten](https://github.com/dotnet/roslyn/blob/990f487dd477db0fecb14ab5aa4f0e66f416a437/src/Compilers/CSharp/Portable/Parser/LanguageParser.cs)                    |
+| C, C++, ObjC (Clang)        | [Handwritten](https://github.com/llvm-mirror/clang/blob/16f27fb3e9a4d061864859279b62392d602d2698/lib/Parse/Parser.cpp)                                                  |
+| C, C++, ObjC (GCC)          | [Handwritten](https://github.com/gcc-mirror/gcc/blob/9c66b1e3a61119eb7cb762ff72c40e7309c16d55/gcc/c/c-parser.c)                                                         |
+| CPython                     | [Handwritten](https://github.com/python/cpython/blob/d0f49d2f5085ca68e3dc8725f1fb1c9674bfb5ed/Parser/parser.c)                                                          |
+| Clojure                     | [Handwritten](https://github.com/clojure/clojure/blob/16ebe679e6a5fd1c7c24df5f9b9b5056bc18d2ec/src/jvm/clojure/lang/Compiler.java)                                      |
+| CQL                         | [Generated](https://github.com/apache/cassandra/blob/4b3f07fc74089151efeff7a8fdfa9c414a1f0d6a/src/antlr/Parser.g)                                                       |
+| Elixir                      | [Generated](https://github.com/elixir-lang/elixir/blob/40180f0f4a9085705f32f440d3f579479fe07d47/lib/elixir/src/elixir_parser.yrl)                                       |
+| Elm                         | [Handwritten](https://github.com/elm/compiler/tree/fc503351bd0d1a0b8933ead01793d46e1baea37c/compiler/src/Parse)                                                         |
+| Erlang                      | [Generated](https://github.com/erlang/otp/blob/b2c338cb8d84567204765db87c7299519f1e1ad6/lib/compiler/src/core_parse.yrl)                                                |
+| Fish                        | [Handwritten](https://github.com/fish-shell/fish-shell/blob/a9b4127f6851d825715492dfd36ca4ac73c42412/src/parser.cpp)                                                    |
+| Fortran (GNU)               | [Handwritten](https://github.com/gcc-mirror/gcc/blob/44eaa2dbff06529b6300b56fe5df4ff88b56a32c/gcc/fortran/parse.c)                                                      |
+| Fortran (LLVM)              | [Handwritten](https://github.com/llvm/llvm-project/blob/a83d99c55ebb14532c414066a5aa3bdb65389965/flang/lib/Parser/Fortran-parsers.cpp)                                  |
+| F#                          | [Generated](https://github.com/fsharp/fsharp/blob/8a897723b74b5dbcfacbaef86e46755fb403074b/src/fsharp/pars.fsy)                                                         |
+| Go                          | [Handwritten](https://github.com/golang/go/blob/37db664c6cd480b578d6114854bc20c2bc3cddcd/src/go/parser/parser.go)                                                       |
+| Hack                        | [Handwritten](https://github.com/facebook/hhvm/tree/d6131da93eef6a03ac485a6b2e0fdc0cfed253ff/hphp/hack/src/parser)                                                      |
+| Haskell                     | [Generated](https://github.com/ghc/ghc/blob/4edc6d64d1bc1898c0974cf26c5713a3b2724a0b/compiler/parser/Parser.y)                                                          |
+| Java (OpenJDK)              | [Handwritten](http://hg.openjdk.java.net/jdk/jdk/file/c93f14a4ae29/src/jdk.compiler/share/classes/com/sun/source/)                                                      |
+| JavaScript (JavascriptCore) | [Handwritten](https://github.com/WebKit/WebKit/blob/cd2a40978774593c76d3fb962eec5c468eb1ae84/Source/JavaScriptCore/parser/Parser.cpp)                                   |
+| JavaScript (Spidermonkey)   | [Handwritten](https://searchfox.org/mozilla-central/rev/a3124addd11cbcf665ed6a37c88484eefe5dab5b/js/src/frontend/Parser.cpp)                                            |
+| JavaScript (V8)             | [Handwritten](https://github.com/v8/v8/blob/5cfe1a6b121ad004ec3d73b137f84f558aac0efd/src/parsing/parser.cc)                                                             |
+| Kotlin                      | [Handwritten](https://github.com/JetBrains/kotlin/blob/5dea245a37f6258bdc9ab14225a61ffbf76324f4/compiler/psi/src/org/jetbrains/kotlin/parsing/KotlinParsing.java)       |
+| Lua (C)                     | [Handwritten](https://www.lua.org/source/5.3/lparser.c.html)                                                                                                            |
+| Lua (LuaJit)                | [Handwritten](https://github.com/LuaJIT/LuaJIT/blob/8ff09d9f5ad5b037926be2a50dc32b681c5e7597/src/lj_parse.c)                                                            |
+| OCaml                       | [Generated](https://github.com/ocaml/ocaml/blob/8c75b5f1d6133585bc6c9d96ac5af04b0624892a/parsing/parser.mly)                                                            |
+| PHP                         | [Handwritten](https://github.com/php/php-src/blob/cdde07d059101a05bc43b79932b01d8228bcee40/Zend/zend_ast.c)                                                             |
+| Perl5                       | [Generated](https://github.com/Perl/perl5/blob/5feab405f7eeeed2157687018ee9aad3088b4a64/perly.y)                                                                        |
+| Perl6                       | [Handwritten](https://github.com/rakudo/rakudo/blob/19edeafd1cafc52d757e63fe1119ce5b7a5e34f9/src/Perl6/Actions.nqp)                                                     |
+| PyPy                        | [Handwritten](https://bitbucket.org/pypy/pypy/src/314ddd2d83c5e467aed4f64ab4b8b2fc0047540b/pypy/interpreter/pyparser/parser.py?at=default&fileviewer=file-view-default) |
+| Ruby                        | [Generated](https://github.com/ruby/ruby/blob/e7db9df9820fd891742dba7ca977754e5d0c14ca/parse.y)                                                                         |
+| Rust                        | [Handwritten](https://github.com/rust-lang/rust/blob/79fcc58b24d85743d025fd880fca55748662ed3e/src/libsyntax/parse/parser.rs)                                            |
+| Scala                       | [Handwritten](https://github.com/scala/scala/blob/b75bfc3b78dbc1b4f254c86d68c2289f2833ecd9/src/compiler/scala/tools/nsc/ast/parser/Parsers.scala)                       |
+| SQL (Postgres)              | [Generated](https://github.com/postgres/postgres/blob/26ae66090398082c54ce046936fc41633dbfc41e/src/backend/parser/gram.y)                                               |
+| SQL (MySQL)                 | [Generated](https://github.com/mysql/mysql-server/blob/beb865a960b9a8a16cf999c323e46c5b0c67f21f/sql/sql_yacc.yy)                                                        |
+| SQL (Clickhouse)            | [Handwritten](https://github.com/ClickHouse/ClickHouse/blob/e620ea15bdb08ebf3e9a580b0072350c9b3aeb9e/src/Parsers/parseQuery.cpp)                                        |
+| SQL (Cockroach)             | [Generated](https://github.com/cockroachdb/cockroach/blob/d18da6c092bf1522e7a6478fe3973817e318c247/pkg/sql/parser/sql.y)                                                |
+| SQL (SQLite)                | [Generated](https://github.com/sqlite/sqlite/blob/2a0eefd66536fea7ac7f57d67ce97aa0b1da7338/src/parse.y)                                                                 |
+| Swift                       | [Handwritten](https://github.com/apple/swift/blob/3f787a1ad2d6774dfb9bf231e443fd771085efd4/lib/Parse/Parser.cpp)                                                        |
+| TypeScript                  | [Handwritten](https://github.com/Microsoft/TypeScript/blob/c57ff087d6b72f1ef5ffe54ab5c1b2710481bb94/src/compiler/parser.ts)                                             |
+| Visual Basic (Rosyln)       | [Handwritten](https://github.com/dotnet/roslyn/blob/990f487dd477db0fecb14ab5aa4f0e66f416a437/src/Compilers/VisualBasic/Portable/Parser/Parser.vb)                       |
+| Zsh                         | [Handwritten](https://github.com/zsh-users/zsh/blob/54d2c4fe5d4ea44dc6212f7c7dd119c4690c481e/Src/parse.c)                                                               |
