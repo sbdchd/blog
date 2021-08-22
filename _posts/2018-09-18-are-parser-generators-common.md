@@ -16,6 +16,7 @@ parsers.
 
 | Language                    | Parser Type                                                                                                                                                             |
 | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| AWK                         | [Generated](https://github.com/onetrueawk/awk/blob/f9affa922c5e074990a999d486d4bc823590fd93/awkgram.y)                                                                  |
 | Bash                        | [Generated](https://github.com/bminor/bash/blob/ce23728687ce9e584333367075c9deef413553fa/parse.y)                                                                       |
 | C# (Mono)                   | [Generated](https://github.com/mono/mono/blob/5bfe7a5d1bf980206e952fbc52b5c1deec342177/mcs/ilasm/parser/ILParser.jay)                                                   |
 | C# (Rosyln)                 | [Handwritten](https://github.com/dotnet/roslyn/blob/990f487dd477db0fecb14ab5aa4f0e66f416a437/src/Compilers/CSharp/Portable/Parser/LanguageParser.cs)                    |
@@ -49,12 +50,14 @@ parsers.
 | Ruby                        | [Generated](https://github.com/ruby/ruby/blob/e7db9df9820fd891742dba7ca977754e5d0c14ca/parse.y)                                                                         |
 | Rust                        | [Handwritten](https://github.com/rust-lang/rust/blob/79fcc58b24d85743d025fd880fca55748662ed3e/src/libsyntax/parse/parser.rs)                                            |
 | Scala                       | [Handwritten](https://github.com/scala/scala/blob/b75bfc3b78dbc1b4f254c86d68c2289f2833ecd9/src/compiler/scala/tools/nsc/ast/parser/Parsers.scala)                       |
+| Sed                         | [Handwritten](https://github.com/mirror/sed/blob/07c9c74c6bffe92e856ba77789736b2a1d7f478e/sed/compile.c)                                                                |
 | SQL (Postgres)              | [Generated](https://github.com/postgres/postgres/blob/26ae66090398082c54ce046936fc41633dbfc41e/src/backend/parser/gram.y)                                               |
 | SQL (MySQL)                 | [Generated](https://github.com/mysql/mysql-server/blob/beb865a960b9a8a16cf999c323e46c5b0c67f21f/sql/sql_yacc.yy)                                                        |
 | SQL (Clickhouse)            | [Handwritten](https://github.com/ClickHouse/ClickHouse/blob/e620ea15bdb08ebf3e9a580b0072350c9b3aeb9e/src/Parsers/parseQuery.cpp)                                        |
 | SQL (Cockroach)             | [Generated](https://github.com/cockroachdb/cockroach/blob/d18da6c092bf1522e7a6478fe3973817e318c247/pkg/sql/parser/sql.y)                                                |
 | SQL (SQLite)                | [Generated](https://github.com/sqlite/sqlite/blob/2a0eefd66536fea7ac7f57d67ce97aa0b1da7338/src/parse.y)                                                                 |
 | Swift                       | [Handwritten](https://github.com/apple/swift/blob/3f787a1ad2d6774dfb9bf231e443fd771085efd4/lib/Parse/Parser.cpp)                                                        |
+| TCL                         | [Handwritten](https://github.com/tcltk/tcl/blob/efefa25af43d126bf9b2396c5d4879f02035f2fb/generic/tclParse.c)                                                            |
 | TypeScript                  | [Handwritten](https://github.com/Microsoft/TypeScript/blob/c57ff087d6b72f1ef5ffe54ab5c1b2710481bb94/src/compiler/parser.ts)                                             |
 | Visual Basic (Rosyln)       | [Handwritten](https://github.com/dotnet/roslyn/blob/990f487dd477db0fecb14ab5aa4f0e66f416a437/src/Compilers/VisualBasic/Portable/Parser/Parser.vb)                       |
 | Zsh                         | [Handwritten](https://github.com/zsh-users/zsh/blob/54d2c4fe5d4ea44dc6212f7c7dd119c4690c481e/Src/parse.c)                                                               |
