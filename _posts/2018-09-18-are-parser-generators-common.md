@@ -11,7 +11,7 @@ there are also handwritten parsers.
 How often are parser generators used in mainstream languages compared to
 handwritten ones?
 
-After looking through some languages/implementations, I found 14/42 used generated
+After looking through some languages/implementations, I found 16/46 used generated
 parsers.
 
 | Language                    | Parser Type                                                                                                                                                             |
@@ -39,6 +39,7 @@ parsers.
 | JavaScript (JavascriptCore) | [Handwritten](https://github.com/WebKit/WebKit/blob/cd2a40978774593c76d3fb962eec5c468eb1ae84/Source/JavaScriptCore/parser/Parser.cpp)                                   |
 | JavaScript (Spidermonkey)   | [Handwritten](https://searchfox.org/mozilla-central/rev/a3124addd11cbcf665ed6a37c88484eefe5dab5b/js/src/frontend/Parser.cpp)                                            |
 | JavaScript (V8)             | [Handwritten](https://github.com/v8/v8/blob/5cfe1a6b121ad004ec3d73b137f84f558aac0efd/src/parsing/parser.cc)                                                             |
+| JQ                          | [Generated](https://github.com/stedolan/jq/blob/d18b2d078c2383d9472d0a0a226e07009025574f/src/parser.y)                                                                  |
 | Kotlin                      | [Handwritten](https://github.com/JetBrains/kotlin/blob/5dea245a37f6258bdc9ab14225a61ffbf76324f4/compiler/psi/src/org/jetbrains/kotlin/parsing/KotlinParsing.java)       |
 | Lua (C)                     | [Handwritten](https://www.lua.org/source/5.3/lparser.c.html)                                                                                                            |
 | Lua (LuaJit)                | [Handwritten](https://github.com/LuaJIT/LuaJIT/blob/8ff09d9f5ad5b037926be2a50dc32b681c5e7597/src/lj_parse.c)                                                            |
