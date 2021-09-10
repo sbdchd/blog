@@ -2,6 +2,7 @@
 layout: post
 title: input[type="number"]
 description: Unexpected change events
+last_modified_at: 2021-09-10
 ---
 
 Let's say you want users to input their
@@ -28,7 +29,7 @@ ReactDOM.render(
 )
 ```
 
-Then you think, we really only want digits in the social security number so let's use `type="number"`:
+Then you think, we really only want digits in the social security number so let's use [`type="number"`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number):
 
 ```diff
 diff --git a/src/index.tsx b/src/index.tsx
