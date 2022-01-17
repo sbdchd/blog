@@ -18,6 +18,7 @@ Here are the results from my incomplete survey:
 | site          | domain type      |
 | ------------- | ---------------- |
 | Ably          | same domain      |
+| Algolia       | same domain      |
 | Airbnb        | same domain      |
 | AWS           | different domain |
 | Basecamp      | different domain |
