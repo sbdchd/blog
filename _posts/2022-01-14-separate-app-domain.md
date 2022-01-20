@@ -17,6 +17,7 @@ Here are the results from my incomplete survey:
 
 | site          | domain type      |
 | ------------- | ---------------- |
+| 1Password     | different domain |
 | Ably          | same domain      |
 | Algolia       | same domain      |
 | Airbnb        | same domain      |
