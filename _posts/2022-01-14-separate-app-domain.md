@@ -29,6 +29,7 @@ Here are the results from my incomplete survey:
 | Datadog       | different domain |
 | Digital Ocean | different domain |
 | Discord       | same domain      |
+| Dribbble      | same domain      |
 | Dropbox       | same domain      |
 | Elastic       | different domain |
 | Facebook      | same domain      |
@@ -51,6 +52,7 @@ Here are the results from my incomplete survey:
 | Segment       | different domain |
 | Sentry        | same domain      |
 | Slack         | different domain |
+| Soundcloud    | same domain      |
 | Spotify       | different domain |
 | Stripe        | different domain |
 | TikTok        | same domain      |
