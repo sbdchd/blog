@@ -60,6 +60,7 @@ Here are the results from my incomplete survey:
 | Twitch        | same domain      |
 | Twitter       | same domain      |
 | Vercel        | same domain      |
+| Vimeo         | same domain      |
 | Youtube       | same domain      |
 
 ## Conclusion
