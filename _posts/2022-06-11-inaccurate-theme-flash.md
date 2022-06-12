@@ -14,7 +14,7 @@ And here are some examples:
 
 ### Twitch's mobile site
 
-<video src="/assets/theme-mobile-twitch.mp4" height="500" muted loop controls style="display: block; margin-left: auto; margin-right: auto"></video>
+<video src="/assets/theme-mobile-twitch.mp4" playsinline muted loop controls style="display: block; margin-left: auto; margin-right: auto; max-height: 500px; max-width: 100%"></video>
 
 The Twitch desktop site is fine, but there is an initial flash of the wrong
 theme with the mobile site.
@@ -24,7 +24,7 @@ theme and the second page visit includes the proper styling.
 
 ### Youtube's mobile site
 
-<video src="/assets/theme-mobile-youtube.mp4" height="500" muted loop controls style="display: block; margin-left: auto; margin-right: auto"></video>
+<video src="/assets/theme-mobile-youtube.mp4" playsinline muted loop controls style="display: block; margin-left: auto; margin-right: auto; max-height: 500px; max-width: 100%"></video>
 
 Like Twitch, the desktop site is fine. On mobile however, there is a flash of the wrong theme.
 
@@ -34,7 +34,7 @@ loads and overrides the initial color with the correct theme.
 
 ### Sentry
 
-<video src="/assets/theme-sentry.mp4" height="500" muted loop controls style="display: block; margin-left: auto; margin-right: auto"></video>
+<video src="/assets/theme-sentry.mp4" playsinline muted loop controls style="display: block; margin-left: auto; margin-right: auto; max-height: 500px; max-width: 100%"></video>
 
 Sentry shows an initial static page while the JS of the app loads in, this
 static page doesn't have theming, so it results in a mismatch when the
@@ -42,14 +42,14 @@ dashboard loads.
 
 ### Stripe API docs
 
-<video src="/assets/theme-stripe-api-docs.mp4" height="500" muted loop controls style="display: block; margin-left: auto; margin-right: auto"></video>
+<video src="/assets/theme-stripe-api-docs.mp4" playsinline muted loop controls style="display: block; margin-left: auto; margin-right: auto; max-height: 500px; max-width: 100%"></video>
 
 The Stripe API docs don't have the proper theme on initial load. Future loads
 result in the correct theme due to a cookie being set.
 
 ### Feedly
 
-<video src="/assets/theme-feedly.mp4" height="500" muted loop controls style="display: block; margin-left: auto; margin-right: auto"></video>
+<video src="/assets/theme-feedly.mp4" playsinline muted loop controls style="display: block; margin-left: auto; margin-right: auto; max-height: 500px; max-width: 100%"></video>
 
 Pretty much the same setup as Sentry, there is an initial static page that is
 shown while the JS loads, and it doesn't have proper theming. Their mobile app
@@ -57,7 +57,7 @@ has a similar issue.
 
 ### Apollo GraphQL docs
 
-<video src="/assets/theme-apollo-graphql-docs.mp4" height="500" muted loop controls style="display: block; margin-left: auto; margin-right: auto"></video>
+<video src="/assets/theme-apollo-graphql-docs.mp4" playsinline muted loop controls style="display: block; margin-left: auto; margin-right: auto; max-height: 500px; max-width: 100%"></video>
 
 The Apollo docs look pretty buggy! The server returns html with a dark mode css
 class name set, then on load the class name switches to light, before quickly
