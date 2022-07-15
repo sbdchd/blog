@@ -135,4 +135,4 @@ function useAutoScroll() {
 
 I'm not sure why Instagram takes a more complicated approach, maybe it's from a time when browser `'auto'` `scrollRestoration` wasn't as well supported? Or maybe it allows for more fine grained control with specific page navigation scenarios?
 
-Either way, I think the Flickr approach is a good starting point, I haven't found any problems with it so far.
+Either way, I think the Flickr approach is a good starting point. I haven't found any problems with it so far.
