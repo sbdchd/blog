@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HTTP Timeouts
-description: Setting an overall timeout in various languages.
+description: Setting an overall timeout in various languages
 ---
 
 Recently as part of [adding a scraper to
@@ -9,14 +9,12 @@ recipeyak](https://github.com/recipeyak/recipeyak/commit/7e98109eb9b68e648c7260d
 I was investigating the various bits and pieces necessary to make the outbound
 network requests secure, e.g. how to avoid SSRF and other badness.
 
-
 Webhooks.fyi has [a nice
 overview](https://webhooks.fyi/best-practices/webhook-providers) of the various
 footguns and while proxying the outbound requests through [Stripe's
 Smokescreen](https://github.com/stripe/smokescreen) would fix the problem, I
 wanted to avoid an extra service and it seemed fun to DIY it. Also it's just a
 hobby project so the risk is low.
-
 
 I got most things covered, but I wasn't able to solve HTTP request timeouts.
 Specifically overall timeouts, with Python's `requests` package you can set

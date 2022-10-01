@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gradually Enabling noImplicitAny
-description: TypeScript ESlint to the rescue.
+description: TypeScript ESlint to the rescue
 ---
 
 When migrating from JS (or Flow) to TypeScript, you'll likely make concessions
