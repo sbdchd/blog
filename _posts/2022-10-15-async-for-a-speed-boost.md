@@ -501,3 +501,5 @@ Compared to async Python, async Rust gives us a 10x decrease in memory usage (14
 Overall, async python is a magnitude more efficient than sync Python and async Rust is a magnitude more efficient than async Python.
 
 I'm guessing there is a way to get Tokio to use more of the available CPU / memory, as there are a lot more resources available on the box.
+
+Also the [code is available on GitHub](https://github.com/sbdchd/http-showdown).
