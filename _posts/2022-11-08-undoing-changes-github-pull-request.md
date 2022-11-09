@@ -20,6 +20,12 @@ git diff origin/master... your/file/here.txt | git apply --reverse
 
 ## Some other useful git commands
 
+### Rebasing master onto current branch without switching
+
+```
+git fetch origin master; git rebase origin/master
+```
+
 ### Searching git history for a substring
 
 ```
