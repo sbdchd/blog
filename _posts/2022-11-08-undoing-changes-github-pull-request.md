@@ -9,12 +9,6 @@ This isn't actually GitHub specific but I wish they'd add a button to make it ea
 Anyways, here's what I use to undo changes to a given file:
 
 ```
-git diff ..origin/master your/file/here.txt | git apply
-```
-
-Or if you prefer seeing the changes as you made them
-
-```
 git diff origin/master... your/file/here.txt | git apply --reverse
 ```
 
@@ -36,4 +30,10 @@ Which you can also give a path and include the actual diff (`-p`)
 
 ```
 git log -pS 'some string to search' your/file/or/directory
+```
+
+### Clean up untracked files
+
+```
+git clean -fd
 ```
