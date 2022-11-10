@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cutting Peak CPU in Half By Caching SSL Context
-description: A little pyspy goes a long way
+description: A little py-spy goes a long way
 ---
 
 `httpx` is great, but [it has a long standing issue](https://github.com/encode/httpx/issues/838) where it doesn't cache ssl context. This is fine if you aren't creating a lot of clients, but for various reasons, [Kodiak](https://kodiakhq.com) [creates a ton of http clients](https://github.com/chdsbd/kodiak/blob/master/bot/kodiak/queries/__init__.py#L834).
