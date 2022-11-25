@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "zero to connection string"
+title: "Zero to Connection String"
 description: it's a race!
 ---
 
