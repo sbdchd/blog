@@ -3,6 +3,7 @@ layout: post
 title: "User Defined Ordering Made Easy"
 description: ints, floats, decimals, rationals, and strings
 date: 2020-03-31
+last_modified_at: 2022-11-27
 ---
 
 So you have a list of items with an adjustable order, like rules, photos, posts, etc. How can you persist the order to a database?
@@ -517,6 +518,21 @@ Compared to the arbitrary decimal approach we:
 - get easy sorting in JS
 - get shorter position values compared to arbitrary decimal
 - and **never** run out of precision
+
+#### Update 2022-11-27: open source implementations:
+
+| lang       | name                                                                                                                                    |
+| ---------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Javascript | [fractional-indexing](https://github.com/rocicorp/fractional-indexing)                                                                  |
+| Python     | [fractional-indexing-python](https://github.com/httpie/fractional-indexing-python)                                                      |
+| Go         | [fracdex](https://github.com/rocicorp/fracdex)                                                                                          |
+| Rust       | [fractional_index](https://docs.rs/fractional_index/latest/fractional_index/)                                                           |
+| Python     | [ordering](https://github.com/recipeyak/recipeyak/blob/09f6d11d4ea44cc0966ee534eb53cac818c614c2/backend/recipeyak/ordering/__init__.py) |
+| TypeScript | [ordering](https://github.com/recipeyak/recipeyak/blob/09f6d11d4ea44cc0966ee534eb53cac818c614c2/frontend/src/ordering.ts)               |
+
+And there's also a blog post from Evan Wallace:
+
+<https://madebyevan.com/algos/crdt-fractional-indexing/>
 
 ### Implementation
 
