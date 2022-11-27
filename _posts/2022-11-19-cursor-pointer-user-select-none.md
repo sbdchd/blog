@@ -2,6 +2,7 @@
 layout: post
 title: "cursor: pointer and user-select: none"
 description: and their usage
+last_modified_at: 2022-11-27
 ---
 
 ## cursor: pointer
@@ -68,3 +69,9 @@ Which sites use `user-select: none`?
 I think `cursor: default` is a good default, but even though it goes against the guidelines / spec, for clickable items I like `cursor: pointer`.
 
 With selection, I think `user-select: none` is a good default, but with great power comes great responsibility, there are things that should be selectable!
+
+_Update 2022-11-27_: I ended up adding these settings to Recipeyak. Took a few PRs to get it all setup:
+
+- [recipeyak#856](https://github.com/recipeyak/recipeyak/pull/856)
+- [recipeyak#858](https://github.com/recipeyak/recipeyak/pull/858)
+- [recipeyak#864](https://github.com/recipeyak/recipeyak/pull/864)
