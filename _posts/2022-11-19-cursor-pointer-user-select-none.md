@@ -2,7 +2,7 @@
 layout: post
 title: "cursor: pointer and user-select: none"
 description: and their usage
-last_modified_at: 2022-11-27
+last_modified_at: 2022-11-30
 ---
 
 ## cursor: pointer
@@ -75,3 +75,13 @@ _Update 2022-11-27_: I ended up adding these settings to Recipeyak. Took a few P
 - [recipeyak#856](https://github.com/recipeyak/recipeyak/pull/856)
 - [recipeyak#858](https://github.com/recipeyak/recipeyak/pull/858)
 - [recipeyak#864](https://github.com/recipeyak/recipeyak/pull/864)
+
+## Addendum (2022-11-30): `:hover`
+
+`:hover` is another edge case to consider when trying to get a more native feel. With browsers, `:hover` on mobile can get "stuck" enabled when using touch.
+
+This can be easily fixed by wrapping `:hover` declarations in a `@media (hover: hover) { }`.
+
+Defensive CSS has a [good post documenting this behavior](https://defensivecss.dev/tip/hover-media/).
+
+Also if you're using Tailwind you can [enable `hoverOnlyWhenSupported`](https://github.com/tailwindlabs/tailwindcss/pull/8394) in the config to automatically add the media queries to hover styles.
