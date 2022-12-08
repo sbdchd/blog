@@ -348,7 +348,7 @@ We can do better!
 
 ### low res, blur, ::after with backdrop-filter
 
-<div src="/assets/vincent-small.jpeg" class="placeholder blurred-filter"></div>
+<div class="placeholder blurred-filter"></div>
 
 ```html
 <style>
@@ -375,7 +375,7 @@ We can do better!
   }
 </style>
 
-<div src="/assets/vincent-small.jpeg" class="blurred-filter"></div>
+<div class="blurred-filter"></div>
 ```
 
 Instead of scaling the image, we can use `backdrop-filter` which produces the perfect blur!
