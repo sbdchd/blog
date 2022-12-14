@@ -10,8 +10,8 @@ There are a lot of providers that offer free VMs, storage, etc., but not many th
 
 | Name                                                                          | Compute | Memory | Storage | Connections             | Automatic Backups |
 | ----------------------------------------------------------------------------- | ------- | ------ | ------- | ----------------------- | ----------------- |
-| [neon.tech](https://neon.tech/docs/introduction/technical-preview-free-tier/) | 3 vCPU  | 4 GB   | 3GB     | 1000 w/ pooler, 100 w/o | ❌                |
-| [supabase](https://supabase.com/pricing)                                      | 2 vCPU  | 1 GB   | 500MB   | 50 w/ pooler, 10 w/o    | ❌                |
+| [neon.tech](https://neon.tech/docs/introduction/technical-preview-free-tier/) | 3 vCPU  | 4 GB   | 3 GB    | 1000 w/ pooler, 100 w/o | ❌                |
+| [supabase](https://supabase.com/pricing)                                      | 2 vCPU  | 1 GB   | 500 MB  | 50 w/ pooler, 10 w/o    | ❌                |
 
 For automated backups, you could always setup your own on of the numerous free tier VM offerings.
 
