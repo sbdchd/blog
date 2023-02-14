@@ -8,10 +8,12 @@ description: "Less is more!"
 
 Moving an expression into a function parameter from a variable is more involved.
 
+<!-- prettier-ignore-start -->
 ```js
-let x = foo()
-bar(x)
+let x = foo();
+bar(x);
 ```
+<!-- prettier-ignore-end -->
 
 If you try to copy the right hand side of the assignment, `foo();`, and paste it into `bar()` you can't because `;` isn't valid.
 
