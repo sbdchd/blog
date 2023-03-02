@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Darkmode for Emails"
+title: "Dark Mode for Emails"
 description: "Auto conversion and media queries"
 ---
 
