@@ -2,6 +2,7 @@
 layout: post
 title: "Blurhash or Downscaled and Blurred"
 description: Quality vs storage
+last_modified_at: 2022-03-22
 ---
 
 <script type="module">
@@ -147,7 +148,7 @@ The options I've found are:
 - include height & width and get an empty placeholder
 - skeleton loader, like Discord & Facebook
 - [blurhash](https://github.com/woltapp/blurhash), like Signal
-- placeholder image, like Slack & Instagram
+- placeholder image, like Slack & [Instagram](https://engineering.fb.com/2015/08/06/android/the-technology-behind-preview-photos/)
 
 For this post we're going to compare blurhash and placeholder images as they're the most visually pleasing of the bunch.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Type Stubs for Native Python Modules
-description: Packing and upacking wheels
+description: Packing and unpacking wheels
 date: 2020-11-12
 ---
 
