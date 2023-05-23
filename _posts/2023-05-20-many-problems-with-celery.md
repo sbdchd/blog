@@ -2,6 +2,7 @@
 layout: post
 title: "The Many Problems with Celery"
 description: "With some possible fixes"
+last_modified_at: 2023-05-22
 ---
 
 Celery is the de facto solution for background workers and cron jobs in the Python ecosystem, but it's full of footguns.
@@ -191,3 +192,13 @@ The Celery [internals aren't type checked](https://github.com/celery/celery/blob
 #### The fix:
 
 - Live with it
+
+## Conclusion
+
+If you're project is heavily invested in Celery, it's tricky to migrate, so implementing the available fixes might be best.
+
+For a new project, I wouldn't use Celery. The biggest issue is how easy it is to lose jobs. Instead I'd use a [transactional outbox setup with some workers](https://brandur.org/nanoglyphs/036-queues#batch-wise).
+
+Also worth looking into the new hotness, [Temporal](https://temporal.io), but it has its own learning curve.
+
+In general, be careful how you enqueue your jobs and ensure changes to your tasks are backwards compatible.
