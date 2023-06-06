@@ -2,6 +2,7 @@
 layout: post
 title: "Dark Mode for Emails"
 description: "Auto conversion and media queries"
+last_modified_at: 2023-06-05
 ---
 
 You can use plain text for your transactional and marketing emails, but for a more professional look you'll want to have designed HTML emails.
@@ -22,7 +23,7 @@ But we want to support all mail clients, so this won't work.
 
 While not used that often, mail clients support [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries).
 
-I've seen a number of emails that Mail automatically renders in dark mode but only one dark mode email using media queries: [Chownow](https://www.chownow.com)
+I've seen a number of emails that Mail automatically renders in dark mode but only a couple dark mode emails using media queries: [Doordash](https://gist.github.com/sbdchd/ccf3fa32756b2bf275cc01493ee5078b) and [Chownow](https://gist.github.com/sbdchd/12326a0d56d8cb6df26f24f12bda8b93)
 
 <div style="display:flex;justify-content:center;">
 <img src="/assets/chownow-email.png" width="500">
