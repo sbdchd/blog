@@ -2,7 +2,7 @@
 layout: post
 title: "The Many Problems with Celery"
 description: "With some possible fixes"
-last_modified_at: 2023-05-24
+last_modified_at: 2023-06-09
 ---
 
 Celery is the de facto solution for background workers and cron jobs in the Python ecosystem, but it's full of footguns.
@@ -18,7 +18,7 @@ This means you could have one job that takes 45 minutes block 3 other jobs that 
 #### The fix:
 
 - Disable prefetching
-- Setup different queues & workers for different priority jobs
+- Setup [different queues](https://engineering.gusto.com/scaling-sidekiq-at-gusto/) & workers for different priority jobs
 
 ## Celery loses jobs by default
 
