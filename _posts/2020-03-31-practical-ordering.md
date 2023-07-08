@@ -3,7 +3,7 @@ layout: post
 title: "User Defined Ordering Made Easy"
 description: ints, floats, decimals, rationals, and strings
 date: 2020-03-31
-last_modified_at: 2022-11-27
+last_modified_at: 2023-07-07
 ---
 
 So you have a list of items with an adjustable order, like rules, photos, posts, etc. How can you persist the order to a database?
@@ -519,12 +519,13 @@ Compared to the arbitrary decimal approach we:
 - get shorter position values compared to arbitrary decimal
 - and **never** run out of precision
 
-#### Update 2022-11-27: open source implementations:
+#### Open Source Implementations
 
 | lang       | name                                                                                                                                    |
 | ---------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | Javascript | [fractional-indexing](https://github.com/rocicorp/fractional-indexing)                                                                  |
 | Python     | [fractional-indexing-python](https://github.com/httpie/fractional-indexing-python)                                                      |
+| Kotlin     | [fractional-indexing-kotlin](https://github.com/darvelo/fractional-indexing-kotlin)                                                     |
 | Go         | [fracdex](https://github.com/rocicorp/fracdex)                                                                                          |
 | Rust       | [fractional_index](https://docs.rs/fractional_index/latest/fractional_index/)                                                           |
 | Python     | [ordering](https://github.com/recipeyak/recipeyak/blob/09f6d11d4ea44cc0966ee534eb53cac818c614c2/backend/recipeyak/ordering/__init__.py) |
@@ -586,3 +587,7 @@ post](https://begriffs.com/posts/2018-03-20-user-defined-order.html) where
 the author covers techniques including integers, floats, decimals and some
 other fancier approaches with Postgres based implementations. Well worth a
 read.
+
+Additionally, there's a great observable notebook, [Implementing Fractional
+Indexing](https://observablehq.com/@dgreensp/implementing-fractional-indexing),
+which provides insight into the why behind Figma's algorithm.
