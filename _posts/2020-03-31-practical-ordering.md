@@ -521,15 +521,14 @@ Compared to the arbitrary decimal approach we:
 
 #### Open Source Implementations
 
-| lang       | name                                                                                                                                    |
-| ---------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Javascript | [fractional-indexing](https://github.com/rocicorp/fractional-indexing)                                                                  |
-| Python     | [fractional-indexing-python](https://github.com/httpie/fractional-indexing-python)                                                      |
-| Kotlin     | [fractional-indexing-kotlin](https://github.com/darvelo/fractional-indexing-kotlin)                                                     |
-| Go         | [fracdex](https://github.com/rocicorp/fracdex)                                                                                          |
-| Rust       | [fractional_index](https://docs.rs/fractional_index/latest/fractional_index/)                                                           |
-| Python     | [ordering](https://github.com/recipeyak/recipeyak/blob/09f6d11d4ea44cc0966ee534eb53cac818c614c2/backend/recipeyak/ordering/__init__.py) |
-| TypeScript | [ordering](https://github.com/recipeyak/recipeyak/blob/09f6d11d4ea44cc0966ee534eb53cac818c614c2/frontend/src/ordering.ts)               |
+| lang       | name                                                                                                                                                                                                                        |
+| ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Javascript | [fractional-indexing](https://github.com/rocicorp/fractional-indexing), [insertBetween](https://gist.github.com/sbdchd/762e4091404a875e3a00e4d26b5aa7f9) [by evanw](https://madebyevan.com/algos/crdt-fractional-indexing/) |
+| Python     | [fractional-indexing-python](https://github.com/httpie/fractional-indexing-python), [ordering](https://github.com/recipeyak/recipeyak/blob/09f6d11d4ea44cc0966ee534eb53cac818c614c2/backend/recipeyak/ordering/__init__.py) |
+| Kotlin     | [fractional-indexing-kotlin](https://github.com/darvelo/fractional-indexing-kotlin)                                                                                                                                         |
+| Go         | [fracdex](https://github.com/rocicorp/fracdex)                                                                                                                                                                              |
+| Rust       | [fractional_index](https://docs.rs/fractional_index/latest/fractional_index/)                                                                                                                                               |
+| TypeScript | [ordering](https://github.com/recipeyak/recipeyak/blob/09f6d11d4ea44cc0966ee534eb53cac818c614c2/frontend/src/ordering.ts)                                                                                                   |
 
 And there's also a blog post from Evan Wallace:
 
