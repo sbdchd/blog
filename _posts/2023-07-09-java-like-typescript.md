@@ -60,3 +60,5 @@ for (var c : foo.toCharArray()) {
 }
 System.out.println(charList.size());
 ```
+
+Additionally, in some cases by using `var` you can avoid having to import the explicit types!
