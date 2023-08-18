@@ -2,6 +2,7 @@
 layout: post
 title: "Sharing Links"
 description: "To track, or not to track"
+last_modified_at: 2023-08-18
 ---
 
 When sharing a link from an app or website there are a few options for tracking.
@@ -11,6 +12,10 @@ Some apps include unique ids in query params when sharing, which are pretty easy
 - Instagram
 
   <https://www.instagram.com/p/Cupv5rCM55G/?igshid=MTIzZWMxMTBkOA==>
+
+- Stackoverflow
+
+  <https://stackoverflow.com/a/60463526/3720597>
 
 Some create a unique id and use that in the URL, which you can't get around easily:
 
