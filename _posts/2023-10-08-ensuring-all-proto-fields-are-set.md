@@ -100,14 +100,14 @@ service MessageService {
 
 message MessageRequest {
   string body = 1 [(buf.validate.field).required = true];
-  string from = 2 [
-    (buf.validate.field).string.min_len = 1,
-    (buf.validate.field).string.max_len = 15
-  ];
-  string to = 3 [
-    (buf.validate.field).string.min_len = 1,
-    (buf.validate.field).string.max_len = 15
-  ];
+  string from = 2 [(buf.validate.field).string = {
+    min_len: 1;
+    max_len: 15;
+  }];
+  string to = 3 [(buf.validate.field).string = {
+    min_len: 1;
+    max_len: 15;
+  }];
 }
 
 message MessageResponse {
