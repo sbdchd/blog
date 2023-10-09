@@ -132,7 +132,7 @@ public class Main {
 
         var validator = new Validator();
         try {
-            var result = validator.validate(transaction);
+            var result = validator.validate(msg);
             if (!result.violations.isEmpty()) {
                 System.out.println(result.toString());
                 System.exit(1);
