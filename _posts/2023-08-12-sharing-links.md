@@ -2,7 +2,7 @@
 layout: post
 title: "Sharing Links"
 description: "To track, or not to track"
-last_modified_at: 2023-08-18
+last_modified_at: 2023-12-09
 ---
 
 When sharing a link from an app or website there are a few options for tracking.
@@ -26,6 +26,10 @@ Some create a unique id and use that in the URL, which you can't get around easi
 - Snapchat
 
   <https://t.snapchat.com/Q8p9PR5p>
+
+- Amazon
+
+  <https://a.co/d/eyBQPCz>
 
 Some include [urchin tags](https://en.wikipedia.org/wiki/UTM_parameters) or similar but nothing unique:
 
