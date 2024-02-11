@@ -168,7 +168,7 @@ Some highlights from `_json_schema_to_typescript_type`:
 | --------------------------- | ------------------- | ------------------- |
 | `date`                      | `string`            | `string`            |
 | `datetime`                  | `Date`              | `string`            |
-| `T \| U` (union)            | `T \| U` (union)    | `T \| U` (union)    |
+| `T | U` (union)             | `T | U` (union)     | `T | U` (union)     |
 | `bool`                      | `boolean`           | `boolean`           |
 | `None`                      | `null`              | `null`              |
 | `int`                       | `number`            | `number`            |
