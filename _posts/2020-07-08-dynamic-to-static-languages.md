@@ -2,7 +2,7 @@
 layout: post
 date: 2020-07-08
 description: Type checkers for dynamic languages
-last_modified_at: 2023-02-08
+last_modified_at: 2024-05-04
 ---
 
 Which popular dynamic languages have static type systems?
