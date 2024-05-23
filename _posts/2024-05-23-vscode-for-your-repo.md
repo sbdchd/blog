@@ -10,7 +10,7 @@ I recently discovered that [Insta](https://github.com/mitsuhiko/insta) has `Go t
 
 Also saw that [Prefab](https://prefab.cloud/features/developer-tools) has a [neat VSCode integration](https://prefab.cloud/features/developer-tools/) for feature flags.
 
-After seeing that the latest release of VSCode includes [local workspace extensions](https://code.visualstudio.com/updates/v1_89#_local-workspace-extensions), I decided at add an [extension for Recipeyak](https://github.com/recipeyak/recipeyak/tree/6e6a3d39d73692937592df8b087637f50826e983/.vscode/extensions/recipeyak-dev).
+After seeing that the latest release of VSCode includes [local workspace extensions](https://code.visualstudio.com/updates/v1_89#_local-workspace-extensions), I decided to add an [extension for Recipeyak](https://github.com/recipeyak/recipeyak/tree/6e6a3d39d73692937592df8b087637f50826e983/.vscode/extensions/recipeyak-dev).
 
 ## Creating a Repo Specific VSCode Extension
 
