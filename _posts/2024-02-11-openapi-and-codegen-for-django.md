@@ -2,7 +2,7 @@
 layout: post
 title: "OpenAPI and Codegen for Django"
 description: "With help from Pydantic"
-last_modified_at: 2024-06-19
+last_modified_at: 2024-06-28
 ---
 
 RecipeYak uses a React UI that talks to a Django powered JSON API.
@@ -215,7 +215,7 @@ Here are the PRs that encompass the codegen changes:
 
 _Edit(2024-06-19)_: there are some existing projects that cover the django url -> js url generation:
 
-- https://github.com/buttondown/django-typescript-routes
-- https://github.com/vintasoftware/django-js-reverse
+- <https://github.com/buttondown/django-typescript-routes>
+- <https://github.com/vintasoftware/django-js-reverse>
 
-But they don't handle the reuqest and response body type generation.
+But they don't handle the request and response body type generation.
