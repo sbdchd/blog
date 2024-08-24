@@ -56,7 +56,7 @@ Sometimes these errors would point to the `@main` `App` struct:
 
 ![screenshot of Xcode showing an EXC_BAD_ACCESS error pointing to the App struct](/assets/swiftdata-exc-bad-access-main-struct.png)
 
-Othertimes it would be inserting into SwiftData's [`ModelContext`](https://developer.apple.com/documentation/swiftdata/modelcontext):
+Other times it would be inserting into SwiftData's [`ModelContext`](https://developer.apple.com/documentation/swiftdata/modelcontext):
 
 ![screenshot of Xcode showing an EXC_BAD_ACCESS error when calling modelContext.insert](/assets/swiftdata-exc-bad-access-model-context.png)
 
@@ -64,7 +64,7 @@ Or updating a property on a SwiftData [`Model`](<https://developer.apple.com/doc
 
 ![screenshot of Xcode showing an EXC_BAD_ACCESS error when updating a Model property](/assets/swiftdata-exc-bad-access-property-update.png)
 
-I wasn't sure what was happening and then eventually I looked at the threads dropdowns and noticed that the `syncStories` function was being run on two different threads at the same time:
+I wasn't sure what was happening and then eventually I looked at the threads drop-downs and noticed that the `syncStories` function was being run on two different threads at the same time:
 
 <div style="display:flex;justify-content:center;">
 <img src="/assets/swiftdata-threads-dropdown.png" width="300" alt="screenshot of Xcode threads inspector dropdown showing syncStories running in two different threads">
