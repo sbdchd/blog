@@ -94,7 +94,7 @@ index 9cdd07c..903e3e9 100644
 --- a/view.swift
 +++ b/view.swift
 @@ -80,7 +80,8 @@
--func syncStories(modelContext: ModelContainer) async throws {
+-func syncStories(modelContext: ModelContext) async throws {
 +func syncStories(modelContainer: ModelContainer) async throws {
 +  let modelContext = ModelContext(modelContainer)
    let stories = try await Client().postList()
