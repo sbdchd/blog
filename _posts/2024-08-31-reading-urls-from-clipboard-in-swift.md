@@ -8,7 +8,7 @@ Apollo had this nice feature where if you had a Reddit link in your clipboard an
 
 I was exploring replicating this functionality in the lastest version of Swift & SwiftUI.
 
-## `UIPasteboard.general.detectedPatterns`
+## UIPasteboard.general.detectedPatterns
 
 My first attempt was using the [`UIPastboard.generate.detectedPatterns`](https://developer.apple.com/documentation/uikit/uipasteboard#3671022) method. There are a bunch of overloads, but I settled on [the async one](https://developer.apple.com/documentation/uikit/uipasteboard/3869652-detectedpatterns):
 
@@ -30,7 +30,7 @@ When copying a link from Safari's address bar manually the `probableWebURL` woul
 
 So `detectedPatterns` is a no go.
 
-## `UIPastboard.general.hasURLs`
+## UIPastboard.general.hasURLs
 
 Turns out there's a property you can check to see if the clipboard has a url: `UIPastboard.general.hasURLs`.
 
