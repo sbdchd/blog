@@ -14,19 +14,21 @@ Having installed `uv` using `pipx`:
 pipx install uv
 ```
 
+I ran:
+
 ```shell
 uv pip install poetry_to_uv
 uv run poetry_to_uv
 ```
 
-This failed with:
+Which failed with:
 
 ```
 ❯ uv run poetry_to_uv
 error: No `project` table found in: `~/recipeyak/backend/pyproject.toml`
 ```
 
-then I tried:
+Then I tried:
 
 ```shell
 trash pyproject.toml
@@ -34,7 +36,7 @@ uv init
 uv run poetry_to_uv
 ```
 
-and got a different error:
+And got a different error:
 
 ```
 ❯ uv run poetry_to_uv
@@ -60,7 +62,7 @@ uv init
 uv add -r requirements.txt
 ```
 
-but this output some pretty gnarly looking dependencies in the `pyproject.toml`:
+But this output some pretty gnarly looking dependencies in the `pyproject.toml`:
 
 ```toml
 [project]
@@ -172,14 +174,14 @@ build-backend = "hatchling.build"
 
 ## Attempt 3: Manually add dependencies
 
-0. clean slate
+0. Clean slate
 
    ```shell
    trash pyproject.toml
    uv init
    ```
 
-1. copy `[tool.poetry.dependencies]`
+1. Copy `[tool.poetry.dependencies]`
 
    ```toml
    [tool.poetry.dependencies]
@@ -217,18 +219,18 @@ build-backend = "hatchling.build"
    pywatchman = "^2.0.0"
    ```
 
-2. set aside any dependencies that install `extras` and remove `python`
+2. Set aside any dependencies that install `extras` and remove `python`
 
    ```
    pydantic = {extras = ["email"], version = "^2.5.3"}
    ```
 
-3. update formatting from `poetry` to `uv`
+3. Update formatting from `poetry` to `uv`
 
    - `recipe-scrapers = "^14.52.0"` becomes `recipe-scrapers~=14.52.0`
    - `python-dotenv = "0.21.0"` becomes `python-dotenv==0.21.0`
 
-   a little vim to help:
+   A little vim to help:
 
    ```
    :%s/="^/\~=/g
@@ -238,15 +240,15 @@ build-backend = "hatchling.build"
    iuv run
    ```
 
-   giving:
+   Giving:
 
    ```shell
    uv run Django~=3.2.9 dj-database-url==0.4.2 gunicorn==20.1.0 django-user-sessions~=1.6 python-dotenv==0.21.0 djangorestframework-types~=0.2.0 orjson==3.8.1 psycopg2-binary~=2.9.3 boto3~=1.24.44 yarl~=1.8.1 advocate~=1.0.0 Pillow~=9.3.0 httpx~=0.23.1 asyncpg~=0.27.0 asyncpg-stubs~=0.27.0 typer~=0.7.0 structlog~=22.3.0 types-Pillow~=9.3.0 pillow-heif~=0.9.0 tldextract~=3.4.0 sentry-sdk~=1.35.0 ably~=2.0.1 recipe-scrapers~=14.52.0 algoliasearch~=3.0.0 async-timeout~=4.0.3 aiohttp~=3.9.1 ruamel-yaml~=0.18.5 pydantic-settings~=2.1.0 jsonref~=1.1.0 pywatchman~=2.0.0
    ```
 
-   which runs successfully!
+   Which runs successfully!
 
-4. repeat steps 1-3 for the dev dependencies
+4. Repeat steps 1-3 for the dev dependencies
 
    ```toml
    [tool.poetry.dev-dependencies]
@@ -274,16 +276,16 @@ build-backend = "hatchling.build"
    uv add --dev pytest==7.2.0 pytest-django==4.5.2 ipdb~=0.13.9 django-types~=0.19.1 types-PyYAML~=6.0.0 types-requests~=2.25.11 syrupy~=3.0.5 types-urllib3~=1.26.23 types-dj-database-url~=1.0.0 mypy~=1.7.0 bpython~=0.24 ruff~=0.3.5 pytest-xdist~=3.5.0
    ```
 
-5. handle the dependencies with `extras`
+5. Handle the dependencies with `extras`
 
    ```shell
    uv add pydantic~=2.5.3 --extra email
    uv add --dev boto3-stubs~=1.24.44 --extra s3
    ```
 
-6. add back the existing stuff to `pyproject.toml` deleted in the first part
+6. Add back the existing stuff to `pyproject.toml` deleted in the first part
 
-7. update authors syntax
+7. Update authors syntax
 
    I ran `uv sync` and hit:
 
@@ -387,7 +389,7 @@ build-backend = "hatchling.build"
    build-backend = "hatchling.build"
    ```
 
-   and ran `uv sync` giving:
+   And ran `uv sync` giving:
 
    ```
    Resolved 143 packages in 10ms
@@ -414,7 +416,7 @@ build-backend = "hatchling.build"
    ---
    ```
 
-   after checking out the docs, I updated the `pyproject.toml` with:
+   After checking out the docs, I updated the `pyproject.toml` with:
 
    ```toml
    [tool.setuptools]
