@@ -2,7 +2,7 @@
 layout: post
 title: "Are Parser Generators Common? No."
 description: Handwritten vs generated language parsers
-last_modified_at: 2021-08-22
+last_modified_at: 2024-12-19
 ---
 
 So there are parser generators like Yacc, Bison, and friends, and
@@ -11,7 +11,7 @@ there are also handwritten parsers.
 How often are parser generators used in mainstream languages compared to
 handwritten ones?
 
-After looking through some languages/implementations, I found 16/55 used generated
+After looking through some languages/implementations, I found 15/55 used generated
 parsers.
 
 | Language                    | Parser Type                                                                                                                                                                              |
@@ -56,7 +56,7 @@ parsers.
 | Perl5                       | [Generated](https://github.com/Perl/perl5/blob/5feab405f7eeeed2157687018ee9aad3088b4a64/perly.y)                                                                                         |
 | Perl6                       | [Handwritten](https://github.com/rakudo/rakudo/blob/19edeafd1cafc52d757e63fe1119ce5b7a5e34f9/src/Perl6/Actions.nqp)                                                                      |
 | PyPy                        | [Handwritten](https://bitbucket.org/pypy/pypy/src/314ddd2d83c5e467aed4f64ab4b8b2fc0047540b/pypy/interpreter/pyparser/parser.py?at=default&fileviewer=file-view-default)                  |
-| Ruby                        | [Generated](https://github.com/ruby/ruby/blob/e7db9df9820fd891742dba7ca977754e5d0c14ca/parse.y)                                                                                          |
+| Ruby                        | [Handwritten](https://github.com/ruby/prism/blob/4507b6daec12fd14aa857df0ab250d469304feee/docs/design.md)                                                                                |
 | Rust                        | [Handwritten](https://github.com/rust-lang/rust/blob/79fcc58b24d85743d025fd880fca55748662ed3e/src/libsyntax/parse/parser.rs)                                                             |
 | Scala                       | [Handwritten](https://github.com/scala/scala/blob/b75bfc3b78dbc1b4f254c86d68c2289f2833ecd9/src/compiler/scala/tools/nsc/ast/parser/Parsers.scala)                                        |
 | Scss                        | [Handwritten](https://github.com/sass/dart-sass/blob/fd7eec9eacb3ac1b8c46388a66220c8f7a77ae2b/lib/src/parse/stylesheet.dart)                                                             |
