@@ -65,3 +65,4 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | Ace        | 3     |
 | HTML       | 3     |
 | XTerm      | 2     |
+| CodeFlask  | 1     |
