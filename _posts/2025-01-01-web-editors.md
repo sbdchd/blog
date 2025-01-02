@@ -6,45 +6,45 @@ description: "A review"
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
 
-| name                      | editor                             | url                                                              |
-| ------------------------- | ---------------------------------- | ---------------------------------------------------------------- |
-| AST Explorer              | [CodeMirror][codemirror]           | <https://astexplorer.net>                                        |
-| AWS Lambda                | [Monaco][monaco]                   | <https://console.aws.amazon.com/lambda/>                         |
-| Black                     | [Ace][ace]                         | <https://black.vercel.app/>                                      |
-| Checkly                   | [Monaco][monaco]                   | <https://www.checklyhq.com>                                      |
-| Cloudflare Workers        | [Monaco][monaco]                   | <https://cloudflare.com>                                         |
-| CodePen                   | [CodeMirror][codemirror]           | <https://codepen.io>                                             |
-| CodeSandbox               | [Monaco][monaco]                   | <https://codesandbox.io>                                         |
-| Compiler Explorer         | [Monaco][monaco]                   | <https://godbolt.org>                                            |
-| DB Fiddle                 | [CodeMirror][codemirror]           | <https://db-fiddle.com>                                          |
-| Elm Playground            | [CodeMirror][codemirror]           | <https://elm-lang.org/try>                                       |
-| GCP Functions             | [Monaco][monaco]                   | <https://console.cloud.google.com/functions/>                    |
-| Gleam                     | [CodeFlask][codeflask]             | <https://playground.gleam.run>                                   |
-| Glitch                    | [CodeMirror][codemirror]           | <https://glitch.com/>                                            |
-| Go                        | [`<textarea>`][textarea]           | <https://go.dev/play/>                                           |
-| JS Bin                    | [CodeMirror][codemirror]           | <https://jsbin.com/>                                             |
-| JSFiddle                  | [CodeMirror][codemirror]           | <https://jsfiddle.net>                                           |
-| MDN Playground            | [CodeMirror][codemirror]           | <https://developer.mozilla.org/en-US/play>                       |
-| MotherDuck                | [CodeMirror][codemirror]           | <https://motherduck.com>                                         |
-| Neon                      | [Ace][ace]                         | <https://console.neon.tech/>                                     |
-| Neon Playground           | [CodeMirror][codemirror]           | <https://neon.tech/demos/playground>                             |
-| PlanetScale               | [`<textarea>`][textarea]           | <https://app.planetscale.com>                                    |
-| Postgres Playground       | [XTerm][xterm]                     | <https://www.crunchydata.com/developers/playground/>             |
-| Prettier                  | [CodeMirror][codemirror]           | <https://prettier.io/playground/>                                |
-| React Compiler Playground | [Monaco][monaco]                   | <https://playground.react.dev/>                                  |
-| Redis Docs                | [`<input type="text">`][inputtext] | <https://redis.io/docs/latest/commands/hset/>                    |
-| Replit                    | [CodeMirror][codemirror]           | <https://replit.com/>                                            |
-| Ruff                      | [Monaco][monaco]                   | <https://play.ruff.rs>                                           |
-| Rust                      | [Ace][ace]                         | <https://play.rust-lang.org/>                                    |
-| Sorbet                    | [Monaco][monaco]                   | <https://sorbet.run>                                             |
-| SQL Fiddle                | [CodeMirror][codemirror]           | <https://sqlfiddle.com>                                          |
-| Stripe Sigma              | [CodeMirror][codemirror]           | <https://dashboard.stripe.com/sigma/queries>                     |
-| Swift Playground          | [Monaco][monaco], [XTerm][xterm]   | <https://swiftfiddle.com>                                        |
-| Timescale                 | [Monaco][monaco]                   | <https://console.cloud.timescale.com/dashboard/services?popsql=> |
-| Twilio Functions          | [Monaco][monaco]                   | <https://console.twilio.com/develop/functions>                   |
-| TypeScript                | [Monaco][monaco]                   | <https://www.typescriptlang.org/play/>                           |
-| typescript-eslint         | [Monaco][monaco]                   | <https://typescript-eslint.io/play>                              |
-| val town                  | [CodeMirror][codemirror]           | <https://www.val.town>                                           |
+| name                                                                        | editor                             |
+| --------------------------------------------------------------------------- | ---------------------------------- |
+| [AST Explorer](https://astexplorer.net)                                     | [CodeMirror][codemirror]           |
+| [AWS Lambda](https://console.aws.amazon.com/lambda/)                        | [Monaco][monaco]                   |
+| [Black](https://black.vercel.app/)                                          | [Ace][ace]                         |
+| [Checkly](https://www.checklyhq.com)                                        | [Monaco][monaco]                   |
+| [Cloudflare Workers](https://cloudflare.com)                                | [Monaco][monaco]                   |
+| [CodePen](https://codepen.io)                                               | [CodeMirror][codemirror]           |
+| [CodeSandbox](https://codesandbox.io)                                       | [Monaco][monaco]                   |
+| [Compiler Explorer](https://godbolt.org)                                    | [Monaco][monaco]                   |
+| [DB Fiddle](https://db-fiddle.com)                                          | [CodeMirror][codemirror]           |
+| [Elm Playground](https://elm-lang.org/try)                                  | [CodeMirror][codemirror]           |
+| [GCP Functions](https://console.cloud.google.com/functions/)                | [Monaco][monaco]                   |
+| [Gleam](https://playground.gleam.run)                                       | [CodeFlask][codeflask]             |
+| [Glitch](https://glitch.com/)                                               | [CodeMirror][codemirror]           |
+| [Go](https://go.dev/play/)                                                  | [`<textarea>`][textarea]           |
+| [JS Bin](https://jsbin.com/)                                                | [CodeMirror][codemirror]           |
+| [JSFiddle](https://jsfiddle.net)                                            | [CodeMirror][codemirror]           |
+| [MDN Playground](https://developer.mozilla.org/en-US/play)                  | [CodeMirror][codemirror]           |
+| [MotherDuck](https://motherduck.com)                                        | [CodeMirror][codemirror]           |
+| [Neon](https://console.neon.tech/)                                          | [Ace][ace]                         |
+| [Neon Playground](https://neon.tech/demos/playground)                       | [CodeMirror][codemirror]           |
+| [PlanetScale](https://app.planetscale.com)                                  | [`<textarea>`][textarea]           |
+| [Postgres Playground](https://www.crunchydata.com/developers/playground/)   | [XTerm][xterm]                     |
+| [Prettier](https://prettier.io/playground/)                                 | [CodeMirror][codemirror]           |
+| [React Compiler Playground](https://playground.react.dev/)                  | [Monaco][monaco]                   |
+| [Redis Docs](https://redis.io/docs/latest/commands/hset/)                   | [`<input type="text">`][inputtext] |
+| [Replit](https://replit.com/)                                               | [CodeMirror][codemirror]           |
+| [Ruff](https://play.ruff.rs)                                                | [Monaco][monaco]                   |
+| [Rust](https://play.rust-lang.org/)                                         | [Ace][ace]                         |
+| [Sorbet](https://sorbet.run)                                                | [Monaco][monaco]                   |
+| [SQL Fiddle](https://sqlfiddle.com)                                         | [CodeMirror][codemirror]           |
+| [Stripe Sigma](https://dashboard.stripe.com/sigma/queries)                  | [CodeMirror][codemirror]           |
+| [Swift Playground](https://swiftfiddle.com)                                 | [Monaco][monaco], [XTerm][xterm]   |
+| [Timescale](https://console.cloud.timescale.com/dashboard/services?popsql=) | [Monaco][monaco]                   |
+| [Twilio Functions](https://console.twilio.com/develop/functions)            | [Monaco][monaco]                   |
+| [TypeScript](https://www.typescriptlang.org/play/)                          | [Monaco][monaco]                   |
+| [typescript-eslint](https://typescript-eslint.io/play)                      | [Monaco][monaco]                   |
+| [val town](https://www.val.town)                                            | [CodeMirror][codemirror]           |
 
 [monaco]: https://microsoft.github.io/monaco-editor/
 [codeflask]: https://www.npmjs.com/package/codeflask
