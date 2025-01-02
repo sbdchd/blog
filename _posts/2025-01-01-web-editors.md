@@ -24,10 +24,11 @@ Before building out a playground for a language server, I decided to take a look
 | [Go](https://go.dev/play/)                                                  | [`<textarea>`][textarea]           |
 | [JS Bin](https://jsbin.com/)                                                | [CodeMirror][codemirror]           |
 | [JSFiddle](https://jsfiddle.net)                                            | [CodeMirror][codemirror]           |
+| [Jupyter](https://jupyter.org/try-jupyter/lab/)                             | [CodeMirror][codemirror]           |
 | [MDN Playground](https://developer.mozilla.org/en-US/play)                  | [CodeMirror][codemirror]           |
 | [MotherDuck](https://motherduck.com)                                        | [CodeMirror][codemirror]           |
-| [Neon](https://console.neon.tech/)                                          | [Ace][ace]                         |
 | [Neon Playground](https://neon.tech/demos/playground)                       | [CodeMirror][codemirror]           |
+| [Neon](https://console.neon.tech/)                                          | [Ace][ace]                         |
 | [PlanetScale](https://app.planetscale.com)                                  | [`<textarea>`][textarea]           |
 | [Postgres Playground](https://www.crunchydata.com/developers/playground/)   | [XTerm][xterm]                     |
 | [Prettier](https://prettier.io/playground/)                                 | [CodeMirror][codemirror]           |
@@ -42,8 +43,8 @@ Before building out a playground for a language server, I decided to take a look
 | [Swift Playground](https://swiftfiddle.com)                                 | [Monaco][monaco], [XTerm][xterm]   |
 | [Timescale](https://console.cloud.timescale.com/dashboard/services?popsql=) | [Monaco][monaco]                   |
 | [Twilio Functions](https://console.twilio.com/develop/functions)            | [Monaco][monaco]                   |
-| [TypeScript](https://www.typescriptlang.org/play/)                          | [Monaco][monaco]                   |
 | [typescript-eslint](https://typescript-eslint.io/play)                      | [Monaco][monaco]                   |
+| [TypeScript](https://www.typescriptlang.org/play/)                          | [Monaco][monaco]                   |
 | [val town](https://www.val.town)                                            | [CodeMirror][codemirror]           |
 
 [monaco]: https://microsoft.github.io/monaco-editor/
@@ -60,7 +61,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name       | count |
 | ---------- | ----- |
-| CodeMirror | 15    |
+| CodeMirror | 16    |
 | Monaco     | 14    |
 | Ace        | 3     |
 | HTML       | 3     |
