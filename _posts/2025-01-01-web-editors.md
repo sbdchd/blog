@@ -20,6 +20,7 @@ Before building out a playground for a language server, I decided to take a look
 | [DB Fiddle](https://db-fiddle.com)                                          | [CodeMirror][codemirror]           |
 | [Elm Playground](https://elm-lang.org/try)                                  | [CodeMirror][codemirror]           |
 | [GCP Functions](https://console.cloud.google.com/functions/)                | [Monaco][monaco]                   |
+| [GitHub](https://github.com)                                                | [CodeMirror][codemirror]           |
 | [Gleam](https://playground.gleam.run)                                       | [CodeFlask][codeflask]             |
 | [Glitch](https://glitch.com/)                                               | [CodeMirror][codemirror]           |
 | [Go](https://go.dev/play/)                                                  | [`<textarea>`][textarea]           |
@@ -63,7 +64,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name       | count |
 | ---------- | ----- |
-| CodeMirror | 16    |
+| CodeMirror | 17    |
 | Monaco     | 15    |
 | Ace        | 3     |
 | HTML       | 3     |
