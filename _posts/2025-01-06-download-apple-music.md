@@ -18,7 +18,7 @@ Enable `Automatic Downloads` in `Settings > Apps > Music > Downloads`
 
 ### 2. Download All Music
 
-1.  Create a playlist will your entire library
+1.  Create a playlist with your entire library
 
     On macOS, navigate to the Songs view, select all via <kbd>CMD + a</kbd>, right click and click `Add to Playlist > New Playlist`.
 
