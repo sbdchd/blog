@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Download Library in Apple Music"
+title: "Download Your Library in Apple Music"
 description: "macOS + iOS"
 ---
 
