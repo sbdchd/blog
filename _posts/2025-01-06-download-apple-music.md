@@ -26,7 +26,7 @@ Enable `Automatic Downloads` in `Settings > Apps > Music > Downloads`
 
     **macOS**
 
-    Navigate to the playlist, at the top click the `...` button and then click `Download`.
+    Right click on the playlist and click `Download`.
 
     **iOS**
 
