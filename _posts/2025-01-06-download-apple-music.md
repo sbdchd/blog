@@ -8,8 +8,6 @@ Make all your music available for offline playback.
 
 ### 1. Enable Automatic Downloads
 
-Ensure music you add will automatically download.
-
 **macOS**
 
 Enable `Automatic Downloads` in Settings <kbd>CMD + ,</kbd>
