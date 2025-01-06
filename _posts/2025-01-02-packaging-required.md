@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Packaging Required"
-description: "Enforcing Boundaries Through Visiblity"
+description: "Enforcing Boundaries Through Visibility"
 ---
 
 ## Overview
@@ -45,4 +45,4 @@ But if those systems aren't your style, you could always build something yoursel
 
 ## Conclusion
 
-Visiblity rules help enforce [boundaries](https://www.destroyallsoftware.com/screencasts/catalog/functional-core-imperative-shell) in code, avoiding a ball of mud.
+Visibility rules help enforce [boundaries](https://www.destroyallsoftware.com/screencasts/catalog/functional-core-imperative-shell) in code, avoiding a ball of mud.
