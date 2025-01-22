@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-01-13
+last_modified_at: 2025-01-21
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -44,6 +44,7 @@ Before building out a playground for a language server, I decided to take a look
 | [SQL Fiddle](https://sqlfiddle.com)                                         | [CodeMirror][codemirror]           |
 | [StackBlitz](https://stackblitz.com/edit/stylex-next?file=README.md)        | [Monaco][monaco], [XTerm][xterm]   |
 | [Stripe Sigma](https://dashboard.stripe.com/sigma/queries)                  | [CodeMirror][codemirror]           |
+| [SWI Prolog](https://swish.swi-prolog.org)                                  | [CodeMirror][codemirror]           |
 | [Swift Playground](https://swiftfiddle.com)                                 | [Monaco][monaco], [XTerm][xterm]   |
 | [Timescale](https://console.cloud.timescale.com/dashboard/services?popsql=) | [Monaco][monaco]                   |
 | [Tinybird](https://www.tinybird.co)                                         | [CodeMirror][codemirror]           |
@@ -66,7 +67,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name       | count |
 | ---------- | ----- |
-| CodeMirror | 19    |
+| CodeMirror | 20    |
 | Monaco     | 15    |
 | Ace        | 3     |
 | HTML       | 3     |
