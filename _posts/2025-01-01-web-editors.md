@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-01-22
+last_modified_at: 2025-01-23
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -19,6 +19,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Compiler Explorer](https://godbolt.org)                                    | [Monaco][monaco]                   |
 | [DB Fiddle](https://db-fiddle.com)                                          | [CodeMirror][codemirror]           |
 | [Elm Playground](https://elm-lang.org/try)                                  | [CodeMirror][codemirror]           |
+| [esbuild try](esbuild.github.io/try/)                                       | [`<textarea>`][textarea]           |
 | [GCP Functions](https://console.cloud.google.com/functions/)                | [Monaco][monaco]                   |
 | [GitHub](https://github.com)                                                | [CodeMirror][codemirror]           |
 | [Gleam](https://playground.gleam.run)                                       | [CodeFlask][codeflask]             |
@@ -32,6 +33,7 @@ Before building out a playground for a language server, I decided to take a look
 | [MotherDuck](https://motherduck.com)                                        | [CodeMirror][codemirror]           |
 | [Neon Playground](https://neon.tech/demos/playground)                       | [CodeMirror][codemirror]           |
 | [Neon](https://console.neon.tech/)                                          | [Ace][ace]                         |
+| [Parcel Repl](https://repl.parceljs.org)                                    | [CodeMirror][codemirror]           |
 | [PlanetScale](https://app.planetscale.com)                                  | [`<textarea>`][textarea]           |
 | [Postgres Playground](https://www.crunchydata.com/developers/playground/)   | [XTerm][xterm]                     |
 | [Prettier](https://prettier.io/playground/)                                 | [CodeMirror][codemirror]           |
@@ -68,9 +70,9 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name       | count |
 | ---------- | ----- |
-| CodeMirror | 21    |
+| CodeMirror | 22    |
 | Monaco     | 15    |
 | Ace        | 3     |
-| HTML       | 3     |
+| HTML       | 4     |
 | XTerm      | 3     |
 | CodeFlask  | 1     |
