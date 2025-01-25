@@ -19,6 +19,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Compiler Explorer](https://godbolt.org)                                    | [Monaco][monaco]                   |
 | [Databricks](https://www.databricks.com)                                    | [Monaco][monaco]                   |
 | [DB Fiddle](https://db-fiddle.com)                                          | [CodeMirror][codemirror]           |
+| [Deno Deploy](https://dash.deno.com)                                        | [Monaco][monaco]                   |
 | [Elm Playground](https://elm-lang.org/try)                                  | [CodeMirror][codemirror]           |
 | [esbuild try](esbuild.github.io/try/)                                       | [`<textarea>`][textarea]           |
 | [GCP Functions](https://console.cloud.google.com/functions/)                | [Monaco][monaco]                   |
@@ -26,6 +27,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Gleam](https://playground.gleam.run)                                       | [CodeFlask][codeflask]             |
 | [Glitch](https://glitch.com/)                                               | [CodeMirror][codemirror]           |
 | [Go](https://go.dev/play/)                                                  | [`<textarea>`][textarea]           |
+| [Heroku Dataclips](https://data.heroku.com/dataclips/create)                | [Monaco][monaco]                   |
 | [JS Bin](https://jsbin.com/)                                                | [CodeMirror][codemirror]           |
 | [JSFiddle](https://jsfiddle.net)                                            | [CodeMirror][codemirror]           |
 | [Jupyter](https://jupyter.org/try-jupyter/lab/)                             | [CodeMirror][codemirror]           |
@@ -75,7 +77,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | name       | count |
 | ---------- | ----- |
 | CodeMirror | 23    |
-| Monaco     | 17    |
+| Monaco     | 19    |
 | Ace        | 4     |
 | HTML       | 4     |
 | XTerm      | 3     |
