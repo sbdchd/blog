@@ -17,6 +17,7 @@ Before building out a playground for a language server, I decided to take a look
 | [CodePen](https://codepen.io)                                               | [CodeMirror][codemirror]           |
 | [CodeSandbox](https://codesandbox.io)                                       | [Monaco][monaco]                   |
 | [Compiler Explorer](https://godbolt.org)                                    | [Monaco][monaco]                   |
+| [Databricks](https://www.databricks.com)                                    | [Monaco][monaco]                   |
 | [DB Fiddle](https://db-fiddle.com)                                          | [CodeMirror][codemirror]           |
 | [Elm Playground](https://elm-lang.org/try)                                  | [CodeMirror][codemirror]           |
 | [esbuild try](esbuild.github.io/try/)                                       | [`<textarea>`][textarea]           |
@@ -73,7 +74,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | name       | count |
 | ---------- | ----- |
 | CodeMirror | 22    |
-| Monaco     | 16    |
+| Monaco     | 17    |
 | Ace        | 4     |
 | HTML       | 4     |
 | XTerm      | 3     |
