@@ -46,6 +46,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Ruff](https://play.ruff.rs)                                                | [Monaco][monaco]                   |
 | [Rust](https://play.rust-lang.org/)                                         | [Ace][ace]                         |
 | [Shadertoy](https://www.shadertoy.com/view/Xds3zN)                          | [CodeMirror][codemirror]           |
+| [Snowflake](https://www.snowflake.com/)                                     | [CodeMirror][codemirror]           |
 | [Sorbet](https://sorbet.run)                                                | [Monaco][monaco]                   |
 | [SQL Fiddle](https://sqlfiddle.com)                                         | [CodeMirror][codemirror]           |
 | [StackBlitz](https://stackblitz.com/edit/stylex-next?file=README.md)        | [Monaco][monaco], [XTerm][xterm]   |
@@ -73,7 +74,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name       | count |
 | ---------- | ----- |
-| CodeMirror | 22    |
+| CodeMirror | 23    |
 | Monaco     | 17    |
 | Ace        | 4     |
 | HTML       | 4     |
