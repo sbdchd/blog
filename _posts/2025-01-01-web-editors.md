@@ -38,6 +38,7 @@ Before building out a playground for a language server, I decided to take a look
 | [mypy Playground](https://mypy-play.net/)                                   | [Ace][ace]                         |
 | [Neon Playground](https://neon.tech/demos/playground)                       | [CodeMirror][codemirror]           |
 | [Neon](https://console.neon.tech/)                                          | [Ace][ace]                         |
+| [Nim Playground](https://play.nim-lang.org/)                                | [CodeMirror][codemirror]           |
 | [Parcel Repl](https://repl.parceljs.org)                                    | [CodeMirror][codemirror]           |
 | [PlanetScale](https://app.planetscale.com)                                  | [`<textarea>`][textarea]           |
 | [Postgres Playground](https://www.crunchydata.com/developers/playground/)   | [XTerm][xterm]                     |
@@ -77,7 +78,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name       | count |
 | ---------- | ----- |
-| CodeMirror | 24    |
+| CodeMirror | 25    |
 | Monaco     | 19    |
 | Ace        | 4     |
 | HTML       | 4     |
