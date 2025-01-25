@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-01-23
+last_modified_at: 2025-01-24
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -31,12 +31,14 @@ Before building out a playground for a language server, I decided to take a look
 | [Kotlin Playground](https://play.kotlinlang.org/)                           | [CodeMirror][codemirror]           |
 | [MDN Playground](https://developer.mozilla.org/en-US/play)                  | [CodeMirror][codemirror]           |
 | [MotherDuck](https://motherduck.com)                                        | [CodeMirror][codemirror]           |
+| [mypy Playground](https://mypy-play.net/)                                   | [Ace][ace]                         |
 | [Neon Playground](https://neon.tech/demos/playground)                       | [CodeMirror][codemirror]           |
 | [Neon](https://console.neon.tech/)                                          | [Ace][ace]                         |
 | [Parcel Repl](https://repl.parceljs.org)                                    | [CodeMirror][codemirror]           |
 | [PlanetScale](https://app.planetscale.com)                                  | [`<textarea>`][textarea]           |
 | [Postgres Playground](https://www.crunchydata.com/developers/playground/)   | [XTerm][xterm]                     |
 | [Prettier](https://prettier.io/playground/)                                 | [CodeMirror][codemirror]           |
+| [Pyright Playground](https://pyright-play.net/)                             | [Monaco][monaco]                   |
 | [React Compiler Playground](https://playground.react.dev/)                  | [Monaco][monaco]                   |
 | [Redis Docs](https://redis.io/docs/latest/commands/hset/)                   | [`<input type="text">`][inputtext] |
 | [Replit](https://replit.com/)                                               | [CodeMirror][codemirror]           |
@@ -71,8 +73,8 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | name       | count |
 | ---------- | ----- |
 | CodeMirror | 22    |
-| Monaco     | 15    |
-| Ace        | 3     |
+| Monaco     | 16    |
+| Ace        | 4     |
 | HTML       | 4     |
 | XTerm      | 3     |
 | CodeFlask  | 1     |
