@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-01-24
+last_modified_at: 2025-01-27
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -10,7 +10,10 @@ Before building out a playground for a language server, I decided to take a look
 | name                                                                        | editor                             |
 | --------------------------------------------------------------------------- | ---------------------------------- |
 | [AST Explorer](https://astexplorer.net)                                     | [CodeMirror][codemirror]           |
+| [AWS Athena](http://console.aws.amazon.com/athena)                          | [Ace][ace]                         |
+| [AWS CloudShell](https://console.aws.amazon.com/cloudshell/)                | [Ace][ace]                         |
 | [AWS Lambda](https://console.aws.amazon.com/lambda/)                        | [Monaco][monaco]                   |
+| [AWS Redshift](https://console.aws.amazon.com/sqlworkbench/home)            | [Monaco][monaco]                   |
 | [Black](https://black.vercel.app/)                                          | [Ace][ace]                         |
 | [Checkly](https://www.checklyhq.com)                                        | [Monaco][monaco]                   |
 | [Cloudflare Workers](https://cloudflare.com)                                | [Monaco][monaco]                   |
@@ -50,6 +53,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Ruff](https://play.ruff.rs)                                                | [Monaco][monaco]                   |
 | [Rust](https://play.rust-lang.org/)                                         | [Ace][ace]                         |
 | [Shadertoy](https://www.shadertoy.com/view/Xds3zN)                          | [CodeMirror][codemirror]           |
+| [SingleStore](https://www.singlestore.com)                                  | [Monaco][monaco]                   |
 | [Snowflake](https://www.snowflake.com/)                                     | [CodeMirror][codemirror]           |
 | [Sorbet](https://sorbet.run)                                                | [Monaco][monaco]                   |
 | [SQL Fiddle](https://sqlfiddle.com)                                         | [CodeMirror][codemirror]           |
@@ -79,8 +83,8 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | name       | count |
 | ---------- | ----- |
 | CodeMirror | 25    |
-| Monaco     | 19    |
-| Ace        | 4     |
+| Monaco     | 21    |
+| Ace        | 6     |
 | HTML       | 4     |
 | XTerm      | 3     |
 | CodeFlask  | 1     |
