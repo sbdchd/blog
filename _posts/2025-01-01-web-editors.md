@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-01-28
+last_modified_at: 2025-01-31
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -26,9 +26,9 @@ Before building out a playground for a language server, I decided to take a look
 | [EDA Playground](https://edaplayground.com)                                   | [CodeMirror][codemirror]           |
 | [Elm Playground](https://elm-lang.org/try)                                    | [CodeMirror][codemirror]           |
 | [esbuild try](esbuild.github.io/try/)                                         | [`<textarea>`][textarea]           |
-| [GCP Functions](https://console.cloud.google.com/functions/)                  | [Monaco][monaco]                   |
 | [GCP Cloud Shell Editor](https://console.cloud.google.com/cloudshelleditor)   | [Monaco][monaco]                   |
 | [GCP Cloud Shell Terminal](https://console.cloud.google.com/cloudshelleditor) | [Xterm][xterm]                     |
+| [GCP Functions](https://console.cloud.google.com/functions/)                  | [Monaco][monaco]                   |
 | [GitHub](https://github.com)                                                  | [CodeMirror][codemirror]           |
 | [Gleam](https://playground.gleam.run)                                         | [CodeFlask][codeflask]             |
 | [Glitch](https://glitch.com/)                                                 | [CodeMirror][codemirror]           |
@@ -38,6 +38,7 @@ Before building out a playground for a language server, I decided to take a look
 | [JSFiddle](https://jsfiddle.net)                                              | [CodeMirror][codemirror]           |
 | [Jupyter](https://jupyter.org/try-jupyter/lab/)                               | [CodeMirror][codemirror]           |
 | [Kotlin Playground](https://play.kotlinlang.org/)                             | [CodeMirror][codemirror]           |
+| [Lightning CSS Playground](https://lightningcss.dev/playground/)              | [CodeMirror][codemirror]           |
 | [MDN Playground](https://developer.mozilla.org/en-US/play)                    | [CodeMirror][codemirror]           |
 | [MotherDuck](https://motherduck.com)                                          | [CodeMirror][codemirror]           |
 | [mypy Playground](https://mypy-play.net/)                                     | [Ace][ace]                         |
@@ -65,6 +66,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Stripe Sigma](https://dashboard.stripe.com/sigma/queries)                    | [CodeMirror][codemirror]           |
 | [SWI Prolog](https://swish.swi-prolog.org)                                    | [CodeMirror][codemirror]           |
 | [Swift Playground](https://swiftfiddle.com)                                   | [Monaco][monaco], [XTerm][xterm]   |
+| [Tailwind Play](https://lightningcss.dev/playground/)                         | [Monaco][monaco]                   |
 | [Timescale](https://console.cloud.timescale.com/dashboard/services?popsql=)   | [Monaco][monaco]                   |
 | [Tinybird](https://www.tinybird.co)                                           | [CodeMirror][codemirror]           |
 | [Twilio Functions](https://console.twilio.com/develop/functions)              | [Monaco][monaco]                   |
@@ -86,8 +88,8 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name       | count |
 | ---------- | ----- |
-| CodeMirror | 27    |
-| Monaco     | 22    |
+| CodeMirror | 28    |
+| Monaco     | 23    |
 | Ace        | 6     |
 | HTML       | 4     |
 | XTerm      | 4     |
