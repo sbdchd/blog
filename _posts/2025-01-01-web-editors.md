@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-01-31
+last_modified_at: 2025-02-05
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -48,6 +48,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Observable](https://observablehq.com/)                                       | [Codemirror][codemirror]           |
 | [Parcel Repl](https://repl.parceljs.org)                                      | [CodeMirror][codemirror]           |
 | [PlanetScale](https://app.planetscale.com)                                    | [`<textarea>`][textarea]           |
+| [Porffor](https://porffor.dev)                                                | [Monaco][monaco]                   |
 | [Postgres Playground](https://www.crunchydata.com/developers/playground/)     | [XTerm][xterm]                     |
 | [Prettier](https://prettier.io/playground/)                                   | [CodeMirror][codemirror]           |
 | [Pyright Playground](https://pyright-play.net/)                               | [Monaco][monaco]                   |
@@ -89,7 +90,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | name       | count |
 | ---------- | ----- |
 | CodeMirror | 28    |
-| Monaco     | 23    |
+| Monaco     | 24    |
 | Ace        | 6     |
 | HTML       | 4     |
 | XTerm      | 4     |
