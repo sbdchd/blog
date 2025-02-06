@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-02-05
+last_modified_at: 2025-02-06
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -26,6 +26,7 @@ Before building out a playground for a language server, I decided to take a look
 | [EDA Playground](https://edaplayground.com)                                   | [CodeMirror][codemirror]           |
 | [Elm Playground](https://elm-lang.org/try)                                    | [CodeMirror][codemirror]           |
 | [esbuild try](esbuild.github.io/try/)                                         | [`<textarea>`][textarea]           |
+| [ESLint Playground](https://eslint.org/play/)                                 | [CodeMirror][codemirror]           |
 | [GCP Cloud Shell Editor](https://console.cloud.google.com/cloudshelleditor)   | [Monaco][monaco]                   |
 | [GCP Cloud Shell Terminal](https://console.cloud.google.com/cloudshelleditor) | [Xterm][xterm]                     |
 | [GCP Functions](https://console.cloud.google.com/functions/)                  | [Monaco][monaco]                   |
@@ -89,7 +90,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name       | count |
 | ---------- | ----- |
-| CodeMirror | 28    |
+| CodeMirror | 29    |
 | Monaco     | 24    |
 | Ace        | 6     |
 | HTML       | 4     |
