@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-02-06
+last_modified_at: 2025-02-08
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -34,6 +34,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Gleam](https://playground.gleam.run)                                         | [CodeFlask][codeflask]             |
 | [Glitch](https://glitch.com/)                                                 | [CodeMirror][codemirror]           |
 | [Go](https://go.dev/play/)                                                    | [`<textarea>`][textarea]           |
+| [Hakana](https://hakana.dev)                                                  | [CodeMirror][codemirror]           |
 | [Heroku Dataclips](https://data.heroku.com/dataclips/create)                  | [Monaco][monaco]                   |
 | [JS Bin](https://jsbin.com/)                                                  | [CodeMirror][codemirror]           |
 | [JSFiddle](https://jsfiddle.net)                                              | [CodeMirror][codemirror]           |
@@ -46,12 +47,13 @@ Before building out a playground for a language server, I decided to take a look
 | [Neon Playground](https://neon.tech/demos/playground)                         | [CodeMirror][codemirror]           |
 | [Neon](https://console.neon.tech/)                                            | [Ace][ace]                         |
 | [Nim Playground](https://play.nim-lang.org/)                                  | [CodeMirror][codemirror]           |
-| [Observable](https://observablehq.com/)                                       | [Codemirror][codemirror]           |
+| [Observable](https://observablehq.com/)                                       | [CodeMirror][codemirror]           |
 | [Parcel Repl](https://repl.parceljs.org)                                      | [CodeMirror][codemirror]           |
 | [PlanetScale](https://app.planetscale.com)                                    | [`<textarea>`][textarea]           |
 | [Porffor](https://porffor.dev)                                                | [Monaco][monaco]                   |
 | [Postgres Playground](https://www.crunchydata.com/developers/playground/)     | [XTerm][xterm]                     |
 | [Prettier](https://prettier.io/playground/)                                   | [CodeMirror][codemirror]           |
+| [Psalm](https://psalm.dev)                                                    | [CodeMirror][codemirror]           |
 | [Pyright Playground](https://pyright-play.net/)                               | [Monaco][monaco]                   |
 | [React Compiler Playground](https://playground.react.dev/)                    | [Monaco][monaco]                   |
 | [Redis Docs](https://redis.io/docs/latest/commands/hset/)                     | [`<input type="text">`][inputtext] |
@@ -90,7 +92,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name       | count |
 | ---------- | ----- |
-| CodeMirror | 29    |
+| CodeMirror | 31    |
 | Monaco     | 24    |
 | Ace        | 6     |
 | HTML       | 4     |
