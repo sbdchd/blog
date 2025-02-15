@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-02-14
+last_modified_at: 2025-02-15
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -43,6 +43,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Kotlin Playground](https://play.kotlinlang.org/)                                 | [CodeMirror][codemirror]           |
 | [Lightning CSS Playground](https://lightningcss.dev/playground/)                  | [CodeMirror][codemirror]           |
 | [MDN Playground](https://developer.mozilla.org/en-US/play)                        | [CodeMirror][codemirror]           |
+| [Monaco Playground](https://microsoft.github.io/monaco-editor/playground.html)    | [Monaco][monaco]                   |
 | [MotherDuck](https://motherduck.com)                                              | [CodeMirror][codemirror]           |
 | [mypy Playground](https://mypy-play.net/)                                         | [Ace][ace]                         |
 | [Neon Playground](https://neon.tech/demos/playground)                             | [CodeMirror][codemirror]           |
@@ -95,7 +96,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | name       | count |
 | ---------- | ----- |
 | CodeMirror | 32    |
-| Monaco     | 24    |
+| Monaco     | 25    |
 | Ace        | 7     |
 | HTML       | 4     |
 | XTerm      | 4     |
