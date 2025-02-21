@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-02-15
+last_modified_at: 2025-02-21
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -16,6 +16,7 @@ Before building out a playground for a language server, I decided to take a look
 | [AWS Redshift](https://console.aws.amazon.com/sqlworkbench/home)                  | [Monaco][monaco]                   |
 | [Biome](https://biomejs.dev/playground/)                                          | [CodeMirror][codemirror]           |
 | [Black](https://black.vercel.app/)                                                | [Ace][ace]                         |
+| [CEL Playground](https://playcel.undistro.io)                                     | [Ace][ace]                         |
 | [Checkly](https://www.checklyhq.com)                                              | [Monaco][monaco]                   |
 | [Cloudflare Workers](https://cloudflare.com)                                      | [Monaco][monaco]                   |
 | [CodePen](https://codepen.io)                                                     | [CodeMirror][codemirror]           |
@@ -97,7 +98,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | ---------- | ----- |
 | CodeMirror | 32    |
 | Monaco     | 25    |
-| Ace        | 7     |
+| Ace        | 8     |
 | HTML       | 4     |
 | XTerm      | 4     |
 | CodeFlask  | 1     |
