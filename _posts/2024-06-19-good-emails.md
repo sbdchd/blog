@@ -2,6 +2,7 @@
 layout: post
 title: "Good Emails"
 description: "With examples"
+last_modified_at: 2025-02-21
 ---
 
 I've been saving emails that look good for a while now and have come up with some basic criteria for what makes an email good.
@@ -31,6 +32,17 @@ If you have to click a button or similar, have a link in the bottom that's equiv
 ### Mobile and desktop friendly
 
 Should look good on your phone and on a desktop. Shouldn't have to pinch and zoom on mobile.
+
+### BIMI (Branded Indicactors for Message Identification)
+
+[Apple](https://developer.apple.com/support/bimi), [and many other email providers](https://bimigroup.org/where-is-my-bimi-logo-displayed/), support BIMI, which shows a site's logo in app.
+
+![Mail with BIMI image for Apple email](/assets/good-emails-apple-bimi.jpg)
+
+Otherwise, you'll end up with a pretty generic icon in a user's inbox:
+
+![Mail with generic icon for github](/assets/good-emails-bimi-github.jpeg)
+![Mail with generic icon for anthropic](/assets/good-emails-bimi-anthropic.jpeg)
 
 ### Darkmode support
 
