@@ -2,14 +2,15 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-02-21
+last_modified_at: 2025-03-03
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
 
 | name                                                                              | editor                             |
 | --------------------------------------------------------------------------------- | ---------------------------------- |
-| [AST Explorer](https://astexplorer.net)                                           | [CodeMirror][codemirror]           |
+| [AST Explorer Dev](https://ast-explorer.dev/)                                     | [Monaco][monaco]                   |
+| [AST Explorer Net](https://astexplorer.net)                                       | [CodeMirror][codemirror]           |
 | [AWS Athena](http://console.aws.amazon.com/athena)                                | [Ace][ace]                         |
 | [AWS CloudShell](https://console.aws.amazon.com/cloudshell/)                      | [Ace][ace]                         |
 | [AWS Lambda](https://console.aws.amazon.com/lambda/)                              | [Monaco][monaco]                   |
@@ -43,6 +44,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Jupyter](https://jupyter.org/try-jupyter/lab/)                                   | [CodeMirror][codemirror]           |
 | [Kotlin Playground](https://play.kotlinlang.org/)                                 | [CodeMirror][codemirror]           |
 | [Lightning CSS Playground](https://lightningcss.dev/playground/)                  | [CodeMirror][codemirror]           |
+| [Limber](https://limber.glimdown.com/)                                            | [CodeMirror][codemirror]           |
 | [MDN Playground](https://developer.mozilla.org/en-US/play)                        | [CodeMirror][codemirror]           |
 | [Monaco Playground](https://microsoft.github.io/monaco-editor/playground.html)    | [Monaco][monaco]                   |
 | [MotherDuck](https://motherduck.com)                                              | [CodeMirror][codemirror]           |
@@ -96,8 +98,8 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name       | count |
 | ---------- | ----- |
-| CodeMirror | 32    |
-| Monaco     | 25    |
+| CodeMirror | 33    |
+| Monaco     | 26    |
 | Ace        | 8     |
 | HTML       | 4     |
 | XTerm      | 4     |
