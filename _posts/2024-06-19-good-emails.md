@@ -2,7 +2,7 @@
 layout: post
 title: "Good Emails"
 description: "With examples"
-last_modified_at: 2025-02-21
+last_modified_at: 2025-03-10
 ---
 
 I've been saving emails that look good for a while now and have come up with some basic criteria for what makes an email good.
@@ -82,6 +82,12 @@ I'm not sure this is necessary if you have a "view in browser" link, but probabl
 
 <div style="display:flex;justify-content:center">
 <img src="/assets/good-email-stripe.png" width="550" alt="stripe email">
+</div>
+
+### CashApp
+
+<div style="display:flex;justify-content:center">
+<img src="/assets/good-email-cashapp.png" width="550" alt="cashapp email">
 </div>
 
 ### Economist
