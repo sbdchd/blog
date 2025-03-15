@@ -103,6 +103,6 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | CodeMirror | 33    |
 | Monaco     | 26    |
 | Ace        | 9     |
-| HTML       | 4     |
+| HTML       | 5     |
 | XTerm      | 4     |
 | CodeFlask  | 1     |
