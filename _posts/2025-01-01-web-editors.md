@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-03-03
+last_modified_at: 2025-03-15
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -19,6 +19,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Black](https://black.vercel.app/)                                                | [Ace][ace]                         |
 | [CEL Playground](https://playcel.undistro.io)                                     | [Ace][ace]                         |
 | [Checkly](https://www.checklyhq.com)                                              | [Monaco][monaco]                   |
+| [ClickHouse Query](https://play.clickhouse.com/play)                              | [`<textarea>`][textarea]           |
 | [Cloudflare Workers](https://cloudflare.com)                                      | [Monaco][monaco]                   |
 | [CodePen](https://codepen.io)                                                     | [CodeMirror][codemirror]           |
 | [CodeSandbox](https://codesandbox.io)                                             | [Monaco][monaco]                   |
