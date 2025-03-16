@@ -2,6 +2,7 @@
 layout: post
 title: "Lyft, Uber, and Waymo Emails"
 description: "Keep it simple"
+last_modified_at: 2025-03-15
 ---
 
 ## Uber
@@ -47,3 +48,17 @@ But Lyft and Uber also have:
 I think the map is neat, but it makes the emails longer than necessary.
 
 Waymo doesn't need anything tipping or driver related, which makes their emails even more concise and the nicest of the three.
+
+## Edit 2025-03-15: Waymo updated their emails!
+
+The emails now have emission data and a picture of the Waymo:
+
+<div style="display:flex;justify-content:center;padding: 10px 0px;">
+<img src="/assets/waymo-email-v2-normal.png" width="400" alt="waymo email receipt from a ride">
+</div>
+
+There's even responsive design, but no dark mode:
+
+<div style="display:flex;justify-content:center;padding: 10px 0px;">
+<img src="/assets/waymo-email-v2-mobile.png" width="400" alt="waymo email receipt from a ride">
+</div>
