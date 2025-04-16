@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-04-08
+last_modified_at: 2025-04-16
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -39,6 +39,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Glitch](https://glitch.com/)                                                     | [CodeMirror][codemirror]           |
 | [Go](https://go.dev/play/)                                                        | [`<textarea>`][textarea]           |
 | [Hakana](https://hakana.dev)                                                      | [CodeMirror][codemirror]           |
+| [Herb](https://herb-tools.dev/playground.html)                                    | [Monaco][monaco]                   |
 | [Heroku Dataclips](https://data.heroku.com/dataclips/create)                      | [Monaco][monaco]                   |
 | [JS Bin](https://jsbin.com/)                                                      | [CodeMirror][codemirror]           |
 | [JSFiddle](https://jsfiddle.net)                                                  | [CodeMirror][codemirror]           |
@@ -104,7 +105,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | name       | count |
 | ---------- | ----- |
 | CodeMirror | 35    |
-| Monaco     | 26    |
+| Monaco     | 27    |
 | Ace        | 10    |
 | HTML       | 5     |
 | XTerm      | 4     |
