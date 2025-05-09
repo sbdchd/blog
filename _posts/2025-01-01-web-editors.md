@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-04-21
+last_modified_at: 2025-05-09
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -81,6 +81,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Stripe Sigma](https://dashboard.stripe.com/sigma/queries)                        | [CodeMirror][codemirror]           |
 | [Svelte](https://svelte.dev/playground)                                           | [CodeMirror][codemirror]           |
 | [SWI Prolog](https://swish.swi-prolog.org)                                        | [CodeMirror][codemirror]           |
+| [Pinot](https://docs.pinot.apache.org/users/user-guide-query/querying-pinot)      | [CodeMirror][codemirror]           |
 | [Swift Playground](https://swiftfiddle.com)                                       | [Monaco][monaco], [XTerm][xterm]   |
 | [Tailscale ACLs](https://login.tailscale.com/admin/acls/file?refreshed=true)      | [CodeMirror][codemirror]           |
 | [Tailwind Play](https://lightningcss.dev/playground/)                             | [Monaco][monaco]                   |
@@ -105,7 +106,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name       | count |
 | ---------- | ----- |
-| CodeMirror | 35    |
+| CodeMirror | 36    |
 | Monaco     | 28    |
 | Ace        | 10    |
 | HTML       | 5     |
