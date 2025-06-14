@@ -2,6 +2,7 @@
 layout: post
 title: "Syncing Code"
 description: "LINT.ifChange"
+last_modified_at: 2025-06-14
 ---
 
 Sometimes you have chunks of code you need to sync.
@@ -131,3 +132,11 @@ This approach ends up being more verbose and less flexible than `LINT.IfChange` 
 ## Conclusion
 
 Code syncing linters provide a lightweight solution to keeping bits of code in sync!
+
+## Related
+
+- [How to use LINT.IfChange to keep files in sync](https://www.chromium.org/chromium-os/developer-library/guides/development/keep-files-in-sync/)
+
+- [Fuchia's Presubmit Checks](https://fuchsia.dev/fuchsia-src/development/source_code/presubmit_checks)
+
+- [IfThisThenThat Linter](https://github.com/ebrevdo/ifttt-lint)
