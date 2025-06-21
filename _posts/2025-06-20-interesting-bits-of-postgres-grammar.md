@@ -4,7 +4,7 @@ title: "Interesting Bits of Postgres Grammar"
 description: "Lessons from building a parser"
 ---
 
-I've been working on [Squawk](https://squawkhq.com) for a while, it's a linter for PostgreSQL, and it [now](https://github.com/sbdchd/squawk/releases/tag/v2.0.0) uses a handmade parser.
+I've been working on [Squawk](https://squawkhq.com) for a while, it's a linter for PostgreSQL, and it [now](https://github.com/sbdchd/squawk/releases/tag/v2.0.0) uses a [handmade parser](https://github.com/sbdchd/squawk/blob/f68b1a81c03bbc3cc8e84bb2d2e5219ca2b610ac/crates/squawk_parser/src/grammar.rs).
 
 So let's explore some interesting bits from the [Postgres grammar](https://github.com/postgres/postgres/blob/2f6e240d7ac930698995ac608695cb0368f504f2/src/backend/parser/gram.y).
 
