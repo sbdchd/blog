@@ -25,7 +25,7 @@ select array_filter(
 );
 ```
 
-Albiet with the wrong precedence.
+Albeit with the wrong precedence.
 
 ## Precedence with Compound `select`s
 
