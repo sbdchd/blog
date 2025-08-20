@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-08-14
+last_modified_at: 2025-08-20
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -69,6 +69,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Pyright Playground](https://pyright-play.net/)                                   | [Monaco][monaco]                   |
 | [React Compiler Playground](https://playground.react.dev/)                        | [Monaco][monaco]                   |
 | [Redis Docs](https://redis.io/docs/latest/commands/hset/)                         | [`<input type="text">`][inputtext] |
+| [Rego](https://play.openpolicyagent.org)                                          | [CodeMirror][codemirror]           |
 | [Replit](https://replit.com/)                                                     | [CodeMirror][codemirror]           |
 | [Ruff](https://play.ruff.rs)                                                      | [Monaco][monaco]                   |
 | [RunKit](https://npm.runkit.com/react)                                            | [CodeMirror][codemirror]           |
@@ -108,7 +109,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name       | count |
 | ---------- | ----- |
-| CodeMirror | 37    |
+| CodeMirror | 38    |
 | Monaco     | 29    |
 | Ace        | 10    |
 | HTML       | 5     |
