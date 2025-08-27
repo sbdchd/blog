@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-08-20
+last_modified_at: 2025-08-26
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -62,6 +62,7 @@ Before building out a playground for a language server, I decided to take a look
 | [ParserTL Playground](https://mingodad.github.io/parsertl-playground/playground/) | [Ace][ace]                         |
 | [PlanetScale](https://app.planetscale.com)                                        | [`<textarea>`][textarea]           |
 | [Porffor](https://porffor.dev)                                                    | [Monaco][monaco]                   |
+| [Pinot](https://docs.pinot.apache.org/users/user-guide-query/querying-pinot)      | [CodeMirror][codemirror]           |
 | [Postgres Playground](https://www.crunchydata.com/developers/playground/)         | [XTerm][xterm]                     |
 | [Prettier](https://prettier.io/playground/)                                       | [CodeMirror][codemirror]           |
 | [PRQL Playground](https://prql-lang.org/playground/)                              | [Monaco][monaco]                   |
@@ -82,9 +83,9 @@ Before building out a playground for a language server, I decided to take a look
 | [SQL Fiddle](https://sqlfiddle.com)                                               | [CodeMirror][codemirror]           |
 | [StackBlitz](https://stackblitz.com/edit/stylex-next?file=README.md)              | [Monaco][monaco], [XTerm][xterm]   |
 | [Stripe Sigma](https://dashboard.stripe.com/sigma/queries)                        | [CodeMirror][codemirror]           |
+| [Strudel](https://strudel.cc/)                                                    | [CodeMirror][codemirror]           |
 | [Svelte](https://svelte.dev/playground)                                           | [CodeMirror][codemirror]           |
 | [SWI Prolog](https://swish.swi-prolog.org)                                        | [CodeMirror][codemirror]           |
-| [Pinot](https://docs.pinot.apache.org/users/user-guide-query/querying-pinot)      | [CodeMirror][codemirror]           |
 | [Swift Playground](https://swiftfiddle.com)                                       | [Monaco][monaco], [XTerm][xterm]   |
 | [Tailscale ACLs](https://login.tailscale.com/admin/acls/file?refreshed=true)      | [CodeMirror][codemirror]           |
 | [Tailwind Play](https://lightningcss.dev/playground/)                             | [Monaco][monaco]                   |
@@ -109,7 +110,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name       | count |
 | ---------- | ----- |
-| CodeMirror | 38    |
+| CodeMirror | 39    |
 | Monaco     | 29    |
 | Ace        | 10    |
 | HTML       | 5     |
