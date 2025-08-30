@@ -2,6 +2,7 @@
 layout: post
 title: "Expression Languages"
 description: "CEL, NSPRedicate, JSON DSLs"
+last_modified_at: 2025-08-29
 ---
 
 Sometimes you want configurability without the baggage of an entire language, so you turn to an simple, expression language!
@@ -87,6 +88,19 @@ $ watchman -j <<-EOT
   "fields": ["name"]
 }]
 EOT
+```
+
+## MQL
+
+[Sublime Security's Message Query Language (MQL)](https://docs.sublime.security/docs/message-query-language)
+
+Has some similarities to CEL, but with some more concise syntax like:
+
+```
+any(attachments, .file_extension in~ ('html', 'htm') and
+  any(file.explode(.),
+    "unescape" in .scan.javascript.identifiers)
+)
 ```
 
 ## Conclusion
