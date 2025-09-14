@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-08-26
+last_modified_at: 2025-09-13
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -29,6 +29,7 @@ Before building out a playground for a language server, I decided to take a look
 | [DB Fiddle](https://db-fiddle.com)                                                | [CodeMirror][codemirror]           |
 | [Deno Deploy](https://dash.deno.com)                                              | [Monaco][monaco]                   |
 | [EDA Playground](https://edaplayground.com)                                       | [CodeMirror][codemirror]           |
+| [Effector](https://share.effector.dev)                                            | [CodeMirror][codemirror]           |
 | [Elm Playground](https://elm-lang.org/try)                                        | [CodeMirror][codemirror]           |
 | [esbuild try](esbuild.github.io/try/)                                             | [`<textarea>`][textarea]           |
 | [ESLint Playground](https://eslint.org/play/)                                     | [CodeMirror][codemirror]           |
@@ -60,9 +61,9 @@ Before building out a playground for a language server, I decided to take a look
 | [Observable](https://observablehq.com/)                                           | [CodeMirror][codemirror]           |
 | [Parcel Repl](https://repl.parceljs.org)                                          | [CodeMirror][codemirror]           |
 | [ParserTL Playground](https://mingodad.github.io/parsertl-playground/playground/) | [Ace][ace]                         |
+| [Pinot](https://docs.pinot.apache.org/users/user-guide-query/querying-pinot)      | [CodeMirror][codemirror]           |
 | [PlanetScale](https://app.planetscale.com)                                        | [`<textarea>`][textarea]           |
 | [Porffor](https://porffor.dev)                                                    | [Monaco][monaco]                   |
-| [Pinot](https://docs.pinot.apache.org/users/user-guide-query/querying-pinot)      | [CodeMirror][codemirror]           |
 | [Postgres Playground](https://www.crunchydata.com/developers/playground/)         | [XTerm][xterm]                     |
 | [Prettier](https://prettier.io/playground/)                                       | [CodeMirror][codemirror]           |
 | [PRQL Playground](https://prql-lang.org/playground/)                              | [Monaco][monaco]                   |
@@ -110,7 +111,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name       | count |
 | ---------- | ----- |
-| CodeMirror | 39    |
+| CodeMirror | 40    |
 | Monaco     | 29    |
 | Ace        | 10    |
 | HTML       | 5     |
