@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-09-13
+last_modified_at: 2025-09-16
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -68,6 +68,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Prettier](https://prettier.io/playground/)                                       | [CodeMirror][codemirror]           |
 | [PRQL Playground](https://prql-lang.org/playground/)                              | [Monaco][monaco]                   |
 | [Psalm](https://psalm.dev)                                                        | [CodeMirror][codemirror]           |
+| [Pyrefly](https://pyrefly.org/sandbox/)                                           | [Monaco][monaco]                   |
 | [Pyright Playground](https://pyright-play.net/)                                   | [Monaco][monaco]                   |
 | [React Compiler Playground](https://playground.react.dev/)                        | [Monaco][monaco]                   |
 | [Redis Docs](https://redis.io/docs/latest/commands/hset/)                         | [`<input type="text">`][inputtext] |
@@ -93,6 +94,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Timescale](https://console.cloud.timescale.com/dashboard/services?popsql=)       | [Monaco][monaco]                   |
 | [Tinybird](https://www.tinybird.co)                                               | [CodeMirror][codemirror]           |
 | [Twilio Functions](https://console.twilio.com/develop/functions)                  | [Monaco][monaco]                   |
+| [Ty](https://play.ty.dev)                                                         | [Monaco][monaco]                   |
 | [typescript-eslint](https://typescript-eslint.io/play)                            | [Monaco][monaco]                   |
 | [TypeScript](https://www.typescriptlang.org/play/)                                | [Monaco][monaco]                   |
 | [val town](https://www.val.town)                                                  | [CodeMirror][codemirror]           |
@@ -112,7 +114,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | name       | count |
 | ---------- | ----- |
 | CodeMirror | 40    |
-| Monaco     | 29    |
+| Monaco     | 31    |
 | Ace        | 10    |
 | HTML       | 5     |
 | XTerm      | 4     |
