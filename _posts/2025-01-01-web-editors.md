@@ -15,6 +15,7 @@ Before building out a playground for a language server, I decided to take a look
 | [AWS CloudShell](https://console.aws.amazon.com/cloudshell/)                      | [Ace][ace]                         |
 | [AWS Lambda](https://console.aws.amazon.com/lambda/)                              | [Monaco][monaco]                   |
 | [AWS Redshift](https://console.aws.amazon.com/sqlworkbench/home)                  | [Monaco][monaco]                   |
+| [Bauble](https://bauble.studio)                                                   | [Monaco][monaco]                   |
 | [Biome](https://biomejs.dev/playground/)                                          | [CodeMirror][codemirror]           |
 | [Black](https://black.vercel.app/)                                                | [Ace][ace]                         |
 | [CEL Playground](https://playcel.undistro.io)                                     | [Ace][ace]                         |
@@ -113,7 +114,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name       | count |
 | ---------- | ----- |
-| CodeMirror | 40    |
+| CodeMirror | 41    |
 | Monaco     | 31    |
 | Ace        | 10    |
 | HTML       | 5     |
