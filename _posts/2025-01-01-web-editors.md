@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-09-28
+last_modified_at: 2025-09-29
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -21,6 +21,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Bytebase](https://bytebase.com)                                                  | [Monaco][monaco]                   |
 | [CEL Playground](https://playcel.undistro.io)                                     | [Ace][ace]                         |
 | [Checkly](https://www.checklyhq.com)                                              | [Monaco][monaco]                   |
+| [Circuitscript](https://bench.circuitscript.net)                                  | [Monaco][monaco]                   |
 | [ClickHouse Query](https://play.clickhouse.com/play)                              | [`<textarea>`][textarea]           |
 | [Cloudflare Workers](https://cloudflare.com)                                      | [Monaco][monaco]                   |
 | [Coalton](https://coalton.app)                                                    | [CodeMirror][codemirror]           |
@@ -116,7 +117,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | name       | count |
 | ---------- | ----- |
 | CodeMirror | 41    |
-| Monaco     | 32    |
+| Monaco     | 33    |
 | Ace        | 10    |
 | HTML       | 5     |
 | XTerm      | 4     |
