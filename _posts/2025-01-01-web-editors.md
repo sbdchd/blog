@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-09-29
+last_modified_at: 2025-09-30
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -98,6 +98,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Tinybird](https://www.tinybird.co)                                               | [CodeMirror][codemirror]           |
 | [Twilio Functions](https://console.twilio.com/develop/functions)                  | [Monaco][monaco]                   |
 | [Ty](https://play.ty.dev)                                                         | [Monaco][monaco]                   |
+| [typegres](https://typegres.com/play/)                                            | [Monaco][monaco]                   |
 | [typescript-eslint](https://typescript-eslint.io/play)                            | [Monaco][monaco]                   |
 | [TypeScript](https://www.typescriptlang.org/play/)                                | [Monaco][monaco]                   |
 | [val town](https://www.val.town)                                                  | [CodeMirror][codemirror]           |
@@ -117,7 +118,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | name       | count |
 | ---------- | ----- |
 | CodeMirror | 41    |
-| Monaco     | 33    |
+| Monaco     | 34    |
 | Ace        | 10    |
 | HTML       | 5     |
 | XTerm      | 4     |
