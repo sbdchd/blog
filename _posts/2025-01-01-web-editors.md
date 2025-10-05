@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-09-30
+last_modified_at: 2025-10-05
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -60,6 +60,7 @@ Before building out a playground for a language server, I decided to take a look
 | [mypy Playground](https://mypy-play.net/)                                         | [Ace][ace]                         |
 | [Neon Playground](https://neon.tech/demos/playground)                             | [CodeMirror][codemirror]           |
 | [Neon](https://console.neon.tech/)                                                | [Ace][ace]                         |
+| [Nickel Playground](https://nickel-lang.org/playground/)                          | [Ace][ace]                         |
 | [Nim Playground](https://play.nim-lang.org/)                                      | [CodeMirror][codemirror]           |
 | [Observable](https://observablehq.com/)                                           | [CodeMirror][codemirror]           |
 | [Parcel Repl](https://repl.parceljs.org)                                          | [CodeMirror][codemirror]           |
@@ -119,7 +120,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | ---------- | ----- |
 | CodeMirror | 41    |
 | Monaco     | 34    |
-| Ace        | 10    |
+| Ace        | 11    |
 | HTML       | 5     |
 | XTerm      | 4     |
 | CodeFlask  | 1     |
