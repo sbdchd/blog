@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-10-05
+last_modified_at: 2025-10-10
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -102,6 +102,7 @@ Before building out a playground for a language server, I decided to take a look
 | [typegres](https://typegres.com/play/)                                            | [Monaco][monaco]                   |
 | [typescript-eslint](https://typescript-eslint.io/play)                            | [Monaco][monaco]                   |
 | [TypeScript](https://www.typescriptlang.org/play/)                                | [Monaco][monaco]                   |
+| [TypeSpec](https://typespec.io/playground/)                                       | [Monaco][monaco]                   |
 | [val town](https://www.val.town)                                                  | [CodeMirror][codemirror]           |
 
 [monaco]: https://microsoft.github.io/monaco-editor/
@@ -119,7 +120,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | name       | count |
 | ---------- | ----- |
 | CodeMirror | 41    |
-| Monaco     | 34    |
+| Monaco     | 35    |
 | Ace        | 11    |
 | HTML       | 5     |
 | XTerm      | 4     |
