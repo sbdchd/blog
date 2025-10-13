@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-10-10
+last_modified_at: 2025-10-13
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -87,6 +87,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Sorbet](https://sorbet.run)                                                      | [Monaco][monaco]                   |
 | [Splitgraph](https://www.splitgraph.com)                                          | [Monaco][monaco]                   |
 | [SQL Fiddle](https://sqlfiddle.com)                                               | [CodeMirror][codemirror]           |
+| [SQL Online](https://sqliteonline.com)                                            | [CodeMirror][codemirror]           |
 | [StackBlitz](https://stackblitz.com/edit/stylex-next?file=README.md)              | [Monaco][monaco], [XTerm][xterm]   |
 | [Stripe Sigma](https://dashboard.stripe.com/sigma/queries)                        | [CodeMirror][codemirror]           |
 | [Strudel](https://strudel.cc/)                                                    | [CodeMirror][codemirror]           |
@@ -119,7 +120,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name       | count |
 | ---------- | ----- |
-| CodeMirror | 41    |
+| CodeMirror | 42    |
 | Monaco     | 35    |
 | Ace        | 11    |
 | HTML       | 5     |
