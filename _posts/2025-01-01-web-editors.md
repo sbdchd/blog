@@ -74,6 +74,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Psalm](https://psalm.dev)                                                        | [CodeMirror][codemirror]           |
 | [Pyrefly](https://pyrefly.org/sandbox/)                                           | [Monaco][monaco]                   |
 | [Pyright Playground](https://pyright-play.net/)                                   | [Monaco][monaco]                   |
+| [RCL](https://rcl-lang.org/#try-it-yourself)                                      | [ContentEditable][contenteditable] |
 | [React Compiler Playground](https://playground.react.dev/)                        | [Monaco][monaco]                   |
 | [Redis Docs](https://redis.io/docs/latest/commands/hset/)                         | [`<input type="text">`][inputtext] |
 | [Rego](https://play.openpolicyagent.org)                                          | [CodeMirror][codemirror]           |
@@ -113,16 +114,18 @@ Before building out a playground for a language server, I decided to take a look
 [xterm]: https://xtermjs.org
 [textarea]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea
 [inputtext]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text
+[contenteditable]: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/contenteditable
 
 ## Breakdown
 
 Overall, CodeMirror and Monaco are the clear favorites:
 
-| name       | count |
-| ---------- | ----- |
-| CodeMirror | 42    |
-| Monaco     | 35    |
-| Ace        | 11    |
-| HTML       | 5     |
-| XTerm      | 4     |
-| CodeFlask  | 1     |
+| name            | count |
+| --------------- | ----- |
+| CodeMirror      | 42    |
+| Monaco          | 35    |
+| Ace             | 11    |
+| HTML            | 5     |
+| XTerm           | 4     |
+| CodeFlask       | 1     |
+| ContentEditable | 1     |
