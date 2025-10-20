@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-10-13
+last_modified_at: 2025-10-20
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -106,6 +106,7 @@ Before building out a playground for a language server, I decided to take a look
 | [TypeScript](https://www.typescriptlang.org/play/)                                | [Monaco][monaco]                   |
 | [TypeSpec](https://typespec.io/playground/)                                       | [Monaco][monaco]                   |
 | [val town](https://www.val.town)                                                  | [CodeMirror][codemirror]           |
+| [x86-64 playground](https://app.x64.halb.it)                                      | [Prism][prism]                     |
 
 [monaco]: https://microsoft.github.io/monaco-editor/
 [codeflask]: https://www.npmjs.com/package/codeflask
@@ -115,6 +116,7 @@ Before building out a playground for a language server, I decided to take a look
 [textarea]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea
 [inputtext]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text
 [contenteditable]: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/contenteditable
+[prism]: https://github.com/jonpyt/prism-code-editor
 
 ## Breakdown
 
@@ -129,3 +131,4 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | XTerm           | 4     |
 | CodeFlask       | 1     |
 | ContentEditable | 1     |
+| Prism           | 1     |
