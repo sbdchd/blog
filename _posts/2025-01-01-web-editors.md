@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-10-20
+last_modified_at: 2025-10-21
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -15,6 +15,7 @@ Before building out a playground for a language server, I decided to take a look
 | [AWS CloudShell](https://console.aws.amazon.com/cloudshell/)                      | [Ace][ace]                         |
 | [AWS Lambda](https://console.aws.amazon.com/lambda/)                              | [Monaco][monaco]                   |
 | [AWS Redshift](https://console.aws.amazon.com/sqlworkbench/home)                  | [Monaco][monaco]                   |
+| [Babel](https://babeljs.io/repl)                                                  | [Monaco][monaco]                   |
 | [Bauble](https://bauble.studio)                                                   | [Monaco][monaco]                   |
 | [Biome](https://biomejs.dev/playground/)                                          | [CodeMirror][codemirror]           |
 | [Black](https://black.vercel.app/)                                                | [Ace][ace]                         |
@@ -125,7 +126,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | name            | count |
 | --------------- | ----- |
 | CodeMirror      | 42    |
-| Monaco          | 35    |
+| Monaco          | 36    |
 | Ace             | 11    |
 | HTML            | 5     |
 | XTerm           | 4     |
