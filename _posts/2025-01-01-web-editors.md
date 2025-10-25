@@ -107,6 +107,7 @@ Before building out a playground for a language server, I decided to take a look
 | [typescript-eslint](https://typescript-eslint.io/play)                            | [Monaco][monaco]                   |
 | [TypeScript](https://www.typescriptlang.org/play/)                                | [Monaco][monaco]                   |
 | [TypeSpec](https://typespec.io/playground/)                                       | [Monaco][monaco]                   |
+| [Typst](https://typst.app/play/)                                                  | [CodeMirror][codemirror]           |
 | [val town](https://www.val.town)                                                  | [CodeMirror][codemirror]           |
 | [x86-64 playground](https://app.x64.halb.it)                                      | [Prism][prism]                     |
 
@@ -126,7 +127,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name            | count |
 | --------------- | ----- |
-| CodeMirror      | 42    |
+| CodeMirror      | 43    |
 | Monaco          | 36    |
 | Ace             | 12    |
 | HTML            | 5     |
