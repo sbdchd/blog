@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-10-24
+last_modified_at: 2025-10-27
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -29,6 +29,7 @@ Before building out a playground for a language server, I decided to take a look
 | [CodePen](https://codepen.io)                                                     | [CodeMirror][codemirror]           |
 | [CodeSandbox](https://codesandbox.io)                                             | [Monaco][monaco]                   |
 | [Compiler Explorer](https://godbolt.org)                                          | [Monaco][monaco]                   |
+| [D2](https://play.d2lang.com/)                                                    | [Monaco][monaco]                   |
 | [Databricks](https://www.databricks.com)                                          | [Monaco][monaco]                   |
 | [DB Fiddle](https://db-fiddle.com)                                                | [CodeMirror][codemirror]           |
 | [Deno Deploy](https://dash.deno.com)                                              | [Monaco][monaco]                   |
@@ -128,7 +129,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | name            | count |
 | --------------- | ----- |
 | CodeMirror      | 43    |
-| Monaco          | 36    |
+| Monaco          | 37    |
 | Ace             | 12    |
 | HTML            | 5     |
 | XTerm           | 4     |
