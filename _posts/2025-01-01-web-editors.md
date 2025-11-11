@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-10-27
+last_modified_at: 2025-11-10
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -33,11 +33,13 @@ Before building out a playground for a language server, I decided to take a look
 | [Databricks](https://www.databricks.com)                                          | [Monaco][monaco]                   |
 | [DB Fiddle](https://db-fiddle.com)                                                | [CodeMirror][codemirror]           |
 | [Deno Deploy](https://dash.deno.com)                                              | [Monaco][monaco]                   |
+| [Dis This](https://www.dis-this.com/)                                             | [CodeMirror][codemirror]           |
 | [EDA Playground](https://edaplayground.com)                                       | [CodeMirror][codemirror]           |
 | [Effector](https://share.effector.dev)                                            | [CodeMirror][codemirror]           |
 | [Elm Playground](https://elm-lang.org/try)                                        | [CodeMirror][codemirror]           |
 | [esbuild try](esbuild.github.io/try/)                                             | [`<textarea>`][textarea]           |
 | [ESLint Playground](https://eslint.org/play/)                                     | [CodeMirror][codemirror]           |
+| [Flems](https://flems.io)                                                         | [CodeMirror][codemirror]           |
 | [GCP Cloud Shell Editor](https://console.cloud.google.com/cloudshelleditor)       | [Monaco][monaco]                   |
 | [GCP Cloud Shell Terminal](https://console.cloud.google.com/cloudshelleditor)     | [Xterm][xterm]                     |
 | [GCP Functions](https://console.cloud.google.com/functions/)                      | [Monaco][monaco]                   |
@@ -53,6 +55,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Jupyter](https://jupyter.org/try-jupyter/lab/)                                   | [CodeMirror][codemirror]           |
 | [Kaitai](https://ide.kaitai.io)                                                   | [Ace][ace]                         |
 | [Kotlin Playground](https://play.kotlinlang.org/)                                 | [CodeMirror][codemirror]           |
+| [Lean](https://live.lean-lang.org/)                                               | [Monaco][monaco]                   |
 | [Lightning CSS Playground](https://lightningcss.dev/playground/)                  | [CodeMirror][codemirror]           |
 | [Limber](https://limber.glimdown.com/)                                            | [CodeMirror][codemirror]           |
 | [MDN Playground](https://developer.mozilla.org/en-US/play)                        | [CodeMirror][codemirror]           |
@@ -65,10 +68,12 @@ Before building out a playground for a language server, I decided to take a look
 | [Neon](https://console.neon.tech/)                                                | [Ace][ace]                         |
 | [Nickel Playground](https://nickel-lang.org/playground/)                          | [Ace][ace]                         |
 | [Nim Playground](https://play.nim-lang.org/)                                      | [CodeMirror][codemirror]           |
+| [Nginx Playground](https://nginx-playground.wizardzines.com)                      | [CodeMirror][codemirror]           |
 | [Observable](https://observablehq.com/)                                           | [CodeMirror][codemirror]           |
 | [Parcel Repl](https://repl.parceljs.org)                                          | [CodeMirror][codemirror]           |
 | [ParserTL Playground](https://mingodad.github.io/parsertl-playground/playground/) | [Ace][ace]                         |
 | [Pinot](https://docs.pinot.apache.org/users/user-guide-query/querying-pinot)      | [CodeMirror][codemirror]           |
+| [Pkl Playground](https://pkl-playground.vercel.app)                               | [CodeMirror][codemirror]           |
 | [PlanetScale](https://app.planetscale.com)                                        | [`<textarea>`][textarea]           |
 | [Porffor](https://porffor.dev)                                                    | [Monaco][monaco]                   |
 | [Postgres Playground](https://www.crunchydata.com/developers/playground/)         | [XTerm][xterm]                     |
@@ -80,18 +85,24 @@ Before building out a playground for a language server, I decided to take a look
 | [RCL](https://rcl-lang.org/#try-it-yourself)                                      | [ContentEditable][contenteditable] |
 | [React Compiler Playground](https://playground.react.dev/)                        | [Monaco][monaco]                   |
 | [Redis Docs](https://redis.io/docs/latest/commands/hset/)                         | [`<input type="text">`][inputtext] |
+| [Regex101](https://regex101.com/)                                                 | [CodeMirror][codemirror]           |
+| [Regexr](https://regexr.com/)                                                     | [CodeMirror][codemirror]           |
 | [Rego](https://play.openpolicyagent.org)                                          | [CodeMirror][codemirror]           |
+| [Riju](https://riju.codes)                                                        | [Monaco][monaco]                   |
 | [Replit](https://replit.com/)                                                     | [CodeMirror][codemirror]           |
 | [Ruff](https://play.ruff.rs)                                                      | [Monaco][monaco]                   |
 | [RunKit](https://npm.runkit.com/react)                                            | [CodeMirror][codemirror]           |
 | [Rust](https://play.rust-lang.org/)                                               | [Ace][ace]                         |
 | [Shadertoy](https://www.shadertoy.com/view/Xds3zN)                                | [CodeMirror][codemirror]           |
+| [SharpLab](https://sharplab.io/)                                                  | [CodeMirror][codemirror]           |
 | [SingleStore](https://www.singlestore.com)                                        | [Monaco][monaco]                   |
 | [Snowflake](https://www.snowflake.com/)                                           | [CodeMirror][codemirror]           |
 | [Sorbet](https://sorbet.run)                                                      | [Monaco][monaco]                   |
 | [Splitgraph](https://www.splitgraph.com)                                          | [Monaco][monaco]                   |
 | [SQL Fiddle](https://sqlfiddle.com)                                               | [CodeMirror][codemirror]           |
 | [SQL Online](https://sqliteonline.com)                                            | [CodeMirror][codemirror]           |
+| [SQL Playground](https://sql-playground.wizardzines.com)                          | [`<textarea>`][textarea]           |
+| [Sqlime](https://sqlime.org/)                                                     | [ContentEditable][contenteditable] |
 | [StackBlitz](https://stackblitz.com/edit/stylex-next?file=README.md)              | [Monaco][monaco], [XTerm][xterm]   |
 | [Stripe Sigma](https://dashboard.stripe.com/sigma/queries)                        | [CodeMirror][codemirror]           |
 | [Strudel](https://strudel.cc/)                                                    | [CodeMirror][codemirror]           |
@@ -110,6 +121,7 @@ Before building out a playground for a language server, I decided to take a look
 | [TypeSpec](https://typespec.io/playground/)                                       | [Monaco][monaco]                   |
 | [Typst](https://typst.app/play/)                                                  | [CodeMirror][codemirror]           |
 | [val town](https://www.val.town)                                                  | [CodeMirror][codemirror]           |
+| [Wokwi](https://wokwi.com/)                                                       | [Monaco][monaco]                   |
 | [x86-64 playground](https://app.x64.halb.it)                                      | [Prism][prism]                     |
 
 [monaco]: https://microsoft.github.io/monaco-editor/
@@ -128,11 +140,11 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name            | count |
 | --------------- | ----- |
-| CodeMirror      | 43    |
-| Monaco          | 37    |
+| CodeMirror      | 50    |
+| Monaco          | 40    |
 | Ace             | 12    |
-| HTML            | 5     |
+| HTML            | 6     |
 | XTerm           | 4     |
 | CodeFlask       | 1     |
-| ContentEditable | 1     |
+| ContentEditable | 2     |
 | Prism           | 1     |
