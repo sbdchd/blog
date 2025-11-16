@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-11-10
+last_modified_at: 2025-11-16
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -59,6 +59,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Lightning CSS Playground](https://lightningcss.dev/playground/)                  | [CodeMirror][codemirror]           |
 | [Limber](https://limber.glimdown.com/)                                            | [CodeMirror][codemirror]           |
 | [MDN Playground](https://developer.mozilla.org/en-US/play)                        | [CodeMirror][codemirror]           |
+| [Mermaid](https://www.mermaidchart.com/play)                                      | [Monaco][monaco]                   |
 | [MiniJinja Playground](https://mitsuhiko.github.io/minijinja-playground/)         | [Ace][ace]                         |
 | [Mode](https://mode.com)                                                          | [Ace][ace]                         |
 | [Monaco Playground](https://microsoft.github.io/monaco-editor/playground.html)    | [Monaco][monaco]                   |
@@ -113,6 +114,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Tailwind Play](https://lightningcss.dev/playground/)                             | [Monaco][monaco]                   |
 | [Timescale](https://console.cloud.timescale.com/dashboard/services?popsql=)       | [Monaco][monaco]                   |
 | [Tinybird](https://www.tinybird.co)                                               | [CodeMirror][codemirror]           |
+| [Try Ruby](https://try.ruby-lang.org)                                             | [CodeMirror][codemirror]           |
 | [Twilio Functions](https://console.twilio.com/develop/functions)                  | [Monaco][monaco]                   |
 | [Ty](https://play.ty.dev)                                                         | [Monaco][monaco]                   |
 | [typegres](https://typegres.com/play/)                                            | [Monaco][monaco]                   |
@@ -140,8 +142,8 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name            | count |
 | --------------- | ----- |
-| CodeMirror      | 50    |
-| Monaco          | 40    |
+| CodeMirror      | 51    |
+| Monaco          | 41    |
 | Ace             | 12    |
 | HTML            | 6     |
 | XTerm           | 4     |
