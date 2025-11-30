@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-11-29
+last_modified_at: 2025-11-30
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -128,6 +128,7 @@ Before building out a playground for a language server, I decided to take a look
 | [webR](https://webr.sh)                                                           | [CodeMirror][codemirror]           |
 | [Wokwi](https://wokwi.com/)                                                       | [Monaco][monaco]                   |
 | [x86-64 playground](https://app.x64.halb.it)                                      | [Prism][prism]                     |
+| [Zigtools Playground](https://playground.zigtools.org)                            | [CodeMirror][codemirror]           |
 
 [monaco]: https://microsoft.github.io/monaco-editor/
 [codeflask]: https://www.npmjs.com/package/codeflask
@@ -145,7 +146,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name            | count |
 | --------------- | ----- |
-| CodeMirror      | 53    |
+| CodeMirror      | 54    |
 | Monaco          | 42    |
 | Ace             | 12    |
 | HTML            | 6     |
