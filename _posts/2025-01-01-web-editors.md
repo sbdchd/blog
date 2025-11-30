@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-11-16
+last_modified_at: 2025-11-29
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -89,13 +89,14 @@ Before building out a playground for a language server, I decided to take a look
 | [Regex101](https://regex101.com/)                                                 | [CodeMirror][codemirror]           |
 | [Regexr](https://regexr.com/)                                                     | [CodeMirror][codemirror]           |
 | [Rego](https://play.openpolicyagent.org)                                          | [CodeMirror][codemirror]           |
-| [Riju](https://riju.codes)                                                        | [Monaco][monaco]                   |
 | [Replit](https://replit.com/)                                                     | [CodeMirror][codemirror]           |
+| [Riju](https://riju.codes)                                                        | [Monaco][monaco]                   |
 | [Ruff](https://play.ruff.rs)                                                      | [Monaco][monaco]                   |
 | [RunKit](https://npm.runkit.com/react)                                            | [CodeMirror][codemirror]           |
 | [Rust](https://play.rust-lang.org/)                                               | [Ace][ace]                         |
 | [Shadertoy](https://www.shadertoy.com/view/Xds3zN)                                | [CodeMirror][codemirror]           |
 | [SharpLab](https://sharplab.io/)                                                  | [CodeMirror][codemirror]           |
+| [Shiny](https://shinylive.io/r/examples/)                                         | [CodeMirror][codemirror]           |
 | [SingleStore](https://www.singlestore.com)                                        | [Monaco][monaco]                   |
 | [Snowflake](https://www.snowflake.com/)                                           | [CodeMirror][codemirror]           |
 | [Sorbet](https://sorbet.run)                                                      | [Monaco][monaco]                   |
@@ -123,6 +124,7 @@ Before building out a playground for a language server, I decided to take a look
 | [TypeSpec](https://typespec.io/playground/)                                       | [Monaco][monaco]                   |
 | [Typst](https://typst.app/play/)                                                  | [CodeMirror][codemirror]           |
 | [val town](https://www.val.town)                                                  | [CodeMirror][codemirror]           |
+| [webR](https://webr.sh)                                                           | [CodeMirror][codemirror]           |
 | [Wokwi](https://wokwi.com/)                                                       | [Monaco][monaco]                   |
 | [x86-64 playground](https://app.x64.halb.it)                                      | [Prism][prism]                     |
 
@@ -142,7 +144,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name            | count |
 | --------------- | ----- |
-| CodeMirror      | 51    |
+| CodeMirror      | 53    |
 | Monaco          | 41    |
 | Ace             | 12    |
 | HTML            | 6     |
