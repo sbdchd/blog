@@ -105,6 +105,7 @@ Before building out a playground for a language server, I decided to take a look
 | [SQL Online](https://sqliteonline.com)                                            | [CodeMirror][codemirror]           |
 | [SQL Playground](https://sql-playground.wizardzines.com)                          | [`<textarea>`][textarea]           |
 | [Sqlime](https://sqlime.org/)                                                     | [ContentEditable][contenteditable] |
+| [Squawk](https://play.squawkhq.com)                                               | [Monaco][monaco]                   |
 | [StackBlitz](https://stackblitz.com/edit/stylex-next?file=README.md)              | [Monaco][monaco], [XTerm][xterm]   |
 | [Stripe Sigma](https://dashboard.stripe.com/sigma/queries)                        | [CodeMirror][codemirror]           |
 | [Strudel](https://strudel.cc/)                                                    | [CodeMirror][codemirror]           |
@@ -145,7 +146,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | name            | count |
 | --------------- | ----- |
 | CodeMirror      | 53    |
-| Monaco          | 41    |
+| Monaco          | 42    |
 | Ace             | 12    |
 | HTML            | 6     |
 | XTerm           | 4     |
