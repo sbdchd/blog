@@ -2,15 +2,18 @@
 layout: post
 title: "Login via QR Code is Slick"
 description: "Need an app"
+last_modified_at: 2025-12-06
 ---
 
-Discord, TikTok, and Steam all support scanning QR codes to login:
+Discord, TikTok, Steam, and Vanguard all support scanning QR codes to login:
 
 <img src="/assets/qr-code-login-discord.png" width="700" alt="discord login page with qr code">
 
 <img src="/assets/qr-code-login-tiktok.png" width="700" alt="tiktok login page with qr code">
 
 <img src="/assets/qr-code-login-steam.png" width="700" alt="steam login page with qr code">
+
+<img src="/assets/qr-code-login-vanguard.png" width="700" alt="vanguard login page with qr code">
 
 It's a pretty quick way to login, the only caveat is you need to have their
 mobile app installed.
