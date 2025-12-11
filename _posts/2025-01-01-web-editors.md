@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-12-06
+last_modified_at: 2025-12-11
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -98,6 +98,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Shadertoy](https://www.shadertoy.com/view/Xds3zN)                                | [CodeMirror][codemirror]           |
 | [SharpLab](https://sharplab.io/)                                                  | [CodeMirror][codemirror]           |
 | [Shiny](https://shinylive.io/r/examples/)                                         | [CodeMirror][codemirror]           |
+| [Shopify Analytics](https://admin.shopify.com/analytics/reports/explore)          | [CodeMirror][codemirror]           |
 | [SingleStore](https://www.singlestore.com)                                        | [Monaco][monaco]                   |
 | [Snowflake](https://www.snowflake.com/)                                           | [CodeMirror][codemirror]           |
 | [Sorbet](https://sorbet.run)                                                      | [Monaco][monaco]                   |
@@ -147,7 +148,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name            | count |
 | --------------- | ----- |
-| CodeMirror      | 54    |
+| CodeMirror      | 55    |
 | Monaco          | 43    |
 | Ace             | 12    |
 | HTML            | 6     |
