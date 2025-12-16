@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2025-12-11
+last_modified_at: 2025-12-15
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -92,6 +92,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Rego](https://play.openpolicyagent.org)                                          | [CodeMirror][codemirror]           |
 | [Replit](https://replit.com/)                                                     | [CodeMirror][codemirror]           |
 | [Riju](https://riju.codes)                                                        | [Monaco][monaco]                   |
+| [RSC Playground](https://rsc-playground.pages.dev)                                | [CodeMirror][codemirror]           |
 | [Ruff](https://play.ruff.rs)                                                      | [Monaco][monaco]                   |
 | [RunKit](https://npm.runkit.com/react)                                            | [CodeMirror][codemirror]           |
 | [Rust](https://play.rust-lang.org/)                                               | [Ace][ace]                         |
@@ -111,6 +112,7 @@ Before building out a playground for a language server, I decided to take a look
 | [StackBlitz](https://stackblitz.com/edit/stylex-next?file=README.md)              | [Monaco][monaco], [XTerm][xterm]   |
 | [Stripe Sigma](https://dashboard.stripe.com/sigma/queries)                        | [CodeMirror][codemirror]           |
 | [Strudel](https://strudel.cc/)                                                    | [CodeMirror][codemirror]           |
+| [StyleX](https://stylexjs.com/playground/)                                        | [Monaco][monaco]                   |
 | [Svelte](https://svelte.dev/playground)                                           | [CodeMirror][codemirror]           |
 | [SWI Prolog](https://swish.swi-prolog.org)                                        | [CodeMirror][codemirror]           |
 | [Swift Playground](https://swiftfiddle.com)                                       | [Monaco][monaco], [XTerm][xterm]   |
@@ -148,8 +150,8 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name            | count |
 | --------------- | ----- |
-| CodeMirror      | 55    |
-| Monaco          | 43    |
+| CodeMirror      | 56    |
+| Monaco          | 44    |
 | Ace             | 12    |
 | HTML            | 6     |
 | XTerm           | 4     |
