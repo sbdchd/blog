@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2026-01-28
+last_modified_at: 2026-01-29
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -99,6 +99,7 @@ Before building out a playground for a language server, I decided to take a look
 | [RunKit](https://npm.runkit.com/react)                                            | [CodeMirror][codemirror]           |
 | [Rust](https://play.rust-lang.org/)                                               | [Ace][ace]                         |
 | [Shadertoy](https://www.shadertoy.com/view/Xds3zN)                                | [CodeMirror][codemirror]           |
+| [ShapedQL Playground](https://playground.shaped.ai/)                              | [Monaco][monaco]                   |
 | [SharpLab](https://sharplab.io/)                                                  | [CodeMirror][codemirror]           |
 | [Shiny](https://shinylive.io/r/examples/)                                         | [CodeMirror][codemirror]           |
 | [Shopify Analytics](https://admin.shopify.com/analytics/reports/explore)          | [CodeMirror][codemirror]           |
@@ -154,7 +155,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | name            | count |
 | --------------- | ----- |
 | CodeMirror      | 57    |
-| Monaco          | 44    |
+| Monaco          | 45    |
 | Ace             | 13    |
 | HTML            | 7     |
 | XTerm           | 4     |
