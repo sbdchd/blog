@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2026-01-29
+last_modified_at: 2026-02-01
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -56,6 +56,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Kaitai](https://ide.kaitai.io)                                                   | [Ace][ace]                         |
 | [Kotlin Playground](https://play.kotlinlang.org/)                                 | [CodeMirror][codemirror]           |
 | [Lean](https://live.lean-lang.org/)                                               | [Monaco][monaco]                   |
+| [Leetcode](https://leetcode.com)                                                  | [Monaco][monaco]                   |
 | [Lightning CSS Playground](https://lightningcss.dev/playground/)                  | [CodeMirror][codemirror]           |
 | [Limber](https://limber.glimdown.com/)                                            | [CodeMirror][codemirror]           |
 | [MDN Playground](https://developer.mozilla.org/en-US/play)                        | [CodeMirror][codemirror]           |
@@ -155,7 +156,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | name            | count |
 | --------------- | ----- |
 | CodeMirror      | 57    |
-| Monaco          | 45    |
+| Monaco          | 46    |
 | Ace             | 13    |
 | HTML            | 7     |
 | XTerm           | 4     |
