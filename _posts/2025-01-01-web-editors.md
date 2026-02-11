@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2026-02-01
+last_modified_at: 2026-02-10
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -59,6 +59,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Leetcode](https://leetcode.com)                                                  | [Monaco][monaco]                   |
 | [Lightning CSS Playground](https://lightningcss.dev/playground/)                  | [CodeMirror][codemirror]           |
 | [Limber](https://limber.glimdown.com/)                                            | [CodeMirror][codemirror]           |
+| [Livedocs](https://livedocs.com/)                                                 | [CodeMirror][codemirror]           |
 | [MDN Playground](https://developer.mozilla.org/en-US/play)                        | [CodeMirror][codemirror]           |
 | [Mermaid](https://www.mermaidchart.com/play)                                      | [Monaco][monaco]                   |
 | [MiniJinja Playground](https://mitsuhiko.github.io/minijinja-playground/)         | [Ace][ace]                         |
@@ -72,6 +73,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Nickel Playground](https://nickel-lang.org/playground/)                          | [Ace][ace]                         |
 | [Nim Playground](https://play.nim-lang.org/)                                      | [CodeMirror][codemirror]           |
 | [Observable](https://observablehq.com/)                                           | [CodeMirror][codemirror]           |
+| [Outerbase](https://studio.outerbase.com/playground/client?template=northwind)    | [CodeMirror][codemirror]           |
 | [Parcel Repl](https://repl.parceljs.org)                                          | [CodeMirror][codemirror]           |
 | [ParserTL Playground](https://mingodad.github.io/parsertl-playground/playground/) | [Ace][ace]                         |
 | [Perfetto](https://ui.perfetto.dev/#!/query)                                      | [CodeMirror][codemirror]           |
@@ -155,7 +157,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name            | count |
 | --------------- | ----- |
-| CodeMirror      | 57    |
+| CodeMirror      | 59    |
 | Monaco          | 46    |
 | Ace             | 13    |
 | HTML            | 7     |
