@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2026-02-10
+last_modified_at: 2026-02-17
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -19,6 +19,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Bauble](https://bauble.studio)                                                   | [Monaco][monaco]                   |
 | [Biome](https://biomejs.dev/playground/)                                          | [CodeMirror][codemirror]           |
 | [Black](https://black.vercel.app/)                                                | [Ace][ace]                         |
+| [Braintrust](https://www.braintrust.dev/)                                         | [CodeMirror][codemirror]           |
 | [Bytebase](https://bytebase.com)                                                  | [Monaco][monaco]                   |
 | [CEL Playground](https://playcel.undistro.io)                                     | [Ace][ace]                         |
 | [Checkly](https://www.checklyhq.com)                                              | [Monaco][monaco]                   |
@@ -157,7 +158,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name            | count |
 | --------------- | ----- |
-| CodeMirror      | 59    |
+| CodeMirror      | 60    |
 | Monaco          | 46    |
 | Ace             | 13    |
 | HTML            | 7     |
