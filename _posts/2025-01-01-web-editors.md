@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2026-02-17
+last_modified_at: 2026-02-19
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -98,6 +98,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Rego](https://play.openpolicyagent.org)                                          | [CodeMirror][codemirror]           |
 | [Replit](https://replit.com/)                                                     | [CodeMirror][codemirror]           |
 | [Riju](https://riju.codes)                                                        | [Monaco][monaco]                   |
+| [Rolldown REPL](https://repl.rolldown.rs/)                                        | [Monaco][monaco]                   |
 | [RSC Playground](https://rsc-playground.pages.dev)                                | [CodeMirror][codemirror]           |
 | [Ruff](https://play.ruff.rs)                                                      | [Monaco][monaco]                   |
 | [RunKit](https://npm.runkit.com/react)                                            | [CodeMirror][codemirror]           |
@@ -159,7 +160,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | name            | count |
 | --------------- | ----- |
 | CodeMirror      | 60    |
-| Monaco          | 46    |
+| Monaco          | 47    |
 | Ace             | 13    |
 | HTML            | 7     |
 | XTerm           | 4     |
