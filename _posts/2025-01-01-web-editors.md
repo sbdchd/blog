@@ -129,6 +129,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Tailwind Play](https://lightningcss.dev/playground/)                             | [Monaco][monaco]                   |
 | [Timescale](https://console.cloud.timescale.com/dashboard/services?popsql=)       | [Monaco][monaco]                   |
 | [Tinybird](https://www.tinybird.co)                                               | [CodeMirror][codemirror]           |
+| [TLA+ By Example](https://tlabyexample.com/intro/platform)                        | [CodeMirror][codemirror]           |
 | [Try Ruby](https://try.ruby-lang.org)                                             | [CodeMirror][codemirror]           |
 | [Twilio Functions](https://console.twilio.com/develop/functions)                  | [Monaco][monaco]                   |
 | [Ty](https://play.ty.dev)                                                         | [Monaco][monaco]                   |
@@ -159,7 +160,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name            | count |
 | --------------- | ----- |
-| CodeMirror      | 60    |
+| CodeMirror      | 61    |
 | Monaco          | 47    |
 | Ace             | 13    |
 | HTML            | 7     |
