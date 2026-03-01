@@ -2,6 +2,7 @@
 layout: post
 title: "Postgres Column Naming"
 description: Where "?column?" comes from
+last_modified_at: 2026-03-01
 ---
 
 This is a follow-up to [Interesting Bits of Postgres Grammar]({% post_url 2025-06-20-interesting-bits-of-postgres-grammar %}).
@@ -130,6 +131,21 @@ select (member).name, (member).species from team;
 | name   | species |
 | ------ | ------- |
 | Piglet | Pig     |
+
+### Indexing
+
+Indexing into a field results in the field's name being used for the column.
+
+```sql
+with t as (
+  select '{1,2,3}'::int4[] as foo
+)
+select foo[1] from t;
+```
+
+| foo |
+| --- |
+| 1   |
 
 ### Functions
 
