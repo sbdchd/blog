@@ -98,11 +98,11 @@ select 1;
 
 the column you get back is:
 
-```sql
-"?column?"
-```
+| ?column? |
+| -------- |
+| 1        |
 
-This is the inferred column name for expressions when there isn't a "better" one.
+This is the inferred column name for expressions.
 
 And even though it looks a little odd, you can use it in your queries like any other name:
 
