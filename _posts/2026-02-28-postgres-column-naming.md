@@ -134,7 +134,7 @@ select (member).name, (member).species from team;
 
 ### Indexing
 
-Indexing into a field results in the field's name being used for the column.
+Indexing uses the base expression's column name.
 
 ```sql
 with t as (
