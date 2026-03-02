@@ -80,7 +80,7 @@ When go-to-def'ing on a symbol, like `)`, `[`, `}`, `;`, `,` TypeScript does the
 
 ## Squawk
 
-In addition to [the symbol support](https://github.com/sbdchd/squawk/blob/c1f6c7c499ec1d0de475c14d73a017ad149841ec/crates/squawk_ide/src/offsets.rs#L11C56-L11C56) like TypeScript, Squawk supports additional navigation niceties.
+In addition to [the symbol support](https://github.com/sbdchd/squawk/blob/c1f6c7c499ec1d0de475c14d73a017ad149841ec/crates/squawk_ide/src/offsets.rs#L11C56-L11C56) like TypeScript, Squawk supports a couple other navigation niceties.
 
 ### Case Expressions
 
