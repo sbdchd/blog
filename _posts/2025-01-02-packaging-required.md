@@ -2,6 +2,7 @@
 layout: post
 title: "Packaging Required"
 description: "Enforcing Boundaries Through Visibility"
+last_modified_at: 2026-03-08
 ---
 
 ## Overview
@@ -41,7 +42,7 @@ Build systems like [Bazel](https://bazel.build/concepts/visibility), [Buck2](htt
 
 The build systems use similar syntax for defining visibility rules, and support a wide range of constraints.
 
-But if those systems aren't your style, you could always build something yourself. Once you have [a module graph](https://docs.astral.sh/ruff/settings/#analyze) you need to traverse it to enforce your rules.
+But if those systems aren't your style, you could always build something yourself. Once you have [a module graph](https://docs.astral.sh/ruff/settings/#analyze) you need to traverse it to [enforce your rules](https://github.com/golang/go/blob/f65692ea562bf24c21ae46854e98584dd4bcc201/src/go/build/deps_test.go#L38).
 
 ## Conclusion
 
