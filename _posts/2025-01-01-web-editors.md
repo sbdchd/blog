@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2026-02-27
+last_modified_at: 2026-03-21
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -74,6 +74,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Nginx Playground](https://nginx-playground.wizardzines.com)                      | [CodeMirror][codemirror]           |
 | [Nickel Playground](https://nickel-lang.org/playground/)                          | [Ace][ace]                         |
 | [Nim Playground](https://play.nim-lang.org/)                                      | [CodeMirror][codemirror]           |
+| [Nuxt UI Playground](https://play.ui.nuxt.com)                                    | [CodeMirror][codemirror]           |
 | [Observable](https://observablehq.com/)                                           | [CodeMirror][codemirror]           |
 | [Outerbase](https://studio.outerbase.com/playground/client?template=northwind)    | [CodeMirror][codemirror]           |
 | [Parcel Repl](https://repl.parceljs.org)                                          | [CodeMirror][codemirror]           |
@@ -131,6 +132,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Timescale](https://console.cloud.timescale.com/dashboard/services?popsql=)       | [Monaco][monaco]                   |
 | [Tinybird](https://www.tinybird.co)                                               | [CodeMirror][codemirror]           |
 | [TLA+ By Example](https://tlabyexample.com/intro/platform)                        | [CodeMirror][codemirror]           |
+| [Trigger](https://trigger.dev)                                                    | [CodeMirror][codemirror]           |
 | [Try Ruby](https://try.ruby-lang.org)                                             | [CodeMirror][codemirror]           |
 | [Twilio Functions](https://console.twilio.com/develop/functions)                  | [Monaco][monaco]                   |
 | [Ty](https://play.ty.dev)                                                         | [Monaco][monaco]                   |
@@ -161,7 +163,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 
 | name            | count |
 | --------------- | ----- |
-| CodeMirror      | 61    |
+| CodeMirror      | 63    |
 | Monaco          | 48    |
 | Ace             | 13    |
 | HTML            | 7     |
