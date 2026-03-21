@@ -2,13 +2,14 @@
 layout: post
 title: "LSP Types & Rust"
 description: "Using the Type System"
+last_modified_at: 2026-03-21
 ---
 
-[Squawk's](https://squawkhq.com) [language server](https://github.com/sbdchd/squawk/tree/1a3f6bd70fb2ddf3caa66b604d15e5314591277d/crates/squawk_server) uses [lsp-types](https://crates.io/crates/lsp-types), which provides serde-friendly types for the Language Server Protocol (LSP). This avoids us having to implement a lot of boilerplate ourselves.
+[Squawk's](https://squawkhq.com) [language server](https://github.com/sbdchd/squawk/tree/1a3f6bd70fb2ddf3caa66b604d15e5314591277d/crates/squawk_server) uses [lsp-types](https://crates.io/crates/lsp-types), which provides serde-friendly types for the Language Server Protocol (LSP). This avoids us having to implement a lot of boilerplate.
 
 ## Before: A Manual Approach
 
-One of the provided types is `SelectionRangeRequest`, which is used for expanding and shrinking selections in editors. It's defined in lsp-types as:
+One of the provided types is `SelectionRangeRequest`, which is used for expanding and shrinking selections in editors. It's defined in `lsp-types` as:
 
 ```rust
 pub enum SelectionRangeRequest {}
@@ -32,7 +33,7 @@ match req.method.as_ref() {
     _ => (),
 }
 
-pub(crate) fn handle_selection_range(
+fn handle_selection_range(
     connection: &Connection,
     req: lsp_server::Request,
     system: &impl System,
@@ -66,7 +67,7 @@ RequestDispatcher::new(&connection, req, &system)
     .finish();
 
 
-pub(crate) fn handle_selection_range(
+fn handle_selection_range(
     system: &dyn System,
     params: SelectionRangeParams,
 ) -> Result<Option<Vec<lsp_types::SelectionRange>>> {
@@ -80,6 +81,8 @@ pub(crate) fn handle_selection_range(
 
 Inside `RequestDispatcher`, the key methods are `parse` and `on`.
 
+### Parse
+
 Since `SelectionRangeRequest` implements `Request`:
 
 ```rust
@@ -89,8 +92,6 @@ pub trait Request {
     const METHOD: &'static str;
 }
 ```
-
-### Parse
 
 We can extract the `Params` type from it along with the `METHOD` `const` and use those in our `parse` method.
 
@@ -124,7 +125,7 @@ where
 With the `on` method we do something similar, extracting the `Params` and `Result` types, giving us statically typed handlers.
 
 ```rust
-pub(crate) fn on<R>(
+fn on<R>(
     mut self,
     handler: fn(&dyn System, R::Params) -> Result<R::Result>,
 ) -> Result<Self>
