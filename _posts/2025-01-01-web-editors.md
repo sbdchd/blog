@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2026-03-21
+last_modified_at: 2026-04-02
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -11,6 +11,7 @@ Before building out a playground for a language server, I decided to take a look
 | --------------------------------------------------------------------------------- | ---------------------------------- |
 | [AST Explorer Dev](https://ast-explorer.dev/)                                     | [Monaco][monaco]                   |
 | [AST Explorer Net](https://astexplorer.net)                                       | [CodeMirror][codemirror]           |
+| [ast-grep](https://ast-grep.github.io/playground.html)                            | [Monaco][monaco]                   |
 | [AWS Athena](http://console.aws.amazon.com/athena)                                | [Ace][ace]                         |
 | [AWS CloudShell](https://console.aws.amazon.com/cloudshell/)                      | [Ace][ace]                         |
 | [AWS Lambda](https://console.aws.amazon.com/lambda/)                              | [Monaco][monaco]                   |
@@ -164,7 +165,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | name            | count |
 | --------------- | ----- |
 | CodeMirror      | 63    |
-| Monaco          | 48    |
+| Monaco          | 49    |
 | Ace             | 13    |
 | HTML            | 7     |
 | XTerm           | 4     |
