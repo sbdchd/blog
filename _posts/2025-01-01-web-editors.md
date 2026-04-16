@@ -86,7 +86,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Pkl Playground](https://pkl-playground.vercel.app)                               | [CodeMirror][codemirror]           |
 | [PlanetScale](https://app.planetscale.com)                                        | [`<textarea>`][textarea]           |
 | [PlantUML](https://editor.plantuml.com)                                           | [Ace][ace]                         |
-| [Pony Playground](https://playground.ponylang.io)                                 | [Monaco][monaco]                   |
+| [Pony Playground](https://playground.ponylang.io)                                 | [Ace][ace]                         |
 | [Porffor](https://porffor.dev)                                                    | [Monaco][monaco]                   |
 | [Postgres Playground](https://www.crunchydata.com/developers/playground/)         | [XTerm][xterm]                     |
 | [Prettier](https://prettier.io/playground/)                                       | [CodeMirror][codemirror]           |
@@ -166,8 +166,8 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | name            | count |
 | --------------- | ----- |
 | CodeMirror      | 63    |
-| Monaco          | 50    |
-| Ace             | 13    |
+| Monaco          | 49    |
+| Ace             | 14    |
 | HTML            | 7     |
 | XTerm           | 4     |
 | CodeFlask       | 1     |
