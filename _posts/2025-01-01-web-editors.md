@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2026-04-02
+last_modified_at: 2026-04-16
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -86,6 +86,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Pkl Playground](https://pkl-playground.vercel.app)                               | [CodeMirror][codemirror]           |
 | [PlanetScale](https://app.planetscale.com)                                        | [`<textarea>`][textarea]           |
 | [PlantUML](https://editor.plantuml.com)                                           | [Ace][ace]                         |
+| [Pony Playground](https://playground.ponylang.io)                                 | [Monaco][monaco]                   |
 | [Porffor](https://porffor.dev)                                                    | [Monaco][monaco]                   |
 | [Postgres Playground](https://www.crunchydata.com/developers/playground/)         | [XTerm][xterm]                     |
 | [Prettier](https://prettier.io/playground/)                                       | [CodeMirror][codemirror]           |
@@ -165,7 +166,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | name            | count |
 | --------------- | ----- |
 | CodeMirror      | 63    |
-| Monaco          | 49    |
+| Monaco          | 50    |
 | Ace             | 13    |
 | HTML            | 7     |
 | XTerm           | 4     |
