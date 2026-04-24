@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2026-04-16
+last_modified_at: 2026-04-24
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -38,6 +38,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Dis This](https://www.dis-this.com/)                                             | [CodeMirror][codemirror]           |
 | [EDA Playground](https://edaplayground.com)                                       | [CodeMirror][codemirror]           |
 | [Effector](https://share.effector.dev)                                            | [CodeMirror][codemirror]           |
+| [Effekt](https://effekt-lang.org/playground.html)                                 | [Monaco][monaco]                   |
 | [Elm Playground](https://elm-lang.org/try)                                        | [CodeMirror][codemirror]           |
 | [esbuild try](esbuild.github.io/try/)                                             | [`<textarea>`][textarea]           |
 | [ESLint Playground](https://eslint.org/play/)                                     | [CodeMirror][codemirror]           |
@@ -166,7 +167,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | name            | count |
 | --------------- | ----- |
 | CodeMirror      | 63    |
-| Monaco          | 49    |
+| Monaco          | 50    |
 | Ace             | 14    |
 | HTML            | 7     |
 | XTerm           | 4     |
