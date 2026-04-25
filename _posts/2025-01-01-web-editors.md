@@ -2,7 +2,7 @@
 layout: post
 title: "Web Editors"
 description: "A review"
-last_modified_at: 2026-04-24
+last_modified_at: 2026-04-25
 ---
 
 Before building out a playground for a language server, I decided to take a look around to see what other people are using.
@@ -65,6 +65,7 @@ Before building out a playground for a language server, I decided to take a look
 | [Livedocs](https://livedocs.com/)                                                 | [CodeMirror][codemirror]           |
 | [MDN Playground](https://developer.mozilla.org/en-US/play)                        | [CodeMirror][codemirror]           |
 | [Mermaid](https://www.mermaidchart.com/play)                                      | [Monaco][monaco]                   |
+| [Mini Swift](https://miniswift.run/playground.html)                               | [Monaco][monaco]                   |
 | [MiniJinja Playground](https://mitsuhiko.github.io/minijinja-playground/)         | [Ace][ace]                         |
 | [Modal](https://modal.com/playground/get_started)                                 | [Monaco][monaco]                   |
 | [Mode](https://mode.com)                                                          | [Ace][ace]                         |
@@ -167,7 +168,7 @@ Overall, CodeMirror and Monaco are the clear favorites:
 | name            | count |
 | --------------- | ----- |
 | CodeMirror      | 63    |
-| Monaco          | 50    |
+| Monaco          | 51    |
 | Ace             | 14    |
 | HTML            | 7     |
 | XTerm           | 4     |
