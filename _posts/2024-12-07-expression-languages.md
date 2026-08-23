@@ -2,7 +2,7 @@
 layout: post
 title: "Expression Languages"
 description: "CEL, NSPRedicate, JSON DSLs"
-last_modified_at: 2025-08-29
+last_modified_at: 2026-08-23
 ---
 
 Sometimes you want configurability without the baggage of an entire language, so you turn to an simple, expression language!
@@ -101,6 +101,35 @@ any(attachments, .file_extension in~ ('html', 'htm') and
   any(file.explode(.),
     "unescape" in .scan.javascript.identifiers)
 )
+```
+
+## Speculation Rules API
+
+[See the docs on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script/type/speculationrules#where).
+
+```html
+<script type="speculationrules">
+  {
+    "prerender": [
+      {
+        "where": {
+          "and": [
+            {
+              "or": [
+                { "href_matches": "/docs/*" },
+                { "href_matches": "/guides/*" },
+                { "href_matches": "/blog/*" }
+              ]
+            },
+            { "not": { "href_matches": "/*\\?*(^|&)download=*" } },
+            { "not": { "selector_matches": ".skip-prefetch" } },
+            { "not": { "selector_matches": "[target=_blank]" } }
+          ]
+        }
+      }
+    ]
+  }
+</script>
 ```
 
 ## Conclusion
