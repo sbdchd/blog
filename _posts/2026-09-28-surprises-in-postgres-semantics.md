@@ -17,7 +17,7 @@ are still passed through.
 with t as (
   select 1 a, 2 b, 3 c
 )
-select * from t as u(x, y)
+select * from t as u (x, y)
 ```
 
 ```
@@ -39,7 +39,7 @@ We don't actually know whether `u` in the `select` clause above is a table or a 
 If the table `u` has a column `u`:
 
 ```sql
-create table u(u text);
+create table u (u text);
 ```
 
 Then we're selecting a column.
@@ -47,7 +47,7 @@ Then we're selecting a column.
 But if the table doesn't have a column named `u`:
 
 ```sql
-create table u(a text);
+create table u (a text);
 ```
 
 Then we're selecting the table itself as a row.
@@ -65,9 +65,7 @@ There are multiple ways to call functions and select columns in Postgres.
 With a table like:
 
 ```sql
-create table t (
-  a text
-);
+create table t (a text);
 ```
 
 We can query column `a` as we might expect:
@@ -88,7 +86,8 @@ Conversely, with a function defined as:
 
 ```sql
 create function d(t) returns text
-  as 'select 1' language sql;
+  as 'select 1'
+  language sql;
 ```
 
 We can call that function via the column style syntax:
@@ -177,7 +176,7 @@ HINT:  You can drop table employee instead.
 Along with your bog standard types like `text`, `int8`, and `float`, functions can also return tables:
 
 ```sql
-create function dup(int) returns table(f1 int, f2 text)
+create function dup(int) returns table (f1 int, f2 text)
   as $$select $1, cast($1 as text)$$
   language sql;
 
@@ -280,9 +279,7 @@ select pg_typeof(1) as a, pg_typeof('1') as b;
 So while the following appears to be playing fast and loose with the types:
 
 ```sql
-select
-  '1' + 2 as add,
-  '1' || 1 as concat;
+select '1' + 2 as add, '1' || 1 as concat;
 ```
 
 ```
@@ -294,16 +291,15 @@ select
 Postgres is converting it to the following internally:
 
 ```sql
-select
-  '1'::integer + 2 as add,
-  '1' || 1::text as concat;
+select '1'::integer + 2 as add, '1' || 1::text as concat;
 ```
 
 This also applies to functions, so this is allowed:
 
 ```sql
 create function add2(int8) returns int8
-  as 'select $1 + 2' language sql;
+  as 'select $1 + 2'
+  language sql;
 
 select add2('100');
 ```
