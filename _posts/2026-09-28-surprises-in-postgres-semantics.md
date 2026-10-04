@@ -6,7 +6,7 @@ description: "The many ways to do things"
 
 ## Overview
 
-Postgres has a lot of features and behavior that's not obvious.
+Postgres has a lot of features and behavior that's not obvious, which I've been encountering as [I build out](https://github.com/sbdchd/squawk) [Squawk](https://squawkhq.com).
 
 ## Aliases Don't Mask Extra Columns
 
